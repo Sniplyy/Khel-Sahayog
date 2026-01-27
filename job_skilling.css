@@ -1,0 +1,399 @@
+/* Job Skilling Page Specific Styles */
+
+/* Hero Section */
+.job-skilling-hero {
+    position: relative;
+    width: 100%;
+    height: 658px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 0;
+}
+
+.job-skilling-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/athletics-hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.job-skilling-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.2) 100%);
+}
+
+.job-skilling-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 129px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.job-skilling-hero-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: #ff5722;
+    margin-bottom: 24px;
+    max-width: 618px;
+}
+
+.job-skilling-hero-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 32px;
+    max-width: 618px;
+}
+
+.job-skilling-hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-support-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    background-color: #ffc107;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 4px 0px 9.1px 0px rgba(255, 87, 34, 0.21);
+    transition: all 0.3s ease;
+}
+
+.btn-support-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 0px 12px 0px rgba(255, 87, 34, 0.3);
+}
+
+/* Problem and Gap Section */
+.problem-gap-section {
+    padding: 80px 129px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+}
+
+.problem-gap-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-heading-orange {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.2em;
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.problem-gap-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.problem-card {
+    background-color: #212121;
+    border: 3px solid #ff5722;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 450px;
+    min-height: 556px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.problem-card-icon {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.problem-card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.problem-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.problem-card-list li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.problem-card-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff5722;
+    font-size: 24px;
+    line-height: 1.2em;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+    padding: 80px 129px;
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 0;
+}
+
+.what-we-do-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.what-we-do-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.solution-card {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.solution-card-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #424242;
+}
+
+/* Join Our Mission Section */
+.join-mission-section {
+    background-color: #ff5722;
+    padding: 80px 129px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.join-mission-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.join-mission-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.join-mission-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #ffffff;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-mission-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-donate-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #ffc107;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-donate-yellow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-get-involved-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #ffffff;
+    color: #ff5722;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-get-involved-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .problem-gap-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .problem-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .what-we-do-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .job-skilling-hero {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .job-skilling-hero-content {
+        padding: 100px 40px 60px;
+    }
+
+    .job-skilling-hero-title {
+        font-size: 28px;
+    }
+
+    .job-skilling-hero-subtitle {
+        font-size: 16px;
+    }
+
+    .problem-gap-section,
+    .what-we-do-section,
+    .join-mission-section {
+        padding: 60px 40px;
+    }
+
+    .section-heading-orange {
+        font-size: 28px;
+    }
+
+    .what-we-do-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .join-mission-title {
+        font-size: 32px;
+    }
+
+    .join-mission-text {
+        font-size: 16px;
+    }
+
+    .join-mission-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-donate-yellow,
+    .btn-get-involved-white {
+        width: 100%;
+    }
+}

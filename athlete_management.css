@@ -1,0 +1,591 @@
+/* ===================================
+   ATHLETE MANAGEMENT PAGE STYLES
+   =================================== */
+
+/* Hero Section */
+.athlete-hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.athlete-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/athlete-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.athlete-hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.athlete-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.athlete-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title-orange {
+    color: #FF5722;
+}
+
+.title-white {
+    color: #FFFFFF;
+}
+
+.athlete-hero-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+    max-width: 900px;
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.athlete-hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn-support-athlete {
+    background: #FFC107;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-support-athlete:hover {
+    background: #FFB300;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 193, 7, 0.3);
+}
+
+.link-join-player {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.link-join-player:hover {
+    opacity: 0.8;
+}
+
+/* Section Title Styles */
+.section-title-orange {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF5722;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Critical Gap Section */
+.critical-gap-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+}
+
+.gap-infographic {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.gap-column-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.gap-items {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.gap-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.gap-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gap-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.gap-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Our Athlete Management Model Section */
+.model-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+}
+
+.model-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.model-card {
+    background: #1A1A1A;
+    border-radius: 15px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.model-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.model-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.model-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FF5722;
+    margin-bottom: 16px;
+}
+
+.model-card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFEFE;
+    line-height: 1.6;
+}
+
+/* Service Tiers Section */
+.tiers-section {
+    background: #F5F5F5;
+    padding: 100px 40px;
+}
+
+.tiers-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.tier-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.tier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tier-entry {
+    border-top: 5px solid #E53935;
+}
+
+.tier-core {
+    border-top: 5px solid #43A047;
+}
+
+.tier-elite {
+    border-top: 5px solid #FFD700;
+}
+
+.tier-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.tier-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    padding: 12px 0;
+    padding-left: 24px;
+    position: relative;
+}
+
+.tier-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #FF5722;
+    font-weight: 700;
+}
+
+/* Athlete Onboarding Flow Section */
+.onboarding-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+}
+
+.onboarding-flow {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flow-step {
+    flex: 1;
+    background: #F9F9F9;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.flow-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+}
+
+.flow-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.flow-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.flow-arrow {
+    font-size: 32px;
+    color: #FF5722;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* JOIN OUR MISSION Section */
+.join-mission-section {
+    background: #FF5722;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.join-mission-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.join-mission-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.join-mission-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-partner-white {
+    background: #FFFFFF;
+    color: #FF5722;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-partner-white:hover {
+    background: #F5F5F5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.btn-donate-outline {
+    background: transparent;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-donate-outline:hover {
+    background: #FFFFFF;
+    color: #FF5722;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .model-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .tiers-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .onboarding-flow {
+        flex-wrap: wrap;
+    }
+
+    .flow-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .athlete-hero {
+        height: 500px;
+    }
+
+    .athlete-hero-title {
+        font-size: 28px;
+    }
+
+    .athlete-hero-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .gap-infographic {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .model-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .onboarding-flow {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .join-mission-title {
+        font-size: 32px;
+    }
+
+    .join-mission-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .athlete-hero {
+        height: 450px;
+    }
+
+    .athlete-hero-content {
+        padding: 0 24px;
+    }
+
+    .athlete-hero-title {
+        font-size: 24px;
+    }
+
+    .athlete-hero-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .btn-support-athlete {
+        font-size: 18px;
+        padding: 14px 32px;
+    }
+
+    .critical-gap-section,
+    .model-section,
+    .tiers-section,
+    .onboarding-section {
+        padding: 60px 24px;
+    }
+
+    .section-title-orange {
+        font-size: 20px;
+    }
+
+    .gap-items {
+        gap: 24px;
+    }
+
+    .model-card,
+    .tier-card {
+        padding: 32px 24px;
+    }
+
+    .join-mission-section {
+        padding: 60px 24px;
+    }
+
+    .join-mission-title {
+        font-size: 28px;
+    }
+
+    .join-mission-text {
+        font-size: 16px;
+    }
+
+    .join-mission-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-partner-white,
+    .btn-donate-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .athlete-hero {
+        height: 400px;
+    }
+
+    .athlete-hero-title {
+        font-size: 20px;
+    }
+
+    .athlete-hero-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .athlete-hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .btn-support-athlete {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}

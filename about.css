@@ -1,0 +1,699 @@
+/* About Page Styles - Rebuilt from Figma Design */
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.about-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/about-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.about-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #FF5722 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+/* WHO ARE WE Section */
+.who-are-we-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #FF5722 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.who-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.who-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000000;
+  text-align: center;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+  background-color: #212121;
+  padding: 100px 20px;
+  width: 100%;
+}
+
+.vision-mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.vm-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.vm-card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.vm-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vm-card-content {
+  padding: 40px;
+}
+
+.vm-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #FF5722;
+  margin-bottom: 24px;
+}
+
+.vm-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vm-list li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.vm-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #FF5722;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+/* Our Values Section */
+.values-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  width: 100%;
+}
+
+.values-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  background-color: #F9F9F9;
+  border-radius: 15px;
+  padding: 36px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 24px rgba(255, 87, 34, 0.2);
+}
+
+.value-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  height: 80px;
+}
+
+.value-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.value-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* Tournament Pipeline Section */
+.tournament-section {
+  background-color: #F5F5F5;
+  padding: 100px 20px;
+  width: 100%;
+}
+
+.tournament-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.tournament-content {
+  padding-right: 20px;
+}
+
+.section-title-left {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #FF5722 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.tournament-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.tournament-benefits li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 24px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.tournament-benefits li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #FF5722;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tournament-benefits strong {
+  font-weight: 700;
+  color: #FF5722;
+}
+
+.tournament-pipeline {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pipeline-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.pipeline-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tier {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.tier:hover {
+  transform: translateX(8px);
+}
+
+.tier-1 {
+  background-color: #4A90E2;
+  color: #ffffff;
+}
+
+.tier-2 {
+  background-color: #FFA726;
+  color: #ffffff;
+}
+
+.tier-3 {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.tier-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  min-width: 50px;
+  text-align: center;
+}
+
+.tier-content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.tier-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.tier-arrow {
+  text-align: center;
+  font-size: 32px;
+  color: #FF5722;
+  font-weight: 700;
+  padding: 8px 0;
+}
+
+/* JOIN OUR MISSION Section */
+.join-mission-section {
+  background-color: #FF5722;
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.join-mission-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.join-mission-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.join-mission-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.btn-partner {
+  padding: 16px 40px;
+  background-color: #FFC107;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-partner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.btn-donate-white {
+  padding: 16px 40px;
+  background-color: #ffffff;
+  color: #FF5722;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-donate-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================ */
+
+/* Desktop Small - 1024px and below */
+@media (max-width: 1024px) {
+
+  .who-are-we-section,
+  .vision-mission-section,
+  .values-section,
+  .tournament-section {
+    padding: 80px 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .tournament-container {
+    gap: 50px;
+  }
+
+  .join-mission-section {
+    padding: 60px 40px;
+  }
+}
+
+/* Tablet - 768px and below */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 350px;
+  }
+
+  .about-hero-title {
+    font-size: 48px;
+  }
+
+  .who-are-we-section,
+  .vision-mission-section,
+  .values-section,
+  .tournament-section {
+    padding: 60px 30px;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .who-paragraph {
+    font-size: 18px;
+  }
+
+  .vision-mission-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vm-card-content {
+    padding: 32px;
+  }
+
+  .vm-card-title {
+    font-size: 28px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .tournament-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .tournament-content {
+    padding-right: 0;
+  }
+
+  .tournament-pipeline {
+    padding: 32px 24px;
+  }
+
+  .join-mission-section {
+    padding: 50px 30px;
+  }
+
+  .join-mission-title {
+    font-size: 32px;
+  }
+
+  .join-mission-text {
+    font-size: 18px;
+  }
+
+  .join-mission-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btn-partner,
+  .btn-donate-white {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+  .about-hero {
+    height: 300px;
+  }
+
+  .about-hero-title {
+    font-size: 36px;
+  }
+
+  .who-are-we-section,
+  .vision-mission-section,
+  .values-section,
+  .tournament-section {
+    padding: 50px 20px;
+  }
+
+  .section-title,
+  .section-title-left {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .who-paragraph {
+    font-size: 16px;
+  }
+
+  .vm-card-image {
+    height: 220px;
+  }
+
+  .vm-card-content {
+    padding: 24px;
+  }
+
+  .vm-card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .vm-list li {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .value-card {
+    padding: 28px 20px;
+  }
+
+  .value-icon {
+    height: 64px;
+    margin-bottom: 16px;
+  }
+
+  .value-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .value-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .value-description {
+    font-size: 13px;
+  }
+
+  .tournament-pipeline {
+    padding: 24px 20px;
+  }
+
+  .pipeline-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .tier {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+
+  .tier-number {
+    font-size: 28px;
+    min-width: 40px;
+  }
+
+  .tier-content h4 {
+    font-size: 16px;
+  }
+
+  .tier-content p {
+    font-size: 13px;
+  }
+
+  .tier-arrow {
+    font-size: 24px;
+  }
+
+  .tournament-benefits li {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .join-mission-section {
+    padding: 40px 20px;
+  }
+
+  .join-mission-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .join-mission-text {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .btn-partner,
+  .btn-donate-white {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}

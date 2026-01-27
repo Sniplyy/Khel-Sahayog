@@ -1,0 +1,598 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1A1616;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header Navigation */
+.header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #E27934;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1A1616;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #E27934;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 16px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #E27934;
+    color: #FFFFFF;
+    border: 2px solid #E27934;
+}
+
+.btn-primary:hover {
+    background-color: #d16a28;
+    border-color: #d16a28;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(226, 121, 52, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #E27934;
+    border: 2px solid #E27934;
+}
+
+.btn-outline:hover {
+    background-color: #E27934;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(226, 121, 52, 0.3);
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 22, 22, 0.85) 0%, rgba(26, 22, 22, 0.6) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 80px 0;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #F9A825 0%, #F57F17 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Power of Football Section */
+.power-section {
+    padding: 80px 0;
+    background-color: #F3F4F6;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #1A1616;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.benefit-card {
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.benefit-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1616;
+    margin-bottom: 12px;
+}
+
+.benefit-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Context Cards Section */
+.context-section {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.context-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.context-card {
+    padding: 40px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.context-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.context-card-dark {
+    background-color: #1A1616;
+    color: #FFFFFF;
+}
+
+.context-card-orange {
+    background-color: #E27934;
+    color: #FFFFFF;
+}
+
+.context-card-gray {
+    background-color: #2A2626;
+    color: #FFFFFF;
+}
+
+.context-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.context-text {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.highlight-text {
+    color: #F9A825;
+    font-weight: 600;
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 80px 0;
+    background-color: #F3F4F6;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+}
+
+.program-card {
+    padding: 40px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.program-card-light {
+    background-color: #FFFFFF;
+}
+
+.program-card-dark {
+    background-color: #1A1616;
+    color: #FFFFFF;
+}
+
+.program-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.program-list {
+    list-style: none;
+}
+
+.program-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.check-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Athlete Pathway Section */
+.pathway-section {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.pathway-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.pathway-step {
+    text-align: center;
+    max-width: 200px;
+}
+
+.step-number {
+    width: 64px;
+    height: 64px;
+    background-color: #E27934;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 auto 16px;
+    transition: transform 0.3s ease;
+}
+
+.pathway-step:hover .step-number {
+    transform: scale(1.1);
+}
+
+.step-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A1616;
+    margin-bottom: 8px;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.pathway-arrow {
+    font-size: 32px;
+    color: #E27934;
+    font-weight: 700;
+}
+
+/* Impact Stats Section */
+.impact-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #E27934 0%, #d16a28 100%);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 48px;
+}
+
+.stat-card {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.stat-number {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* Footer */
+.footer {
+    background-color: #1A1616;
+    color: #FFFFFF;
+    padding: 60px 0 24px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+.footer-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #E27934;
+    margin-bottom: 16px;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #E27934;
+    transform: translateY(-4px);
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #E27934;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .context-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pathway-steps {
+        flex-direction: column;
+    }
+
+    .pathway-arrow {
+        transform: rotate(90deg);
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .stat-number {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-large {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+}

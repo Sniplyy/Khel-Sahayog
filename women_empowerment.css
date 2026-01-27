@@ -1,0 +1,661 @@
+/* ===================================
+   WOMEN EMPOWERMENT PAGE STYLES
+   =================================== */
+
+/* Hero Section */
+.women-hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.women-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/women-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.women-hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.7), rgba(233, 30, 99, 0.6));
+}
+
+.women-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.women-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.women-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Heading Styles */
+.section-heading-purple {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #9C27B0;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Mission Statement Section */
+.mission-statement-section {
+    background: #FFFFFF;
+    padding: 80px 40px;
+}
+
+.mission-statement-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Why It Matters Section */
+.why-matters-section {
+    background: #F9F3FC;
+    padding: 100px 40px;
+}
+
+.why-matters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.matters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.matter-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    border-left: 5px solid #9C27B0;
+}
+
+.matter-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(156, 39, 176, 0.2);
+}
+
+.matter-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.matter-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #9C27B0;
+    margin-bottom: 16px;
+}
+
+.matter-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* Challenges Section */
+.challenges-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+}
+
+.challenges-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.challenge-item {
+    background: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    border-radius: 12px;
+    padding: 40px 32px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.challenge-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.challenge-item:hover::before {
+    opacity: 1;
+}
+
+.challenge-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(156, 39, 176, 0.3);
+}
+
+.challenge-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 16px;
+}
+
+.challenge-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.challenge-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+}
+
+/* Programs Section */
+.programs-section {
+    background: #F9F3FC;
+    padding: 100px 40px;
+}
+
+.programs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.program-block {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px;
+    border-top: 5px solid #9C27B0;
+    transition: all 0.3s ease;
+}
+
+.program-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(156, 39, 176, 0.15);
+}
+
+.program-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.program-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #9C27B0;
+}
+
+.program-badge {
+    background: linear-gradient(135deg, #9C27B0, #E91E63);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.program-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-features li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    padding: 10px 0;
+    padding-left: 28px;
+    position: relative;
+}
+
+.program-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #9C27B0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Success Stories Section */
+.success-stories-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+}
+
+.success-stories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.story-card {
+    background: linear-gradient(135deg, #F9F3FC 0%, #FCE4EC 100%);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(156, 39, 176, 0.15);
+}
+
+.story-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: rgba(156, 39, 176, 0.2);
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.story-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.story-author {
+    border-top: 2px solid rgba(156, 39, 176, 0.2);
+    padding-top: 20px;
+}
+
+.author-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #9C27B0;
+    margin-bottom: 4px;
+}
+
+.author-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* Impact Statistics Section */
+.impact-stats-section {
+    background: linear-gradient(135deg, #9C27B0 0%, #E91E63 100%);
+    padding: 100px 40px;
+}
+
+.impact-stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Call to Action Section */
+.cta-section {
+    background: #FFFFFF;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #9C27B0;
+    margin-bottom: 24px;
+}
+
+.cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sponsor-purple {
+    background: linear-gradient(135deg, #9C27B0, #E91E63);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 48px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3);
+}
+
+.btn-sponsor-purple:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(156, 39, 176, 0.4);
+}
+
+.btn-volunteer-white {
+    background: #FFFFFF;
+    color: #9C27B0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 48px;
+    border: 3px solid #9C27B0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-volunteer-white:hover {
+    background: #9C27B0;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(156, 39, 176, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .matters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .challenges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .program-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .women-hero {
+        height: 450px;
+    }
+
+    .women-hero-title {
+        font-size: 42px;
+    }
+
+    .women-hero-subtitle {
+        font-size: 22px;
+    }
+
+    .section-heading-purple {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .women-hero {
+        height: 400px;
+    }
+
+    .women-hero-title {
+        font-size: 36px;
+    }
+
+    .women-hero-subtitle {
+        font-size: 20px;
+    }
+
+    .mission-statement-section,
+    .why-matters-section,
+    .challenges-section,
+    .programs-section,
+    .success-stories-section,
+    .impact-stats-section,
+    .cta-section {
+        padding: 60px 24px;
+    }
+
+    .matter-card,
+    .challenge-item,
+    .program-block,
+    .story-card {
+        padding: 32px 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-title {
+        font-size: 32px;
+    }
+
+    .cta-text {
+        font-size: 18px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-sponsor-purple,
+    .btn-volunteer-white {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .women-hero {
+        height: 350px;
+    }
+
+    .women-hero-title {
+        font-size: 28px;
+    }
+
+    .women-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .section-heading-purple {
+        font-size: 24px;
+    }
+
+    .section-text {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .matter-title,
+    .challenge-title,
+    .program-title {
+        font-size: 18px;
+    }
+
+    .cta-title {
+        font-size: 26px;
+    }
+
+    .cta-text {
+        font-size: 16px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+}

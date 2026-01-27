@@ -1,0 +1,484 @@
+/* ===========================
+   KABADDI PAGE STYLES
+   =========================== */
+
+/* Hero Section */
+.kabaddi-hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.kabaddi-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/kabaddi-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.kabaddi-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+    z-index: 2;
+}
+
+.kabaddi-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.kabaddi-hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.kabaddi-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    max-width: 700px;
+}
+
+.kabaddi-hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* Why Kabaddi Section */
+.why-kabaddi-section {
+    padding: 80px 40px;
+    background-color: #FFFFFF;
+}
+
+.why-kabaddi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading-orange {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF5722;
+    margin-bottom: 48px;
+    text-align: left;
+}
+
+.why-kabaddi-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Benefits List */
+.kabaddi-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.benefit-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.benefit-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+/* Context Boxes */
+.kabaddi-context {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.context-box {
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.context-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF5722;
+    margin-bottom: 8px;
+}
+
+.context-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    margin: 0;
+}
+
+/* Programs Section */
+.kabaddi-programs-section {
+    padding: 80px 40px;
+    background-color: #F9F9F9;
+}
+
+.kabaddi-programs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.program-card {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-4px);
+}
+
+.program-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.program-features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.program-feature {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.program-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.program-feature-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #BDBDBD;
+}
+
+/* Athlete Pathway Section */
+.athlete-pathway-section {
+    padding: 80px 40px;
+    background-color: #FFFFFF;
+}
+
+.athlete-pathway-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pathway-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.pathway-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 0 0 auto;
+}
+
+.pathway-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.pathway-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    max-width: 150px;
+    margin: 0;
+}
+
+.pathway-connector {
+    flex: 1;
+    height: 2px;
+    background-color: #E0E0E0;
+    margin: 0 16px;
+}
+
+/* Impact Goal Section */
+.impact-goal-section {
+    padding: 80px 40px;
+    background-color: #121212;
+}
+
+.impact-goal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading-white {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.impact-stat-box {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.impact-stat-box:hover {
+    transform: translateY(-4px);
+}
+
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FF5722;
+    margin-bottom: 16px;
+}
+
+.stat-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #BDBDBD;
+}
+
+/* Bottom CTA Section */
+.kabaddi-cta-section {
+    padding: 80px 40px;
+    background-color: #FF5722;
+    text-align: center;
+}
+
+.kabaddi-cta-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.kabaddi-cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+.kabaddi-cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn-support-yellow {
+    background-color: #FFC107;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-support-yellow:hover {
+    background-color: #FFB300;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-get-involved-white {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-get-involved-white:hover {
+    background-color: #FFFFFF;
+    color: #FF5722;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kabaddi-hero {
+        height: 500px;
+    }
+
+    .kabaddi-hero-title {
+        font-size: 32px;
+    }
+
+    .kabaddi-hero-subtitle {
+        font-size: 16px;
+    }
+
+    .kabaddi-hero-buttons {
+        flex-direction: column;
+    }
+
+    .why-kabaddi-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pathway-steps {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .pathway-connector {
+        width: 2px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .kabaddi-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-support-yellow,
+    .btn-get-involved-white {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .why-kabaddi-section,
+    .kabaddi-programs-section,
+    .athlete-pathway-section,
+    .impact-goal-section,
+    .kabaddi-cta-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading-orange,
+    .section-heading-white {
+        font-size: 24px;
+    }
+
+    .kabaddi-hero-content {
+        padding: 0 20px;
+    }
+
+    .program-card {
+        padding: 24px;
+    }
+
+    .impact-stat-box {
+        padding: 24px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .kabaddi-cta-title {
+        font-size: 28px;
+    }
+}
