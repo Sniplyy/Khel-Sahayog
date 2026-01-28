@@ -22,7 +22,7 @@
         <div class="nav-container">
             <img class="logo" src="images/logo.png" alt="Khel Sahayog Logo" />
             <div class="nav-menu">
-                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <div class="nav-link programs-dropdown">
                     <span>Programs</span>
@@ -36,6 +36,41 @@
             <div class="nav-buttons">
                 <button class="btn-primary">Donate/Partner</button>
                 <button class="btn-secondary">Contact Us</button>
+            </div>
+        </div>
+
+        <!-- Dropdown Backdrop Blur -->
+        <div class="dropdown-backdrop"></div>
+
+        <!-- Programs Dropdown Menu -->
+        <div class="dropdown-menu">
+            <div class="dropdown-container">
+                <div class="dropdown-section">
+                    <h3 class="dropdown-heading">Our Programs</h3>
+                    <ul class="dropdown-list">
+                        <li><a href="grassroots_development.html" class="dropdown-link">Grassroots Development</a></li>
+                        <li><a href="athlete_management.html" class="dropdown-link">Athlete Management</a></li>
+                        <li><a href="hockey.html" class="dropdown-link">Hockey Programs</a></li>
+                        <li><a href="#" class="dropdown-link">Coach Training</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-section">
+                    <h3 class="dropdown-heading">Sports</h3>
+                    <ul class="dropdown-list">
+                        <li><a href="hockey.html" class="dropdown-link">Hockey</a></li>
+                        <li><a href="football.html" class="dropdown-link">Football</a></li>
+                        <li><a href="athletics.html" class="dropdown-link">Athletics</a></li>
+                        <li><a href="badminton.html" class="dropdown-link">Badminton</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-section">
+                    <h3 class="dropdown-heading">Support</h3>
+                    <ul class="dropdown-list">
+                        <li><a href="impact.html" class="dropdown-link">Program Impact</a></li>
+                        <li><a href="#" class="dropdown-link">Success Stories</a></li>
+                        <li><a href="contact_us.html" class="dropdown-link">Get Involved</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -335,6 +370,50 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Dropdown menu functionality
+        const programsDropdown = document.querySelector('.programs-dropdown');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const dropdownBackdrop = document.querySelector('.dropdown-backdrop');
+        let dropdownTimeout;
+
+        // Show dropdown on hover
+        programsDropdown.addEventListener('mouseenter', () => {
+            clearTimeout(dropdownTimeout);
+            dropdownMenu.classList.add('active');
+            dropdownBackdrop.classList.add('active');
+        });
+
+        // Keep dropdown open when hovering over the menu
+        dropdownMenu.addEventListener('mouseenter', () => {
+            clearTimeout(dropdownTimeout);
+            dropdownMenu.classList.add('active');
+            dropdownBackdrop.classList.add('active');
+        });
+
+        // Hide dropdown when leaving the trigger
+        programsDropdown.addEventListener('mouseleave', () => {
+            dropdownTimeout = setTimeout(() => {
+                dropdownMenu.classList.remove('active');
+                dropdownBackdrop.classList.remove('active');
+            }, 100);
+        });
+
+        // Hide dropdown when leaving the menu
+        dropdownMenu.addEventListener('mouseleave', () => {
+            dropdownTimeout = setTimeout(() => {
+                dropdownMenu.classList.remove('active');
+                dropdownBackdrop.classList.remove('active');
+            }, 100);
+        });
+
+        // Hide dropdown when clicking on backdrop
+        dropdownBackdrop.addEventListener('click', () => {
+            dropdownMenu.classList.remove('active');
+            dropdownBackdrop.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>

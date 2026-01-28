@@ -1,44 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+#!/usr/bin/env python3
+"""
+Script to add dropdown navbar to remaining HTML files
+"""
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khel Sahayog - Programs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+import os
+import re
 
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <img class="logo" src="images/logo.png" alt="Khel Sahayog Logo" />
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-link programs-dropdown">
-                    <span>Programs</span>
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
-                        <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1" />
-                    </svg>
-                </div>
-                <a href="get_involved.html" class="nav-link">Get Involved</a>
-                <a href="impact.html" class="nav-link">Impact</a>
-            </div>
-            <div class="nav-buttons">
-                <button class="btn-primary">Donate/Partner</button>
-                <button class="btn-secondary">Contact Us</button>
-            </div>
-        </div>
-
+# Dropdown HTML to insert after nav-container closing div
+DROPDOWN_HTML = '''        
         <!-- Dropdown Backdrop Blur -->
         <div class="dropdown-backdrop"></div>
-
+        
         <!-- Programs Dropdown Menu -->
         <div class="dropdown-menu">
             <div class="dropdown-container">
@@ -69,15 +41,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
+        </div>'''
 
-    <!-- Main Content Placeholder -->
-    <section style="padding: 150px 20px; text-align: center;">
-        <h1>Programs</h1>
-        <p>This page is under construction.</p>
-    </section>
-
+# JavaScript to insert before </body>
+DROPDOWN_JS = '''    
     <script>
         // Dropdown menu functionality
         const programsDropdown = document.querySelector('.programs-dropdown');
@@ -120,7 +87,93 @@
             dropdownMenu.classList.remove('active');
             dropdownBackdrop.classList.remove('active');
         });
-    </script>
-</body>
+    </script>'''
 
-</html>
+# Files to update (excluding already completed ones)
+FILES_TO_UPDATE = [
+    "about.html",
+    "athletics.html",
+    "badminton.html",
+    "donate.html",
+    "drug_awareness.html",
+    "football.html",
+    "get_involved.html",
+    "impact.html",
+    "job_skilling.html",
+    "kabaddi.html",
+    "mental_heath.html",
+    "Programs.html",
+    "rugby.html",
+    "women_empowerment.html"
+]
+
+def update_html_file(filepath):
+    """Add dropdown menu and JavaScript to an HTML file"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Check if already updated
+        if 'dropdown-backdrop' in content:
+            print(f"  ⏭️  {filepath} - Already has dropdown, skipping")
+            return False
+        
+        # Add dropdown HTML after nav-container closing div, before </nav>
+        # Find the pattern: </div>\n        </nav> or </div>\n    </nav>
+        pattern = r'(</div>\s*)(</nav>)'
+        
+        # Check if we can find the nav closing tag
+        if not re.search(pattern, content):
+            print(f"  ❌ {filepath} - Could not find nav closing pattern")
+            return False
+        
+        # Insert dropdown HTML
+        content = re.sub(
+            pattern,
+            r'\1' + DROPDOWN_HTML + r'\n        \2',
+            content,
+            count=1
+        )
+        
+        # Add JavaScript before </body>
+        content = content.replace('</body>', DROPDOWN_JS + '\n</body>')
+        
+        # Write back
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        print(f"  ✅ {filepath} - Successfully updated")
+        return True
+        
+    except Exception as e:
+        print(f"  ❌ {filepath} - Error: {str(e)}")
+        return False
+
+def main():
+    print("🚀 Starting navbar dropdown update...\n")
+    
+    updated = 0
+    skipped = 0
+    failed = 0
+    
+    for filename in FILES_TO_UPDATE:
+        if os.path.exists(filename):
+            result = update_html_file(filename)
+            if result:
+                updated += 1
+            elif result is False and 'Already has dropdown' in str(result):
+                skipped += 1
+            else:
+                failed += 1
+        else:
+            print(f"  ⚠️  {filename} - File not found")
+            failed += 1
+    
+    print(f"\n📊 Summary:")
+    print(f"  ✅ Updated: {updated}")
+    print(f"  ⏭️  Skipped: {skipped}")
+    print(f"  ❌ Failed: {failed}")
+    print(f"\n✨ Done!")
+
+if __name__ == "__main__":
+    main()
