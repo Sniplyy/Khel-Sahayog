@@ -28,8 +28,12 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1001;
   padding: 7px 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  transition: background 0.3s ease;
 }
 
 .nav-container {
@@ -76,6 +80,115 @@ body {
 .programs-dropdown svg {
   width: 10px;
   height: 5px;
+  transition: transform 0.3s ease;
+}
+
+.programs-dropdown:hover svg {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Backdrop Blur */
+.dropdown-backdrop {
+  position: fixed;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 78px);
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 998;
+  pointer-events: none;
+}
+
+.dropdown-backdrop.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  pointer-events: none;
+  padding: 40px 0;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 129px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.dropdown-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdown-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ff5722;
+}
+
+.dropdown-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.dropdown-link:hover {
+  background-color: rgba(255, 87, 34, 0.1);
+  color: #ff5722;
+  transform: translateX(4px);
 }
 
 .nav-buttons {
