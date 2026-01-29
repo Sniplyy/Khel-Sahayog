@@ -427,7 +427,7 @@ body {
 
 /* Stats Section */
 .stats-section {
-  background-color: #4CAF50;
+  background-color: #212121;
   padding: 48px 0;
   width: 100%;
   margin: 0;
@@ -853,6 +853,7 @@ body {
   width: 251px;
   height: 55px;
   font-size: 20px;
+  font-weight: bolder;
 }
 
 /* Footer */
