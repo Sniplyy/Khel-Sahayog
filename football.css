@@ -19,6 +19,57 @@ body {
     padding: 0 24px;
 }
 
+/* Navbar Override for Football Page */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1001;
+    padding: 7px 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+    color: #FFB800 !important;
+}
+
+.programs-dropdown span {
+    color: #FFFFFF !important;
+}
+
+.programs-dropdown:hover span {
+    color: #FFB800 !important;
+}
+
+.navbar .btn-primary {
+    background-color: #FFB800;
+    color: #000000;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #FFC933;
+}
+
+.navbar .btn-secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.navbar .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
 /* Header Navigation */
 .header {
     background-color: #FFFFFF;
@@ -78,35 +129,35 @@ body {
 }
 
 .btn-primary {
-    background-color: #E27934;
-    color: #FFFFFF;
-    border: 2px solid #E27934;
+    background-color: #FFB800;
+    color: #000000;
+    border: 2px solid #FFB800;
 }
 
 .btn-primary:hover {
-    background-color: #d16a28;
-    border-color: #d16a28;
+    background-color: #FFC933;
+    border-color: #FFC933;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(226, 121, 52, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #E27934;
-    border: 2px solid #E27934;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .btn-outline:hover {
-    background-color: #E27934;
+    background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(226, 121, 52, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .btn-large {
     padding: 16px 32px;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 /* Hero Section */
@@ -114,11 +165,19 @@ body {
     position: relative;
     min-height: 600px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background-image: url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1920&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 80px;
 }
 
 .hero-overlay {
@@ -127,22 +186,24 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(26, 22, 22, 0.85) 0%, rgba(26, 22, 22, 0.6) 100%);
+    background: linear-gradient(90deg, rgba(26, 22, 22, 0.9) 0%, rgba(26, 22, 22, 0.7) 50%, rgba(26, 22, 22, 0.3) 100%);
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 600px;
     padding: 80px 0;
+    text-align: left;
 }
 
 .hero-title {
     font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: #E27934;
     margin-bottom: 24px;
+    text-align: left;
 }
 
 .gradient-text {
@@ -158,12 +219,14 @@ body {
     margin-bottom: 32px;
     line-height: 1.6;
     opacity: 0.95;
+    text-align: left;
 }
 
 .hero-buttons {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 /* Power of Football Section */
