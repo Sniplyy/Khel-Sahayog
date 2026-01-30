@@ -617,7 +617,6 @@ body {
   border-radius: 15px;
   overflow: hidden;
   justify-self: center;
-  transform: translateX(200px);
 }
 
 .story-image img {
@@ -630,7 +629,7 @@ body {
 .story-content {
   grid-area: content;
   align-self: center;
-  padding-left: 80px;
+  padding-left: px;
 }
 
 .story-text-without {
