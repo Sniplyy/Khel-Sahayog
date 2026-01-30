@@ -217,8 +217,8 @@ body {
 
 /* Our Values Section */
 .values-section {
-  background-color: #ffffff;
-  padding: 100px 20px;
+  background-color: #F5F5F5;
+  padding: 80px 20px;
   width: 100%;
 }
 
@@ -227,37 +227,36 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
 
 .value-card {
-  background-color: #F9F9F9;
-  border-radius: 15px;
-  padding: 36px 24px;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 20px 10px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0px 8px 24px rgba(255, 87, 34, 0.2);
+  transform: translateY(-5px);
 }
 
 .value-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   height: 80px;
 }
 
 .value-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   color: #000000;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .value-description {
@@ -265,154 +264,141 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #333333;
+  color: #000000;
 }
 
 /* Tournament Pipeline Section */
 .tournament-section {
-  background-color: #F5F5F5;
-  padding: 100px 20px;
+  background-color: #D9D9D9;
+  padding: 80px 20px;
   width: 100%;
+}
+
+.tournament-intro {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px;
 }
 
 .tournament-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
   align-items: start;
 }
 
 .tournament-content {
-  padding-right: 20px;
-}
-
-.section-title-left {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.2;
-  background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #FF5722 88%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: left;
-  margin-bottom: 40px;
+  padding-right: 0;
 }
 
 .tournament-benefits {
   list-style: none;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .tournament-benefits li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #000000;
-  margin-bottom: 24px;
-  padding-left: 28px;
+  margin-bottom: 16px;
+  padding-left: 24px;
   position: relative;
 }
 
 .tournament-benefits li::before {
-  content: '→';
+  content: '•';
   position: absolute;
   left: 0;
-  color: #FF5722;
+  color: #000000;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.tournament-benefits strong {
-  font-weight: 700;
-  color: #FF5722;
+.tournament-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 20px;
 }
 
 .tournament-pipeline {
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 40px;
+  padding: 40px 30px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pipeline-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.3;
   color: #000000;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .pipeline-tiers {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .tier {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 24px;
-  border-radius: 12px;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 30px;
   transition: transform 0.3s ease;
 }
 
 .tier:hover {
-  transform: translateX(8px);
+  transform: translateX(5px);
 }
 
 .tier-1 {
-  background-color: #4A90E2;
-  color: #ffffff;
+  background-color: #FFC107;
+  color: #000000;
 }
 
 .tier-2 {
-  background-color: #FFA726;
-  color: #ffffff;
+  background-color: #FFC107;
+  color: #000000;
 }
 
 .tier-3 {
-  background-color: #212121;
-  color: #ffffff;
+  background-color: #FFC107;
+  color: #000000;
 }
 
-.tier-number {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 1;
-  min-width: 50px;
-  text-align: center;
+.tier-badge {
+  width: 20px;
+  height: 20px;
+  background-color: #212121;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .tier-content h4 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.3;
-  margin-bottom: 8px;
-}
-
-.tier-content p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.4;
-  opacity: 0.9;
-}
-
-.tier-arrow {
-  text-align: center;
-  font-size: 32px;
-  color: #FF5722;
-  font-weight: 700;
-  padding: 8px 0;
+  margin: 0;
+  color: #000000;
 }
 
 /* JOIN OUR MISSION Section */
