@@ -588,11 +588,6 @@ body {
     color: #FFFFFF;
 }
 
-.context-card-orange {
-    background-color: #E27934;
-    color: #FFFFFF;
-}
-
 .context-card-gray {
     background-color: #2A2626;
     color: #FFFFFF;
@@ -711,7 +706,7 @@ body {
 .step-number {
     width: 64px;
     height: 64px;
-    background-color: #E27934;
+    background-color: #FF5722;
     color: #FFFFFF;
     border-radius: 50%;
     display: flex;
@@ -742,7 +737,7 @@ body {
 
 .pathway-arrow {
     font-size: 32px;
-    color: #E27934;
+    color: #FF5722;
     font-weight: 700;
 }
 
@@ -750,29 +745,63 @@ body {
 .impact-section {
     padding: 80px 0;
     background: #D9D9D9;
+    text-align: center;
+}
+
+.impact-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1616;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.impact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FF5722;
+    margin-bottom: 48px;
+    text-align: center;
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .stat-card {
+    background-color: #2A2626;
+    padding: 32px 48px;
+    border-radius: 16px;
     text-align: center;
-    color: #FFFFFF;
+    min-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .stat-number {
+    font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     font-weight: 700;
+    color: #FFC107;
     margin-bottom: 12px;
     line-height: 1;
 }
 
 .stat-label {
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: 500;
+    color: #FFFFFF;
     opacity: 0.95;
 }
 
@@ -793,7 +822,7 @@ body {
 .footer-brand {
     font-size: 24px;
     font-weight: 700;
-    color: #E27934;
+    color: #FF5722;
     margin-bottom: 16px;
 }
 
@@ -822,7 +851,7 @@ body {
 }
 
 .social-icon:hover {
-    background-color: #E27934;
+    background-color: #FF5722;
     transform: translateY(-4px);
 }
 
@@ -850,7 +879,7 @@ body {
 
 .footer-links a:hover {
     opacity: 1;
-    color: #E27934;
+    color: #FF5722;
     padding-left: 4px;
 }
 

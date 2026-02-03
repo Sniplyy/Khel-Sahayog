@@ -19,8 +19,6 @@ body {
     padding: 0 20px;
 }
 
-
-
 /* Button Styles */
 .btn {
     font-family: 'Montserrat', sans-serif;
@@ -276,16 +274,21 @@ body {
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .program-card {
-    border-radius: 10px;
-    padding: 32px;
+    border-radius: 16px;
+    padding: 48px;
+    min-height: 400px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .program-card-dark {
-    background-color: #1E1E1E;
+    background-color: #2A2626;
 }
 
 .program-icon {
@@ -302,17 +305,29 @@ body {
 
 .program-list {
     list-style: none;
+    padding-left: 0;
 }
 
 .program-list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     margin-bottom: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #FFFFFF;
+    padding-left: 20px;
+    position: relative;
+}
+
+.program-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 /* Pathway Section */
