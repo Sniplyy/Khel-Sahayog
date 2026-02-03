@@ -677,7 +677,6 @@ body {
 .story-content {
   grid-area: content;
   align-self: center;
-  padding-left: px;
 }
 
 .story-text-without {
@@ -1417,8 +1416,10 @@ body {
     transform: translateX(0);
   }
 
-  .story-content {
-    padding-left: 0;
+  .story-content p{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
   }
 
   .story-text-without {
@@ -1802,7 +1803,6 @@ body {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
   gap: 8px 30px;
-  width: 350px;
 }
 
 /* ========================================

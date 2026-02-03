@@ -13,10 +13,6 @@ body {
     background-color: #FFFFFF;
 }
 
-/* ============================================ */
-/* NAVIGATION CSS FROM STYLE.CSS - DO NOT MODIFY */
-/* ============================================ */
-
 /* Navigation Bar */
 .navbar {
     position: absolute;
@@ -36,8 +32,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 129px;
-    gap: 138px;
     margin: 0 auto;
     left: 0;
     right: 0;

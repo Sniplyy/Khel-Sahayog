@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khel Sahayog - Programs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khel Sahayog - Programs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <img class="logo" src="images/logo.png" alt="Khel Sahayog Logo" />
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-link programs-dropdown">
-                    <span>Programs</span>
-                    <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
-                        <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1" />
-                    </svg>
-                </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/index.html"><img class="logo" src="images/logo.png" alt="Khel Sahayog Logo" /></a>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <div class="nav-link programs-dropdown">
+          <span>Programs</span>
+          <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
+            <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1" />
+          </svg>
+        </div>
         <!-- Programs Dropdown Menu -->
         <div class="dropdown-menu">
           <div class="dropdown-container">
@@ -59,74 +59,74 @@
           </div>
         </div>
 
-                <a href="get_involved.html" class="nav-link">Get Involved</a>
-                <a href="impact.html" class="nav-link">Impact</a>
-            </div>
-            <div class="nav-buttons">
-                <button class="btn-primary">Donate/Partner</button>
-                <button class="btn-secondary">Contact Us</button>
+        <a href="get_involved.html" class="nav-link">Get Involved</a>
+        <a href="impact.html" class="nav-link">Impact</a>
+      </div>
+      <div class="nav-buttons">
+        <button class="btn-primary">Donate/Partner</button>
+        <button class="btn-secondary">Contact Us</button>
         <button class="mobile-menu-toggle" aria-label="Toggle Menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- Dropdown Backdrop Blur -->
-        <div class="dropdown-backdrop"></div>
-    </nav>
+    <!-- Dropdown Backdrop Blur -->
+    <div class="dropdown-backdrop"></div>
+  </nav>
 
-    <!-- Main Content Placeholder -->
-    <section style="padding: 150px 20px; text-align: center;">
-        <h1>Programs</h1>
-        <p>This page is under construction.</p>
-    </section>
+  <!-- Main Content Placeholder -->
+  <section style="padding: 150px 20px; text-align: center;">
+    <h1>Programs</h1>
+    <p>This page is under construction.</p>
+  </section>
 
-    <script>
-        // Dropdown menu functionality
-        const programsDropdown = document.querySelector('.programs-dropdown');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        const dropdownBackdrop = document.querySelector('.dropdown-backdrop');
-        let dropdownTimeout;
+  <script>
+    // Dropdown menu functionality
+    const programsDropdown = document.querySelector('.programs-dropdown');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownBackdrop = document.querySelector('.dropdown-backdrop');
+    let dropdownTimeout;
 
-        // Show dropdown on hover
-        programsDropdown.addEventListener('mouseenter', () => {
-            clearTimeout(dropdownTimeout);
-            dropdownMenu.classList.add('active');
-            dropdownBackdrop.classList.add('active');
-        });
+    // Show dropdown on hover
+    programsDropdown.addEventListener('mouseenter', () => {
+      clearTimeout(dropdownTimeout);
+      dropdownMenu.classList.add('active');
+      dropdownBackdrop.classList.add('active');
+    });
 
-        // Keep dropdown open when hovering over the menu
-        dropdownMenu.addEventListener('mouseenter', () => {
-            clearTimeout(dropdownTimeout);
-            dropdownMenu.classList.add('active');
-            dropdownBackdrop.classList.add('active');
-        });
+    // Keep dropdown open when hovering over the menu
+    dropdownMenu.addEventListener('mouseenter', () => {
+      clearTimeout(dropdownTimeout);
+      dropdownMenu.classList.add('active');
+      dropdownBackdrop.classList.add('active');
+    });
 
-        // Hide dropdown when leaving the trigger
-        programsDropdown.addEventListener('mouseleave', () => {
-            dropdownTimeout = setTimeout(() => {
-                dropdownMenu.classList.remove('active');
-                dropdownBackdrop.classList.remove('active');
-            }, 100);
-        });
+    // Hide dropdown when leaving the trigger
+    programsDropdown.addEventListener('mouseleave', () => {
+      dropdownTimeout = setTimeout(() => {
+        dropdownMenu.classList.remove('active');
+        dropdownBackdrop.classList.remove('active');
+      }, 100);
+    });
 
-        // Hide dropdown when leaving the menu
-        dropdownMenu.addEventListener('mouseleave', () => {
-            dropdownTimeout = setTimeout(() => {
-                dropdownMenu.classList.remove('active');
-                dropdownBackdrop.classList.remove('active');
-            }, 100);
-        });
+    // Hide dropdown when leaving the menu
+    dropdownMenu.addEventListener('mouseleave', () => {
+      dropdownTimeout = setTimeout(() => {
+        dropdownMenu.classList.remove('active');
+        dropdownBackdrop.classList.remove('active');
+      }, 100);
+    });
 
-        // Hide dropdown when clicking on backdrop
-        dropdownBackdrop.addEventListener('click', () => {
-            dropdownMenu.classList.remove('active');
-            dropdownBackdrop.classList.remove('active');
-        });
-    </script>
+    // Hide dropdown when clicking on backdrop
+    dropdownBackdrop.addEventListener('click', () => {
+      dropdownMenu.classList.remove('active');
+      dropdownBackdrop.classList.remove('active');
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 
