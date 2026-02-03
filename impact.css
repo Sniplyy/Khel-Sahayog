@@ -41,11 +41,6 @@
     margin: 0 auto;
     padding: 0 120px;
     width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .impact-hero-title {
@@ -66,7 +61,6 @@
     line-height: 1.6;
     color: #FFFFFF;
     max-width: 550px;
-    text-align: center;
 }
 
 /* Gallery Section */
@@ -410,6 +404,11 @@
     .impact-hero-content {
         padding: 0 20px;
         max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .impact-hero-title {
