@@ -469,9 +469,10 @@
 .hockey-cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: clamp(20px, 5vw, 36px);
     color: var(--white);
     margin: 0 0 24px 0;
+    white-space: nowrap;
 }
 
 .hockey-cta-text {
@@ -598,17 +599,22 @@
         gap: 12px;
     }
 
-    .hockey-cta-title {
-        font-size: 28px;
-    }
-
     .hockey-cta-text {
         font-size: 16px;
     }
 
     .hockey-cta-buttons {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .hockey-cta-buttons .btn-support-yellow,
+    .hockey-cta-buttons .btn-get-involved-white {
+        padding: 10px 16px;
+        font-size: 13px;
+        flex-shrink: 1;
+        white-space: nowrap;
     }
 
     .stat-number {
