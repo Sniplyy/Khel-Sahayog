@@ -170,47 +170,61 @@
 }
 
 .program-card {
-    background-color: #121212;
-    border-radius: 8px;
+    background-color: #1E1E1E;
+    border-radius: 16px;
     padding: 40px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: auto;
+    height: auto;
+    overflow: visible;
 }
 
 .program-card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.program-icon {
+    margin-bottom: 24px;
 }
 
 .program-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 32px;
+    color: #FF5722;
+    margin-bottom: 24px;
 }
 
-.program-features {
+.program-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.program-list li {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.program-feature {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.program-icon {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-}
-
-.program-feature-text {
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     font-weight: 400;
-    color: #BDBDBD;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    position: relative;
+}
+
+.program-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.program-list li:last-child {
+    margin-bottom: 0;
 }
 
 /* Athlete Pathway Section */
