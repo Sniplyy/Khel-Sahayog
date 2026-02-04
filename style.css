@@ -1416,7 +1416,7 @@ body {
     transform: translateX(0);
   }
 
-  .story-content p{
+  .story-content p {
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -1912,7 +1912,8 @@ body {
 
   /* Hide desktop nav buttons */
   .nav-buttons .btn-primary,
-  .nav-buttons .btn-secondary {
+  .nav-buttons .btn-secondary,
+  .nav-buttons .btn-outline {
     display: none;
   }
 
