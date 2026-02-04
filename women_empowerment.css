@@ -385,6 +385,17 @@
         width: 100%;
     }
 
+    .footer-legal {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Fix for Navigation Dropdown overlap */
+    .dropdown-menu.mobile-active {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
     .btn-donate-yellow,
     .btn-get-involved-white {
         width: 100%;
