@@ -681,7 +681,7 @@ body {
 
 .story-text-without {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.467em;
   color: #FF794E;
   margin-bottom: 24px;
@@ -700,6 +700,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
+  font-weight: 700;
 }
 
 .story-text-without {
