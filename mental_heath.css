@@ -37,176 +37,115 @@ body {
     padding: 0 20px;
 }
 
-/* Header Styles */
-.header {
-    background-color: #FFFFFF;
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-.nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.logo img {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.18));
-}
-
-.nav-menu {
-    display: flex;
-    gap: 32px;
-}
-
-.nav-menu a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-    color: #F97316;
-}
-
-.nav-actions {
-    display: flex;
-    gap: 16px;
-}
-
-/* Button Styles */
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #FACC15;
-    color: #000000;
-}
-
-.btn-primary:hover {
-    background-color: #EAB308;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
-}
-
-.btn-outline {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #D9D9D9;
-}
-
-.btn-outline:hover {
-    background-color: #F5F5F5;
-    border-color: #BBBBBB;
-}
-
-.btn-large {
-    padding: 16px 32px;
-    font-size: 16px;
-}
-
-.btn-yellow {
-    background-color: #FACC15;
-    color: #000000;
-}
-
-.btn-yellow:hover {
-    background-color: #EAB308;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
-}
-
-.btn-grey {
-    background-color: #D9D9D9;
-    color: #000000;
-}
-
-.btn-grey:hover {
-    background-color: #BBBBBB;
-    transform: translateY(-2px);
-}
 
 /* ===================================
    Hero Section
    =================================== */
-.hero {
+/* ===================================
+   Hero Section
+   =================================== */
+.mental-hero {
     position: relative;
-    min-height: 600px;
+    min-height: 520px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: url('/Users/sniply/.gemini/antigravity/brain/e1e6ad75-0dc1-42ff-8fc5-064575cfff1a/hero_pills_background_1769543503996.png');
+    justify-content: flex-start;
+    background-image: url('images/mental.jpg');
+    /* Placeholder image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--white);
-    text-align: center;
-    padding: var(--section-padding);
+    padding: 80px 129px;
 }
 
-.hero-overlay {
+.mental-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.2) 100%);
     z-index: 1;
 }
 
-.hero-content {
+.mental-hero-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1440px;
 }
 
-.hero-title {
-    font-size: 48px;
+.mental-hero-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
     font-weight: 800;
+    color: #FF5722;
     margin-bottom: 24px;
     line-height: 1.2;
+    max-width: 618px;
+    /* Matching Figma Layout Width */
 }
 
-.hero-description {
+.mental-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.8;
+    color: #FFFFFF;
+    line-height: 1.6;
     margin-bottom: 32px;
     text-align: justify;
-    color: var(--white);
+    max-width: 618px;
+    /* Matching Figma Layout Width */
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--accent-yellow);
-    color: var(--dark-bg);
-    font-size: 18px;
-    font-weight: 600;
-    padding: 16px 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
+.mental-hero-buttons {
+    display: flex;
+    gap: 20px;
 }
+
+.btn-donate-hero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFC107;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(255, 87, 34, 0.21);
+    transition: all 0.3s ease;
+}
+
+.btn-donate-hero:hover {
+    transform: translateY(-2px);
+    background-color: #FFB300;
+}
+
+.btn-contact-hero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FF794E;
+    color: #000000;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(255, 87, 34, 0.21);
+    transition: all 0.3s ease;
+}
+
+.btn-contact-hero:hover {
+    transform: translateY(-2px);
+    background-color: #F4511E;
+}
+
+
 
 .cta-button:hover {
     background-color: #e5a503;
