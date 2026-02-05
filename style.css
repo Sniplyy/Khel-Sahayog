@@ -2050,6 +2050,7 @@ body {
     visibility: visible;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow: visible;
   }
 
   .dropdown-menu.mobile-active .dropdown-container {
