@@ -707,6 +707,7 @@ body {
   text-overflow: ellipsis;
   text-align: justify;
   font-weight: 700;
+  max-width: 550px;
 }
 
 .story-text-without {
@@ -1669,12 +1670,21 @@ body {
     font-size: 13px;
   }
 
+  .story-content {
+    padding: 0;
+  }
+
   .story-text-with {
     font-size: 16px;
+    margin: 0 auto 24px auto;
+    /* Centering only on mobile */
   }
 
   .story-link {
     font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 
   /* Roles Section */
