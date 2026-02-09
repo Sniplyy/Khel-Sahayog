@@ -249,7 +249,14 @@ body {
 .nav-buttons {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
+}
+
+.nav-buttons .btn-primary,
+.nav-buttons .btn-outline {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  line-height: normal;
 }
 
 .btn-primary {

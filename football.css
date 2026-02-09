@@ -172,11 +172,7 @@ body {
     transform: translateX(4px);
 }
 
-.nav-buttons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 .btn-primary {
     display: flex;
@@ -418,10 +414,7 @@ body {
     }
 
     /* Hide desktop buttons in mobile menu */
-    .nav-buttons .btn-primary,
-    .nav-buttons .btn-outline {
-        display: none;
-    }
+
 }
 
 /* Mobile specific - 430 x 932 */
