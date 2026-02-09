@@ -430,11 +430,12 @@ body {
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   margin-bottom: 0;
-  max-width: 1700px;
+  max-width: 106.25rem;
   margin: 0 auto;
-  width: 1300px;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .program-card {
@@ -466,10 +467,10 @@ body {
 
 .program-image {
   width: 100%;
-  height: 144px;
+  height: 9rem;
   /* Reduced by 40% */
   overflow: hidden;
-  border-radius: 24px 24px 0 0;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .program-image img {
@@ -485,7 +486,7 @@ body {
 }
 
 .program-content {
-  padding: 24px 28px 32px;
+  padding: 1.5rem 1.75rem 2rem;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -495,12 +496,12 @@ body {
 .program-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.3em;
   color: #ff5722;
   text-align: left;
   /* Better readability */
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   /* Tighter grouping */
 }
 
@@ -508,7 +509,7 @@ body {
   font-family: "Montserrat", sans-serif;
   /* Standardized body font */
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.4em;
   /* More breathing room */
   color: #666666;
@@ -519,7 +520,7 @@ body {
 /* Stats Section */
 .stats-section {
   background: linear-gradient(91.59deg, #171E22 0%, #263238 50%, #171E22 100%);
-  padding: 50px 0;
+  padding: 3.125rem 0;
   width: 100%;
   margin: 0;
 }
@@ -541,24 +542,24 @@ body {
 .stat-number {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.219em;
   color: #FF5722;
   background: none;
   -webkit-text-fill-color: initial;
   background-clip: border-box;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .stat-description {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.3;
   color: #ffffff;
   /* Reverted to white for contrast */
   text-align: center;
-  max-width: 213px;
+  max-width: 13.3125rem;
   margin: 0 auto;
 }
 
@@ -590,8 +591,8 @@ body {
 
 .comparison-card-without-support {
   background-color: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-right: 6px solid #ff5722;
   /* Right border instead of top */
@@ -607,8 +608,8 @@ body {
 
 .comparison-card-with-support {
   background-color: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-left: 6px solid #4caf50;
   /* Left border instead of top */
@@ -625,11 +626,11 @@ body {
 .comparison-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2em;
   text-align: left;
   /* Align left */
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-transform: uppercase;
   /* Capital text */
 }
@@ -653,13 +654,13 @@ body {
 .comparison-list-without li {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
   font-family: "Montserrat", sans-serif;
   /* Reverted to Montserrat per request */
   font-weight: 500;
   /* Slightly bolder for readability if not regular */
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4em;
   color: #4a4a4a;
 }
@@ -687,7 +688,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 5%;
+  padding: 3.125rem 5%;
   background-color: #F8F9FA;
   /* Clean soft gray */
   width: 100%;
@@ -698,48 +699,47 @@ body {
 .story-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #ff5722;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0px;
+  letter-spacing: 0.125rem;
+  margin-bottom: 0;
   /* Tight grouping with subtitle */
 }
 
 .story-subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   /* Bigger Impact */
   line-height: 1.0;
   color: #1a1a1a;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   /* Space before content starts */
-  max-width: 900px;
+  max-width: 56.25rem;
 }
 
 /* Wrapper for image and content */
 .story-content-wrapper {
   display: flex;
-  gap: 60px;
+  gap: 3.75rem;
   align-items: center;
   justify-content: center;
-  max-width: 1100px;
+  max-width: 68.75rem;
   width: 100%;
-  margin-left: 100px;
 }
 
 /* Image */
 /* Image */
 .story-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 21.875rem;
   height: auto;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.1);
   /* Premium Float */
   transition: transform 0.3s ease;
   flex-shrink: 0;
@@ -862,34 +862,34 @@ body {
 .role-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.3;
   color: #1a1a1a;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .role-description {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: #555555;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   flex-grow: 1;
 }
 
 .role-button {
   width: 100%;
-  max-width: 220px;
-  height: 48px;
+  max-width: 13.75rem;
+  height: 3rem;
   background-color: #ffffff;
   border: 2px solid #ff5722;
   /* Outline style */
-  border-radius: 12px;
+  border-radius: 0.75rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #ff5722;
   cursor: pointer;
   margin: 0 auto;
@@ -1024,12 +1024,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   /* Extra bold */
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.2;
   color: #1a1a1a;
   /* Dark text */
-  margin-bottom: 24px;
-  max-width: 900px;
+  margin-bottom: 1.5rem;
+  max-width: 56.25rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1037,26 +1037,26 @@ body {
 .support-description {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: #555555;
-  max-width: 700px;
-  margin: 0 auto 40px;
+  max-width: 43.75rem;
+  margin: 0 auto 2.5rem;
 }
 
 .support-section .btn-primary {
   display: block;
   width: 100%;
-  max-width: 350px;
+  max-width: 21.875rem;
   /* Responsive Width */
-  height: 56px;
-  font-size: 18px;
+  height: 3.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   background-color: #ff5722;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 0.25rem 0.9375rem rgba(255, 87, 34, 0.4);
   transition: all 0.3s ease;
   padding: 0;
 }
@@ -2026,6 +2026,85 @@ body {
 .reveal-fade.reveal-active {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* ========================================
+   RESPONSIVE STYLES FOR MOBILE/TABLET
+   ======================================== */
+
+/* Tablet and below - adjust story section */
+@media (max-width: 1024px) {
+  .story-content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .story-image {
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .story-subtitle {
+    font-size: 1.5rem;
+  }
+
+  /* Programs grid - 2 columns on tablet */
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Mobile - stack everything vertically */
+@media (max-width: 768px) {
+  .story-section {
+    padding: 2rem 1rem;
+  }
+
+  .story-content-wrapper {
+    gap: 1.5rem;
+  }
+
+  .story-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .story-text-without,
+  .story-text-with {
+    font-size: 0.875rem;
+    max-width: 100%;
+  }
+
+  /* Programs section */
+  .programs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  /* Comparison section */
+  .comparison-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  .comparison-card-with-support,
+  .comparison-card-without-support {
+    padding: 1.5rem;
+  }
+
+  /* Stats section */
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  /* Roles section */
+  .roles-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
 }
 
 /* ========================================
