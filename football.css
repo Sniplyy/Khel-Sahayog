@@ -296,12 +296,14 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 320px;
+        width: 70%;
+        max-width: 320px;
         height: 100vh;
         background-color: #ffffff;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: flex-start;
-        padding: 80px 24px 24px;
+        padding: 100px 24px 24px;
         gap: 0;
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
@@ -315,7 +317,7 @@ body {
 
     .nav-link {
         width: 100%;
-        padding: 16px 0;
+        padding: 20px 0;
         color: #000000;
         font-size: 18px;
         font-weight: 500;
@@ -329,7 +331,7 @@ body {
 
     .programs-dropdown {
         width: 100%;
-        padding: 16px 0;
+        padding: 20px 0;
         border-bottom: 1px solid #e5e5e5;
         position: relative;
     }
@@ -337,7 +339,7 @@ body {
     .programs-dropdown span {
         color: #ff5722;
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .programs-dropdown svg {
@@ -345,6 +347,7 @@ body {
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        stroke: #ff5722;
     }
 
     .programs-dropdown.expanded svg {
@@ -368,8 +371,9 @@ body {
     }
 
     .dropdown-menu.mobile-active {
-        max-height: 800px;
-        padding: 16px 0 0 0;
+        max-height: 1000px;
+        padding: 20px 0 0 0;
+        overflow: visible;
     }
 
     .dropdown-container {
@@ -384,23 +388,24 @@ body {
     }
 
     .dropdown-heading {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 700;
         color: #ff5722;
-        margin-bottom: 4px;
-        padding-bottom: 4px;
-        border-bottom: 1px solid #ff5722;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-bottom: none;
     }
 
     .dropdown-list {
-        gap: 4px;
+        gap: 0;
     }
 
     .dropdown-link {
         font-size: 16px;
         font-weight: 400;
         color: #333333;
-        padding: 12px 16px;
+        padding: 12px 20px;
+        border-radius: 0;
     }
 
     .dropdown-link:hover {
@@ -414,8 +419,40 @@ body {
 
     /* Hide desktop buttons in mobile menu */
     .nav-buttons .btn-primary,
-    .nav-buttons .btn-secondary {
+    .nav-buttons .btn-outline {
         display: none;
+    }
+}
+
+/* Mobile specific - 430 x 932 */
+@media (max-width: 430px) {
+    .nav-menu {
+        width: 75%;
+        max-width: none;
+        padding: 80px 30px 30px;
+    }
+
+    .nav-link {
+        padding: 18px 0;
+        font-size: 17px;
+    }
+
+    .programs-dropdown {
+        padding: 18px 0;
+    }
+
+    .programs-dropdown span {
+        font-size: 17px;
+    }
+
+    .dropdown-heading {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .dropdown-link {
+        font-size: 15px;
+        padding: 14px 24px;
     }
 }
 
@@ -508,102 +545,7 @@ body {
     justify-content: flex-start;
 }
 
-/* Power of Football Section */
-.power-section {
-    padding: 80px 0;
-    background-color: #F3F4F6;
-}
 
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 48px;
-    color: #1A1616;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
-}
-
-.benefit-card {
-    background-color: #FFFFFF;
-    padding: 32px;
-    border-radius: 12px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.benefit-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
-.benefit-icon {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.benefit-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1A1616;
-    margin-bottom: 12px;
-}
-
-.benefit-text {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Context Cards Section */
-.context-section {
-    padding: 80px 0;
-    background-color: #FFFFFF;
-}
-
-.context-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-}
-
-.context-card {
-    padding: 40px;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.context-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.context-card-dark {
-    background-color: #1A1616;
-    color: #FFFFFF;
-}
-
-.context-card-gray {
-    background-color: #2A2626;
-    color: #FFFFFF;
-}
-
-.context-title {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.context-text {
-    font-size: 16px;
-    line-height: 1.6;
-    opacity: 0.95;
-}
 
 .highlight-text {
     color: #F9A825;
@@ -742,68 +684,7 @@ body {
 }
 
 /* Impact Stats Section */
-.impact-section {
-    padding: 80px 0;
-    background: #D9D9D9;
-    text-align: center;
-}
 
-.impact-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #1A1616;
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.impact-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: #FF5722;
-    margin-bottom: 48px;
-    text-align: center;
-}
-
-.stats-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-}
-
-.stat-card {
-    background-color: #2A2626;
-    padding: 32px 48px;
-    border-radius: 16px;
-    text-align: center;
-    min-width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.stat-number {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    color: #FFC107;
-    margin-bottom: 12px;
-    line-height: 1;
-}
-
-.stat-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #FFFFFF;
-    opacity: 0.95;
-}
 
 /* Footer */
 .footer {
@@ -913,7 +794,7 @@ body {
     }
 
     .nav-menu {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
@@ -954,19 +835,14 @@ body {
         transform: rotate(90deg);
     }
 
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
+
 
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
-    .stat-number {
-        font-size: 48px;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -982,5 +858,214 @@ body {
 
     .hero-title {
         font-size: 28px;
+    }
+}
+
+/* ========================================
+   WHY FOOTBALL SECTION (Adapted from Hockey)
+   ======================================== */
+
+.why-football-section {
+    background-color: #FFFFFF;
+    padding: 80px 40px;
+}
+
+.why-football-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-football-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.football-left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-football-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+.why-football-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FF5722;
+    /* Football primary orange */
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.why-football-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin: 0 0 32px 0;
+    line-height: 1.6;
+}
+
+.football-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+.football-context {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.context-box {
+    background-color: #1A1616;
+    /* Football dark grey */
+    padding: 24px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.context-box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #FFC107;
+    /* Football yellow/amber */
+}
+
+.context-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 0 12px 0;
+}
+
+.context-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .why-football-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .why-football-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-football-title {
+        font-size: 28px;
+    }
+
+    .football-benefits {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+/* ========================================
+   IMPACT GOAL SECTION (Adapted from Hockey)
+   ======================================== */
+
+.impact-goal-section {
+    background-color: #E8E8E8;
+    padding: 80px 40px;
+    border-bottom: 4px solid #FF5722;
+}
+
+.impact-goal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading-white {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FF5722;
+    margin: 0 0 48px 0;
+    text-align: center;
+}
+
+.impact-goal-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.impact-stat-box {
+    background-color: #1A1616;
+    padding: 48px 32px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #FFC107;
+    margin: 0 0 16px 0;
+    line-height: 1;
+}
+
+.stat-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Responsive for Impact Goal */
+@media (max-width: 1024px) {
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }

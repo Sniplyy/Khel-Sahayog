@@ -1,82 +1,18 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ========================================
+   RUGBY PAGE STYLES
+   ======================================== */
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    background-color: #FFFFFF;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Button Styles */
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #FACC15;
-    color: #000000;
-}
-
-.btn-primary:hover {
-    background-color: #EAB308;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
-}
-
-.btn-outline {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #D9D9D9;
-}
-
-.btn-outline:hover {
-    background-color: #F5F5F5;
-    border-color: #BBBBBB;
-}
-
-.btn-large {
-    padding: 16px 32px;
-    font-size: 16px;
-}
-
-.btn-yellow {
-    background-color: #FACC15;
-    color: #000000;
-}
-
-.btn-yellow:hover {
-    background-color: #EAB308;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
-}
-
-.btn-grey {
-    background-color: #D9D9D9;
-    color: #000000;
-}
-
-.btn-grey:hover {
-    background-color: #BBBBBB;
-    transform: translateY(-2px);
+/* CSS Variables */
+:root {
+    --primary-yellow: #FFB800;
+    --primary-orange: #F05A28;
+    /* Rugby Orange */
+    --gradient-orange: #FF8A00;
+    --black: #000000;
+    --dark-grey: #1A1A1A;
+    --medium-grey: #0E0B0B;
+    --light-grey: #444343;
+    --white: #FFFFFF;
 }
 
 /* ========================================
@@ -135,12 +71,12 @@ body {
     max-width: 600px;
 }
 
-.rugby-hero-description {
+.rugby-hero-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #FFFFFF;
+    color: var(--white);
     margin: 0 0 28px 0;
     max-width: 500px;
 }
@@ -152,8 +88,8 @@ body {
 }
 
 .btn-support-yellow {
-    background-color: #FFB800;
-    color: #000000;
+    background-color: var(--primary-yellow);
+    color: var(--black);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -171,12 +107,12 @@ body {
 
 .btn-get-involved-white {
     background-color: transparent;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
     padding: 14px 32px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--white);
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -187,15 +123,21 @@ body {
     transform: translateY(-2px);
 }
 
-/* Power Section */
-.power-section {
+/* ========================================
+   WHY RUGBY SECTION
+   ======================================== */
+
+.why-rugby-section {
+    background-color: var(--white);
     padding: 80px 40px;
-    background-color: #FFFFFF;
 }
 
-.power-layout {
+.why-rugby-container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.why-rugby-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -207,28 +149,28 @@ body {
     flex-direction: column;
 }
 
-.rugby-subtitle {
+.why-rugby-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000000;
+    color: var(--black);
     margin: 0 0 8px 0;
 }
 
-.rugby-title {
+.why-rugby-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    color: #F97316;
+    color: var(--primary-orange);
     margin: 0 0 20px 0;
     line-height: 1.2;
 }
 
-.rugby-description {
+.why-rugby-description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000000;
+    color: var(--black);
     margin: 0 0 32px 0;
     line-height: 1.6;
 }
@@ -249,7 +191,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #000000;
+    color: var(--black);
 }
 
 .rugby-context {
@@ -258,29 +200,29 @@ body {
     gap: 24px;
 }
 
-.context-card {
-    background-color: #1A1A1A;
+.context-box {
+    background-color: var(--dark-grey);
     padding: 24px;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
 }
 
-.context-card::before {
+.context-box::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 6px;
     height: 100%;
-    background-color: #FFB800;
+    background-color: var(--primary-yellow);
 }
 
 .context-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--white);
     margin: 0 0 12px 0;
 }
 
@@ -293,208 +235,301 @@ body {
     line-height: 1.6;
 }
 
-.highlight-text {
-    color: #F97316;
-    font-weight: 600;
+/* ========================================
+   PROGRAMS SECTION
+   ======================================== */
+
+.rugby-programs-section {
+    background-color: #111111;
+    padding: 80px 40px;
 }
 
-/* Programs Section */
-.programs-section {
-    padding: 80px 0;
-    background-color: #F5F5F5;
+.rugby-programs-container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    max-width: 700px;
-    margin: 0 auto;
+    gap: 32px;
+    width: 100%;
 }
 
 .program-card {
-    border-radius: 16px;
+    background-color: #1C1C1C;
     padding: 48px;
-    min-height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
     width: 100%;
-    box-sizing: border-box;
+    border: 1px solid #2a2a2a;
+    min-height: 450px;
 }
 
-.program-card-dark {
-    background-color: #2A2626;
+.program-icon-large {
+    margin-bottom: 20px;
 }
 
-.program-icon {
-    margin-bottom: 24px;
+.program-icon-large svg {
+    width: 64px;
+    height: 64px;
 }
 
 .program-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 24px;
-    color: #F97316;
+    font-size: 24px;
+    color: var(--primary-orange);
+    margin: 0 0 20px 0;
 }
 
-.program-list {
+.program-features-list {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
 }
 
-.program-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 16px;
+.program-features-list li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
     padding-left: 20px;
     position: relative;
 }
 
-.program-list li::before {
+.program-features-list li::before {
     content: '•';
     position: absolute;
     left: 0;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
-/* Pathway Section */
-.pathway-section {
-    padding: 80px 0;
-    background-color: #FFFFFF;
+/* ========================================
+   ATHLETE PATHWAY SECTION
+   ======================================== */
+
+.athlete-pathway-section {
+    background-color: var(--white);
+    padding: 80px 40px;
+}
+
+.athlete-pathway-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pathway-heading {
+    margin-bottom: 48px;
+}
+
+.pathway-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--primary-orange);
+    margin: 0 0 8px 0;
+}
+
+.pathway-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black);
+    margin: 0;
 }
 
 .pathway-steps {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 24px;
+    flex-wrap: wrap;
     margin-top: 48px;
 }
 
 .pathway-step {
     text-align: center;
-    flex: 0 0 auto;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .step-number {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
+    background-color: var(--primary-orange);
+    color: var(--white);
     border-radius: 50%;
-    background-color: #F97316;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto 16px;
+    transition: transform 0.3s ease;
+}
+
+.pathway-step:hover .step-number {
+    transform: scale(1.1);
 }
 
 .step-title {
-    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: 600;
+    color: var(--black);
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.step-description {
     font-size: 14px;
-    color: #000000;
+    color: #666;
+    line-height: 1.5;
 }
 
-.pathway-connector {
-    width: 100px;
-    height: 3px;
-    background-color: #F97316;
-    margin: 0 -10px;
-    margin-bottom: 40px;
+.pathway-arrow {
+    font-size: 32px;
+    color: var(--primary-orange);
+    font-weight: 700;
 }
 
-/* Impact Section */
-.impact-section {
-    padding: 80px 0;
-    background-color: #F5F5F5;
+.impact-goal-section {
+    background-color: #E8E8E8;
+    padding: 80px 40px;
+    border-bottom: 4px solid var(--primary-orange);
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    margin-top: 48px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.impact-goal-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.stat-card {
+.section-heading-white {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--primary-orange);
+    margin: 0 0 48px 0;
     text-align: center;
-    background-color: #1E1E1E;
+}
+
+.impact-goal-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.impact-stat-box {
+    background-color: var(--dark-grey);
     padding: 48px 32px;
-    border-radius: 10px;
+    border-radius: 12px;
+    text-align: center;
 }
 
 .stat-number {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    color: #F97316;
-    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 64px;
+    color: var(--primary-yellow);
+    margin: 0 0 16px 0;
+    line-height: 1;
 }
 
 .stat-label {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    margin: 0;
 }
 
-/* CTA Section */
-.cta-section {
-    padding: 80px 0;
-    background-color: #EA580C;
-}
+/* ========================================
+   BOTTOM CTA SECTION
+   ======================================== */
 
-.cta-content {
+.rugby-cta-section {
+    background-color: var(--primary-orange);
+    padding: 80px 40px;
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-.cta-title {
+.rugby-cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 32px;
-    color: #FFFFFF;
-    margin-bottom: 24px;
+    font-size: clamp(20px, 5vw, 36px);
+    color: var(--white);
+    margin: 0 0 24px 0;
+    white-space: nowrap;
 }
 
-.cta-description {
+.rugby-cta-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-bottom: 32px;
+    font-size: 18px;
+    color: var(--white);
+    margin: 0 auto 32px auto;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
-.cta-buttons {
+.rugby-cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
+    align-items: center;
 }
 
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
 
-/* Responsive Design */
 @media (max-width: 1024px) {
-    .nav-menu {
-        gap: 20px;
+    .rugby-hero {
+        height: 350px;
     }
 
-    .power-layout {
+    .rugby-hero-content {
+        padding: 0 40px;
+    }
+
+    .rugby-hero-title {
+        font-size: 28px;
+    }
+
+    .rugby-hero-subtitle {
+        font-size: 15px;
+    }
+
+    .why-rugby-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .why-rugby-title {
+        font-size: 32px;
     }
 
     .rugby-benefits {
@@ -505,49 +540,60 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .stats-grid {
+    .impact-stats {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
+    .pathway-steps {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .pathway-arrow {
+        transform: rotate(90deg);
     }
 }
 
 @media (max-width: 768px) {
-    .nav-wrapper {
-        flex-direction: column;
-        gap: 20px;
+    .rugby-hero {
+        height: 400px;
     }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
+    .rugby-hero-content {
+        padding: 130px 24px 0 24px;
     }
 
-    .nav-actions {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hero {
-        height: 500px;
-    }
-
-    .hero-title {
+    .rugby-hero-title {
         font-size: 24px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
+    .rugby-hero-subtitle {
+        font-size: 14px;
     }
 
-    .rugby-title {
+    .rugby-hero-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+
+    .btn-support-yellow,
+    .btn-get-involved-white {
+        width: auto;
+        padding: 10px 16px;
+        font-size: 13px;
+        flex-shrink: 1;
+        white-space: nowrap;
+    }
+
+    .why-rugby-title {
         font-size: 28px;
     }
 
-    .rugby-description {
+    .why-rugby-description {
         font-size: 15px;
     }
 
@@ -556,36 +602,48 @@ body {
         gap: 12px;
     }
 
-    .pathway-steps {
-        flex-direction: column;
-        gap: 24px;
+    .rugby-cta-text {
+        font-size: 16px;
     }
 
-    .pathway-connector {
-        width: 3px;
-        height: 60px;
-        margin: -10px auto;
-    }
-
-    .cta-title {
-        font-size: 24px;
-    }
-
-    .cta-buttons {
+    .rugby-cta-buttons {
         flex-direction: row;
-        flex-wrap: nowrap;
         gap: 8px;
+        flex-wrap: nowrap;
     }
 
-    .btn-yellow,
-    .btn-grey {
+    .rugby-cta-buttons .btn-support-yellow,
+    .rugby-cta-buttons .btn-get-involved-white {
         padding: 10px 16px;
         font-size: 13px;
         flex-shrink: 1;
         white-space: nowrap;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
+    .stat-number {
+        font-size: 48px;
+    }
+
+    .stat-label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .why-rugby-section,
+    .rugby-programs-section,
+    .athlete-pathway-section,
+    .impact-goal-section,
+    .rugby-cta-section {
+        padding: 60px 20px;
+    }
+
+    .program-card {
+        padding: 24px;
+    }
+
+    .impact-stat-box {
+        padding: 32px 24px;
     }
 }

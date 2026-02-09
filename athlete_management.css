@@ -1,8 +1,3 @@
-/* ===================================
-   ATHLETE MANAGEMENT PAGE STYLES
-   =================================== */
-
-/* Hero Section */
 .athlete-hero {
     position: relative;
     width: 100%;
@@ -650,7 +645,7 @@
 
 @media (max-width: 480px) {
     .athlete-hero {
-        height: 400px;
+        height: 500px;
     }
 
     .athlete-hero-title {
