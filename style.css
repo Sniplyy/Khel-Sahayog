@@ -383,6 +383,7 @@ body {
   max-width: 935px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: bolder;
 }
 
 .hero-buttons {
@@ -418,7 +419,7 @@ body {
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.25em;
   color: #ff5722;
   /* Solid Dark Grey for contrast */
@@ -429,23 +430,21 @@ body {
 
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
   margin-bottom: 0;
   max-width: 106.25rem;
-  margin: 0 auto;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
   padding: 0 1rem;
 }
 
 .program-card {
   background-color: #FFFFFF;
-  /* White Card */
   border-radius: 24px;
-  /* Perfectly rounded */
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  /* Soft, calm shadow */
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
@@ -457,7 +456,6 @@ body {
 .program-card:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
-  border-color: rgba(255, 87, 34, 0.3);
 }
 
 .program-card:hover .program-title {
@@ -496,7 +494,7 @@ body {
 .program-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.3em;
   color: #ff5722;
   text-align: left;
@@ -509,12 +507,13 @@ body {
   font-family: "Montserrat", sans-serif;
   /* Standardized body font */
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.4em;
   /* More breathing room */
-  color: #666666;
+  color: #000000;
   /* Softer text color */
   text-align: left;
+  font-weight: bolder;
 }
 
 /* Stats Section */
@@ -690,7 +689,6 @@ body {
   align-items: center;
   padding: 3.125rem 5%;
   background-color: #F8F9FA;
-  /* Clean soft gray */
   width: 100%;
   position: relative;
 }
@@ -785,6 +783,7 @@ body {
   text-align: left;
   font-weight: 200;
   max-width: 550px;
+  font-weight: bolder;
 }
 
 .story-text-without {
@@ -811,8 +810,7 @@ body {
 /* Roles Section */
 .roles-section {
   padding: 80px 5%;
-  background-color: #F8F9FA;
-  /* Consistent soft gray background */
+  background-color: #ffffff;
   width: 100%;
   margin: 0;
 }
@@ -828,8 +826,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  /* Tighter gap for better grouping */
-  margin-bottom: 80px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1088,9 +1084,9 @@ body {
   padding: 0 120px 60px;
   /* Figma horizontal padding */
   display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-  /* Frame 113 gap */
+  flex-wrap: nowrap;
+  gap: 40px;
+  /* Reduced gap to fit all columns */
   border-bottom: 1px solid #D4D6D7;
   /* Line 2 */
 }
@@ -1101,8 +1097,8 @@ body {
   flex-direction: column;
   gap: 16px;
   /* Frame 91 gap */
-  width: 406px;
-  /* Frame 91 width */
+  width: 280px;
+  /* Reduced width to fit all columns */
   flex-shrink: 0;
 }
 
@@ -1130,7 +1126,7 @@ body {
 .footer-description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: #FFEFE9;
   max-width: 406px;
@@ -1191,6 +1187,8 @@ body {
   flex-direction: column;
   gap: 12px;
   /* Frame 100 gap */
+  flex: 1;
+  min-width: 150px;
 }
 
 .footer-heading {
