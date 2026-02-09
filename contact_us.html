@@ -16,6 +16,7 @@
 
 <body>
     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="/index.html"><img class="logo" src="images/logo.png" alt="Khel Sahayog Logo" /></a>
@@ -47,16 +48,12 @@
                                 <li><a href="football.html" class="dropdown-link">Football</a></li>
                                 <li><a href="kabaddi.html" class="dropdown-link">Kabaddi</a></li>
                                 <li><a href="athletics.html" class="dropdown-link">Athletics</a></li>
-<<<<<<< HEAD
-                                <li><a href="table_tennis.html" class="dropdown-link">Table Tennis</a></li>
-=======
                                 <li><a href="tabletennis.html" class="dropdown-link">Table Tennis</a></li>
->>>>>>> 0cf98ce6d08bab3c26f51227ce89d23276631277
                                 <li><a href="badminton.html" class="dropdown-link">Badminton</a></li>
                             </ul>
                         </div>
                         <div class="dropdown-section">
-                            <h3 class="dropdown-heading">Other Programs</h3>
+                            <h3 class="dropdown-heading">Other programs</h3>
                             <ul class="dropdown-list">
                                 <li><a href="job_skilling.html" class="dropdown-link">Job Skilling</a></li>
                                 <li><a href="women_empowerment.html" class="dropdown-link">Women Empowerment</a></li>
@@ -66,7 +63,6 @@
                         </div>
                     </div>
                 </div>
-
                 <a href="get_involved.html" class="nav-link">Get Involved</a>
                 <a href="impact.html" class="nav-link">Impact</a>
             </div>
@@ -78,13 +74,12 @@
                     <span></span>
                     <span></span>
                 </button>
-
             </div>
         </div>
-
-        <!-- Dropdown Backdrop Blur -->
-        <div class="dropdown-backdrop"></div>
     </nav>
+
+    <!-- Dropdown Backdrop -->
+    <div class="dropdown-backdrop"></div>
 
     <!-- Hero Section -->
     <section class="contact-hero">
@@ -368,49 +363,6 @@
         </div>
     </footer>
 
-    <script>
-        // Dropdown menu functionality
-        const programsDropdown = document.querySelector('.programs-dropdown');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        const dropdownBackdrop = document.querySelector('.dropdown-backdrop');
-        let dropdownTimeout;
-
-        // Show dropdown on hover
-        programsDropdown.addEventListener('mouseenter', () => {
-            clearTimeout(dropdownTimeout);
-            dropdownMenu.classList.add('active');
-            dropdownBackdrop.classList.add('active');
-        });
-
-        // Keep dropdown open when hovering over the menu
-        dropdownMenu.addEventListener('mouseenter', () => {
-            clearTimeout(dropdownTimeout);
-            dropdownMenu.classList.add('active');
-            dropdownBackdrop.classList.add('active');
-        });
-
-        // Hide dropdown when leaving the trigger
-        programsDropdown.addEventListener('mouseleave', () => {
-            dropdownTimeout = setTimeout(() => {
-                dropdownMenu.classList.remove('active');
-                dropdownBackdrop.classList.remove('active');
-            }, 100);
-        });
-
-        // Hide dropdown when leaving the menu
-        dropdownMenu.addEventListener('mouseleave', () => {
-            dropdownTimeout = setTimeout(() => {
-                dropdownMenu.classList.remove('active');
-                dropdownBackdrop.classList.remove('active');
-            }, 100);
-        });
-
-        // Hide dropdown when clicking on backdrop
-        dropdownBackdrop.addEventListener('click', () => {
-            dropdownMenu.classList.remove('active');
-            dropdownBackdrop.classList.remove('active');
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 
