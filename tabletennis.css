@@ -1,8 +1,6 @@
-/* ========================================
-   TABLE TENNIS PAGE STYLES
-   ======================================== */
 
-/* CSS Variables */
+
+
 :root {
     --primary-yellow: #FFB800;
     --primary-orange: #F05A28;
@@ -14,9 +12,7 @@
     --white: #FFFFFF;
 }
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
+
 
 .tabletennis-hero {
     position: relative;
@@ -122,9 +118,7 @@
     transform: translateY(-2px);
 }
 
-/* ========================================
-   WHY TABLE TENNIS SECTION
-   ======================================== */
+
 
 .why-tabletennis-section {
     background-color: var(--white);
@@ -234,9 +228,7 @@
     line-height: 1.6;
 }
 
-/* ========================================
-   PROGRAMS SECTION
-   ======================================== */
+
 
 .tabletennis-programs-section {
     background-color: #111111;
@@ -314,9 +306,7 @@
     line-height: 1.6;
 }
 
-/* ========================================
-   ATHLETE PATHWAY SECTION
-   ======================================== */
+
 
 .athlete-pathway-section {
     background-color: var(--white);
@@ -467,9 +457,7 @@
     margin: 0;
 }
 
-/* ========================================
-   BOTTOM CTA SECTION
-   ======================================== */
+
 
 .tabletennis-cta-section {
     background-color: var(--primary-orange);
@@ -503,9 +491,7 @@
     align-items: center;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
+
 
 @media (max-width: 1024px) {
     .tabletennis-hero {
@@ -649,9 +635,7 @@
     }
 }
 
-/* ========================================
-   NAVBAR DROPDOWN GRID OVERRIDE
-   ======================================== */
+
 .sports-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr;

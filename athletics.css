@@ -1,8 +1,6 @@
-/* ===========================
-   ATHLETICS PAGE STYLES
-   =========================== */
 
-/* Hero Section */
+
+
 .athletics-hero {
     position: relative;
     width: 100%;
@@ -71,7 +69,7 @@
     gap: 16px;
 }
 
-/* Why Athletics Section */
+
 .why-athletics-section {
     background-color: #FFFFFF;
     padding: 80px 40px;
@@ -182,7 +180,7 @@
     line-height: 1.6;
 }
 
-/* Programs Section */
+
 .athletics-programs-section {
     padding: 80px 40px;
     background-color: #000000;
@@ -258,7 +256,7 @@
     line-height: 1.6;
 }
 
-/* Athlete Pathway Section */
+
 .athlete-pathway-section {
     background-color: #FFFFFF;
     padding: 80px 40px;
@@ -347,7 +345,7 @@
     font-weight: 700;
 }
 
-/* Impact Goal Section */
+
 .impact-goal-section {
     background-color: #E8E8E8;
     padding: 80px 40px;
@@ -409,7 +407,7 @@
     margin: 0;
 }
 
-/* Bottom CTA Section */
+
 .athletics-cta-section {
     padding: 80px 40px;
     background-color: #F25F25;
@@ -440,7 +438,7 @@
     justify-content: center;
 }
 
-/* Button Styles */
+
 .btn-support-yellow {
     background-color: #FFC107;
     color: #000000;
@@ -479,7 +477,7 @@
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .why-athletics-content {
         grid-template-columns: 1fr;

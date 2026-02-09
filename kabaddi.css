@@ -1,8 +1,6 @@
-/* ========================================
-   KABADDI PAGE STYLES
-   ======================================== */
 
-/* CSS Variables */
+
+
 :root {
     --primary-yellow: #FFB800;
     --primary-orange: #F05A28;
@@ -14,9 +12,7 @@
     --white: #FFFFFF;
 }
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
+
 
 .kabaddi-hero {
     position: relative;
@@ -122,9 +118,7 @@
     transform: translateY(-2px);
 }
 
-/* ========================================
-   WHY KABADDI SECTION
-   ======================================== */
+
 
 .why-kabaddi-section {
     background-color: var(--white);
@@ -234,9 +228,7 @@
     line-height: 1.6;
 }
 
-/* ========================================
-   PROGRAMS SECTION
-   ======================================== */
+
 
 .kabaddi-programs-section {
     background-color: #111111;
@@ -314,9 +306,7 @@
     line-height: 1.6;
 }
 
-/* ========================================
-   ATHLETE PATHWAY SECTION
-   ======================================== */
+
 
 .athlete-pathway-section {
     background-color: var(--white);
@@ -465,9 +455,7 @@
     margin: 0;
 }
 
-/* ========================================
-   BOTTOM CTA SECTION
-   ======================================== */
+
 
 .kabaddi-cta-section {
     background-color: var(--primary-orange);
@@ -501,9 +489,7 @@
     align-items: center;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
+
 
 @media (max-width: 1024px) {
     .kabaddi-hero {

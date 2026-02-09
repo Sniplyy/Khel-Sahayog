@@ -111,7 +111,7 @@
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-/* Section Title Styles */
+
 .section-title-orange {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -142,7 +142,7 @@
     margin-bottom: 60px;
 }
 
-/* Critical Gap Section */
+
 .critical-gap-section {
     background: #ffffff;
     padding: 100px 40px;
@@ -202,7 +202,7 @@
     line-height: 1.5;
 }
 
-/* Our Athlete Management Model Section */
+
 .model-section {
     background: #FFFFFF;
     padding: 50px 40px;
@@ -250,7 +250,7 @@
     line-height: 1.6;
 }
 
-/* Service Tiers Section */
+
 .tiers-section {
     background: #F5F5F5;
     padding: 100px 40px;
@@ -320,7 +320,7 @@
     font-weight: 700;
 }
 
-/* Athlete Onboarding Flow Section */
+
 .onboarding-section {
     background: #FFFFFF;
     padding: 80px 40px;
@@ -368,7 +368,7 @@
     margin: 0 -1px;
 }
 
-/* KPIs & Success Metrics Section */
+
 .kpi-section {
     background: #F5F5F5;
     padding: 80px 40px;
@@ -420,7 +420,7 @@
     line-height: 1.6;
 }
 
-/* JOIN OUR MISSION Section */
+
 .join-mission-section {
     background: #FF5722;
     padding: 80px 40px;
@@ -491,7 +491,7 @@
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .model-grid {
         grid-template-columns: repeat(2, 1fr);

@@ -1,8 +1,6 @@
-/* ===================================
-   WOMEN EMPOWERMENT PAGE STYLES
-   =================================== */
 
-/* Hero Section (Preserved) */
+
+
 .women-hero {
     position: relative;
     width: 100%;
@@ -84,18 +82,16 @@
     box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
 }
 
-/* ===================================
-   NEW SECTIONS START
-   =================================== */
 
-/* Section 1: The Problem and The Gap */
-/* Section 1: The Problem and The Gap */
+
+
+
 .problem-gap-section {
     background-color: #ffffff;
-    /* Standardized to White */
+    
     padding: 80px 40px;
     color: #000000;
-    /* Text color reset for white section */
+    
 }
 
 .problem-gap-container {
@@ -170,7 +166,7 @@
 
 
 
-/* Section 2: What We Do (Our Solution) - Standardized from Job Skilling */
+
 .what-we-do-section {
     padding: 80px 40px;
     background-color: #f5f5f5;
@@ -189,7 +185,7 @@
     color: #FF5722;
     margin-bottom: 60px;
     text-align: left;
-    /* Kept left aligned as per previous design, or should it be center like job_skilling? Job skilling was center. User said "math image 3". Image 3 heading is centered. I will Center it.*/
+    
     text-align: center;
     line-height: 1.3em;
 }
@@ -239,7 +235,7 @@
     color: #424242;
 }
 
-/* Responsive Grid for Solution Section */
+
 @media (max-width: 992px) {
     .what-we-do-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -252,7 +248,7 @@
     }
 }
 
-/* Section 3: Call to Action (Join Mission) - Standardized from Job Skilling */
+
 .join-mission-section {
     background-color: #ff5722;
     padding: 80px 129px;
@@ -390,7 +386,7 @@
         gap: 8px;
     }
 
-    /* Fix for Navigation Dropdown overlap */
+    
     .dropdown-menu.mobile-active {
         max-height: none !important;
         overflow: visible !important;

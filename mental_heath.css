@@ -1,8 +1,6 @@
-/* ===================================
-   CSS Variables & Reset
-   =================================== */
+
 :root {
-    /* Colors from Figma */
+    
     --primary-orange: #FF5722;
     --accent-yellow: #FFB703;
     --dark-bg: #1D1D1D;
@@ -10,10 +8,10 @@
     --light-gray: #F5F5F5;
     --text-dark: #333333;
 
-    /* Typography */
+    
     --font-primary: 'Montserrat', sans-serif;
 
-    /* Spacing */
+    
     --container-max-width: 1200px;
     --section-padding: 80px 20px;
 }
@@ -40,17 +38,13 @@ body {
 
 
 
-/* ===================================
-   Hero Section
-   =================================== */
-/* ===================================
-   Hero Section
-   =================================== */
+
+
 .mental-hero {
     position: relative;
     width: 100%;
     height: 600px;
-    /* Reduced from 658px to reduce vertical spacing */
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -160,9 +154,7 @@ body {
     box-shadow: 0 8px 16px rgba(255, 183, 3, 0.3);
 }
 
-/* ===================================
-   Problem and Gap Section
-   =================================== */
+
 .problem-gap {
     padding: var(--section-padding);
     background-color: var(--white);
@@ -240,7 +232,7 @@ body {
 }
 
 
-/* What We Do Section */
+
 .what-we-do-section {
     padding: 80px 129px;
     background-color: #f5f5f5;
@@ -277,7 +269,7 @@ body {
 
 .solution-card-icon {
     font-size: 56px;
-    /* Keeping the emoji size */
+    
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -311,9 +303,7 @@ body {
     margin-bottom: 60px;
 }
 
-/* ===================================
-   Join Our Mission Section
-   =================================== */
+
 .join-mission {
     padding: var(--section-padding);
     background-color: var(--primary-orange);
@@ -378,10 +368,8 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* ===================================
-   Footer Section
-   =================================== */
-/* Footer */
+
+
 .footer {
     background-color: #212121;
     padding: 64px 0 0;
@@ -407,22 +395,22 @@ body {
 }
 
 .footer-column:nth-child(1) {
-    /* About - Column 1 */
+    
     grid-column: 1;
 }
 
 .footer-column:nth-child(2) {
-    /* Programs - Column 2 */
+    
     grid-column: 2;
 }
 
 .footer-column:nth-child(3) {
-    /* Get Involved - Column 3 */
+    
     grid-column: 3;
 }
 
 .footer-column:nth-child(4) {
-    /* Contact - Column 4 */
+    
     grid-column: 4;
 }
 
@@ -606,9 +594,7 @@ body {
     color: #ffffff;
 }
 
-/* ===================================
-   Responsive Design
-   =================================== */
+
 @media (max-width: 1200px) {
     .what-we-do-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -731,7 +717,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    /* Footer Mobile Styles (from style.css max-width: 1024px logic) */
+    
     .footer {
         padding: 48px 0 0;
     }

@@ -1,8 +1,6 @@
-/* ===================================
-   GRASSROOTS DEVELOPMENT PAGE STYLES
-   =================================== */
 
-/* Hero Section */
+
+
 .grassroots-hero {
     position: relative;
     width: 100%;
@@ -60,7 +58,7 @@
     max-width: 550px;
 }
 
-/* Section Heading Styles */
+
 .section-heading-orange {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
@@ -88,7 +86,7 @@
     text-align: justify;
 }
 
-/* Who We Are Section */
+
 .who-we-are-section {
     background: #FFFFFF;
     padding: 80px 40px;
@@ -99,7 +97,7 @@
     margin: 0 auto;
 }
 
-/* Why Grassroots Matters Section */
+
 .why-grassroots-section {
     background: #F5F5F5;
     padding: 80px 40px;
@@ -110,7 +108,7 @@
     margin: 0 auto;
 }
 
-/* Athlete Management Model Section */
+
 .athlete-model-section {
     background: #FFFFFF;
     padding: 100px 40px;
@@ -198,7 +196,7 @@
     flex-shrink: 0;
 }
 
-/* Core Services Section */
+
 .core-services-section {
     background: #F5F5F5;
     padding: 100px 40px;
@@ -272,7 +270,7 @@
     font-weight: 700;
 }
 
-/* Grassroots By Sport Section */
+
 .grassroots-sports-section {
     background: #FFFFFF;
     padding: 100px 40px;
@@ -299,7 +297,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* min-height: 200px; */
+    
 }
 
 .sport-card:hover {
@@ -308,7 +306,7 @@
     background: #212121;
 }
 
-/* Center the last card when it's alone in the row */
+
 .sport-card:nth-child(7) {
     grid-column: 2 / 3;
 }
@@ -331,7 +329,7 @@
     text-align: center;
 }
 
-/* JOIN OUR MISSION Section */
+
 .join-mission-section {
     background: #FF5722;
     padding: 80px 40px;
@@ -401,7 +399,7 @@
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .athlete-model-flow {
         flex-wrap: wrap;
@@ -520,7 +518,7 @@
     }
 }
 
-/* Mobile specific - 430 x 932 */
+
 @media (max-width: 430px) {
     .grassroots-hero {
         height: 932px;

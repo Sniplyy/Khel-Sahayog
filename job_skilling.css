@@ -1,11 +1,11 @@
-/* Job Skilling Page Specific Styles */
 
-/* Hero Section */
+
+
 .job-skilling-hero {
     position: relative;
     width: 100%;
     height: 600px;
-    /* Reduced from 658px */
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -104,7 +104,7 @@ a {
     box-shadow: 4px 0px 12px 0px rgba(255, 87, 34, 0.3);
 }
 
-/* Problem and Gap Section */
+
 .problem-gap-section {
     padding: 80px 129px;
     background-color: #ffffff;
@@ -189,7 +189,7 @@ a {
     line-height: 1.2em;
 }
 
-/* What We Do Section */
+
 .what-we-do-section {
     padding: 80px 129px;
     background-color: #f5f5f5;
@@ -248,7 +248,7 @@ a {
     color: #424242;
 }
 
-/* Join Our Mission Section */
+
 .join-mission-section {
     background-color: #ff5722;
     padding: 80px 129px;
@@ -335,7 +335,7 @@ a {
     background-color: #f5f5f5;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .problem-gap-content {
         flex-direction: column;

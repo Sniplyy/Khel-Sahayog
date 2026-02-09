@@ -1,7 +1,7 @@
-/* Import Lato font for Impact page */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
 
-/* Impact Hero Section */
+
 .impact-hero {
     position: relative;
     width: 100%;
@@ -63,7 +63,7 @@
     max-width: 550px;
 }
 
-/* Gallery Section */
+
 .gallery-section {
     padding: 80px 120px;
     background-color: #FFFFFF;
@@ -119,7 +119,7 @@
     object-fit: cover;
 }
 
-/* Impact Goals Section */
+
 .impact-goals-section {
     padding: 80px 120px;
     background-color: #F5F5F5;
@@ -192,7 +192,7 @@
     color: #FFFFFF;
 }
 
-/* Success Stories Section */
+
 .success-stories-section {
     padding: 80px 120px;
     background-color: #FFFFFF;
@@ -330,7 +330,7 @@
     margin-top: auto;
 }
 
-/* Impact CTA Section */
+
 .impact-cta-section {
     padding: 80px 120px;
     background-color: #FF5722;
@@ -383,7 +383,7 @@
     color: #000000;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
 
     .gallery-grid,

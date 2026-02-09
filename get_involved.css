@@ -1,6 +1,6 @@
-/* Get Involved Page Specific Styles */
 
-/* Hero Section */
+
+
 .get-involved-hero {
     position: relative;
     width: 100%;
@@ -53,7 +53,7 @@
     margin: 0;
 }
 
-/* Support Form Section */
+
 .support-form-section {
     background-color: #ffffff;
     padding: 60px 0 80px;
@@ -171,7 +171,7 @@
     box-shadow: 0px 6px 16px #ff794EE3;
 }
 
-/* CTA Banner Section */
+
 .cta-banner-section {
     background-color: #FF5722;
     padding: 60px 20px;
@@ -221,11 +221,9 @@
     box-shadow: 0px 6px 16px rgba(255, 193, 7, 0.4);
 }
 
-/* ============================================
-   RESPONSIVE DESIGN - MEDIA QUERIES
-   ============================================ */
 
-/* Desktop Small - 1024px and below */
+
+
 @media (max-width: 1024px) {
     .get-involved-hero {
         height: 400px;
@@ -240,7 +238,7 @@
     }
 }
 
-/* Tablet - 768px and below */
+
 @media (max-width: 768px) {
     .get-involved-hero {
         height: 350px;
@@ -277,7 +275,7 @@
     }
 }
 
-/* Mobile - 480px and below */
+
 @media (max-width: 480px) {
     .get-involved-hero {
         height: 300px;

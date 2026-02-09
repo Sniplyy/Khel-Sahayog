@@ -1,7 +1,6 @@
-/* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400&display=swap");
 
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -50,7 +49,7 @@ body {
   z-index: 1001;
 }
 
-/* Mobile menu toggle active state animation */
+
 .mobile-menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }
@@ -76,7 +75,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation Bar */
+
 .navbar {
   position: absolute;
   top: 0;
@@ -85,7 +84,7 @@ body {
   width: 100%;
   z-index: 1001;
   padding: 4px 0;
-  /* Increased Height */
+
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -97,7 +96,7 @@ body {
   background: rgba(0, 0, 0, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   padding: 4px 0;
-  /* Slightly smaller on scroll */
+
 }
 
 .nav-container {
@@ -105,7 +104,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
-  /* Better responsive spacing */
+
   max-width: 1440px;
   gap: 40px;
   margin: 0 auto;
@@ -151,7 +150,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* Dropdown Backdrop Blur */
+
 .dropdown-backdrop {
   position: fixed;
   top: 78px;
@@ -168,7 +167,7 @@ body {
   pointer-events: none;
 }
 
-/* Dropdown Menu */
+
 .dropdown-menu {
   position: fixed;
   top: 78px;
@@ -266,7 +265,7 @@ body {
   gap: 10px;
   padding: 12px 24px;
   background-color: #ff5722;
-  /* Brand Orange */
+
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -333,7 +332,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   width: 100%;
@@ -413,11 +412,11 @@ body {
   box-shadow: 0px 6px 14px rgba(255, 87, 34, 0.5);
 }
 
-/* Programs Section */
+
 .programs-section {
   padding: 80px 5%;
   background-color: #f8f9fa;
-  /* Light Calm Gray */
+
   min-height: 512px;
   width: 100%;
   margin: 0;
@@ -429,7 +428,7 @@ body {
   font-size: 30px;
   line-height: 1.25em;
   color: #ff5722;
-  /* Solid Dark Grey for contrast */
+
   text-align: center;
   margin-bottom: 60px;
   letter-spacing: -0.02em;
@@ -473,7 +472,7 @@ body {
 .program-image {
   width: 100%;
   height: 9rem;
-  /* Reduced by 40% */
+
   overflow: hidden;
   border-radius: 1.5rem 1.5rem 0 0;
 }
@@ -487,7 +486,7 @@ body {
 
 .program-card:hover .program-image img {
   transform: scale(1.08);
-  /* Gentle zoom */
+
 }
 
 .program-content {
@@ -505,25 +504,25 @@ body {
   line-height: 1.3em;
   color: #ff5722;
   text-align: left;
-  /* Better readability */
+
   margin-bottom: 0.5rem;
-  /* Tighter grouping */
+
 }
 
 .program-description {
   font-family: "Montserrat", sans-serif;
-  /* Standardized body font */
+
   font-weight: 400;
   font-size: 0.85rem;
   line-height: 1.4em;
-  /* More breathing room */
+
   color: #000000;
-  /* Softer text color */
+
   text-align: left;
   font-weight: bolder;
 }
 
-/* Stats Section */
+
 .stats-section {
   background: linear-gradient(91.59deg, #171E22 0%, #263238 50%, #171E22 100%);
   padding: 3.125rem 0;
@@ -563,16 +562,16 @@ body {
   font-size: 0.8125rem;
   line-height: 1.3;
   color: #ffffff;
-  /* Reverted to white for contrast */
+
   text-align: center;
   max-width: 13.3125rem;
   margin: 0 auto;
 }
 
-/* Why Section */
+
 .why-section {
   padding: 80px 0 0;
-  /* Increased top spacing */
+
   background-color: #ffffff;
   width: 100%;
   margin: 0;
@@ -587,10 +586,10 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 54px;
   padding: 0 212px;
-  /* Reduced by 60px to widen cards */
+
   margin-bottom: 100px;
   max-width: 1560px;
-  /* Increased to accommodate wider content */
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -601,9 +600,9 @@ body {
   padding: 2.5rem;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-right: 6px solid #ff5722;
-  /* Right border instead of top */
+
   background: linear-gradient(180deg, #fff5f2 0%, #ffffff 100%);
-  /* Light red tint */
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -618,9 +617,9 @@ body {
   padding: 2.5rem;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
   border-left: 6px solid #4caf50;
-  /* Left border instead of top */
+
   background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%);
-  /* Light green tint */
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -635,21 +634,21 @@ body {
   font-size: 1.25rem;
   line-height: 1.2em;
   text-align: left;
-  /* Align left */
+
   margin-bottom: 1.25rem;
   text-transform: uppercase;
-  /* Capital text */
+
 }
 
-/* Fix selectors to match HTML structure */
+
 .comparison-card-with-support .comparison-title {
   color: #4caf50;
-  /* Green */
+
 }
 
 .comparison-card-without-support .comparison-title {
   color: #ff5722;
-  /* Red */
+
 }
 
 .comparison-list {
@@ -663,9 +662,9 @@ body {
   gap: 1rem;
   margin-bottom: 1.25rem;
   font-family: "Montserrat", sans-serif;
-  /* Reverted to Montserrat per request */
+
   font-weight: 500;
-  /* Slightly bolder for readability if not regular */
+
   font-size: 0.875rem;
   line-height: 1.4em;
   color: #4a4a4a;
@@ -700,7 +699,7 @@ body {
   position: relative;
 }
 
-/* Headings */
+
 .story-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -710,23 +709,23 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   margin-bottom: 0;
-  /* Tight grouping with subtitle */
+
 }
 
 .story-subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 2rem;
-  /* Bigger Impact */
+
   line-height: 1.0;
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 2.5rem;
-  /* Space before content starts */
+
   max-width: 56.25rem;
 }
 
-/* Wrapper for image and content */
+
 .story-content-wrapper {
   display: flex;
   gap: 3.75rem;
@@ -736,8 +735,8 @@ body {
   width: 100%;
 }
 
-/* Image */
-/* Image */
+
+
 .story-image {
   width: 100%;
   max-width: 21.875rem;
@@ -745,7 +744,7 @@ body {
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.1);
-  /* Premium Float */
+
   transition: transform 0.3s ease;
   flex-shrink: 0;
 }
@@ -761,7 +760,7 @@ body {
   display: block;
 }
 
-/* Content */
+
 .story-content {
   align-self: center;
   flex: 1;
@@ -801,7 +800,7 @@ body {
   font-weight: 700;
 }
 
-/* Link */
+
 .story-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -814,7 +813,7 @@ body {
   text-decoration: underline;
 }
 
-/* Roles Section */
+
 .roles-section {
   padding: 80px 5%;
   background-color: #ffffff;
@@ -841,16 +840,16 @@ body {
 
 .role-card {
   background-color: #ffffff;
-  /* Clean White */
+
   border-radius: 1.25rem;
   padding: 2.5rem 1.875rem;
   height: 100%;
   min-height: 10rem;
   display: flex;
   flex-direction: column;
-  /* Removed justify-content: space-between to bring content closer */
+
   box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.05);
-  /* Soft premium shadow */
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.03);
 }
@@ -877,8 +876,8 @@ body {
   color: #555555;
   text-align: center;
   margin-bottom: 1rem;
-  /* Reduced gap */
-  /* Removed flex-grow: 1 to stop pushing button down */
+
+
 }
 
 .role-button {
@@ -887,7 +886,7 @@ body {
   height: 3rem;
   background-color: #ffffff;
   border: 2px solid #ff5722;
-  /* Outline style */
+
   border-radius: 0.75rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -912,12 +911,12 @@ body {
   align-items: center;
   padding: 80px 10%;
   margin: 0;
-  /* Figma Gradient */
+
   background: linear-gradient(91.59deg, #171E22 0%, #263238 50%, #171E22 100%);
   border-radius: 0;
   width: 100%;
   max-width: 100%;
-  /* Fixes white space issue */
+
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -925,7 +924,7 @@ body {
   box-shadow: none;
 }
 
-/* Inner content container to match the 1155px width logic if needed, but flex handles it */
+
 
 .join-content {
   flex: 1;
@@ -936,53 +935,53 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  /* Figma gap */
+
 }
 
 .join-title {
-  /* Using Montserrat as requested, overriding Teko */
+
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 28px;
-  /* Figma size */
+
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #EAEBEC;
-  /* Figma color */
+
   margin-bottom: 0;
-  /* Handled by gap */
+
   background: none;
-  /* Remove previous gradient text */
+
   -webkit-text-fill-color: initial;
 }
 
 .join-description {
   font-family: "Montserrat", sans-serif;
-  /* Figma: Montserrat */
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.04em;
   color: #EAEBEC;
-  /* Figma color */
+
   max-width: 650px;
 }
 
 .join-button {
-  /* CTA */
+
   width: 350px;
-  /* Figma width */
+
   height: 55px;
-  /* Figma height */
+
   background: #FF5722;
-  /* Figma bg */
+
   border-radius: 28px;
-  /* Figma radius */
+
   border: none;
 
-  /* Text Styles using Montserrat as requested override */
+
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1009,27 +1008,27 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Support Section */
-/* Support Section */
+
+
 .support-section {
   background-color: #ffffff;
-  /* Clean White layout */
+
   padding: 100px 5%;
   text-align: center;
   width: 100%;
   margin: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  /* Subtle separation */
+
 }
 
 .support-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  /* Extra bold */
+
   font-size: 1.75rem;
   line-height: 1.2;
   color: #1a1a1a;
-  /* Dark text */
+
   margin-bottom: 1.5rem;
   max-width: 56.25rem;
   margin-left: auto;
@@ -1050,7 +1049,7 @@ body {
   display: block;
   width: 100%;
   max-width: 21.875rem;
-  /* Responsive Width */
+
   height: 3.5rem;
   font-size: 1.125rem;
   font-weight: 700;
@@ -1065,47 +1064,46 @@ body {
 
 .support-section .btn-primary:hover {
   transform: translateY(-4px) scale(1.05);
-  /* Added Scale Effect */
+
   box-shadow: 0 10px 25px rgba(255, 87, 34, 0.6);
   background-color: #e64a19;
-  /* Darker Orange on Hover */
+
 }
 
-/* Footer */
+
 .footer {
   background-color: #263238;
-  /* Exact Figma BG */
+
   width: 100%;
   margin: 0;
   color: #ffffff;
   padding: 100px 0 0;
-  /* Aligning internal container padding logic */
+
 }
 
-/* Figma: padding: 100px 120px; width: 1440px... 
-   We apply this to the max-width container to fit screens */
+
 .footer-container {
   max-width: 1440px;
-  /* Matched Figma Frame Width */
+
   margin: 0 auto;
   padding: 0 120px 60px;
-  /* Figma horizontal padding */
+
   display: flex;
   flex-wrap: nowrap;
   gap: 40px;
-  /* Reduced gap to fit all columns */
+
   border-bottom: 1px solid #D4D6D7;
-  /* Line 2 */
+
 }
 
-/* Layout Logic: Brand (Left) + Links Block (Right) */
+
 .footer-brand {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* Frame 91 gap */
+
   width: 280px;
-  /* Reduced width to fit all columns */
+
   flex-shrink: 0;
 }
 
@@ -1113,7 +1111,7 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  /* Frame 90 gap */
+
 }
 
 .footer-logo-img {
@@ -1140,12 +1138,12 @@ body {
   margin: 0;
 }
 
-/* Social Icons - Frame 98 */
+
 .footer-social {
   display: flex;
   gap: 16px;
   margin-top: 16px;
-  /* Visual spacing */
+
 }
 
 .social-icon {
@@ -1165,23 +1163,23 @@ body {
 
 .social-icon svg {
   width: 24px;
-  /* Vector size */
+
   height: 24px;
 }
 
 .social-icon path {
   fill: #FFFFFF;
-  /* High contrast White */
+
   transition: fill 0.2s ease;
 }
 
 .social-icon:hover path {
   fill: #FFFFFF;
-  /* Keep white on hover, relying on BG change */
+
 }
 
-/* Right Side Links Container */
-/* Frame 112 width 733px */
+
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -1193,7 +1191,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* Frame 100 gap */
+
   flex: 1;
   min-width: 150px;
 }
@@ -1205,7 +1203,7 @@ body {
   line-height: 29px;
   color: #EAEBEC;
   margin-bottom: 4px;
-  /* Visual adjustment */
+
   height: 29px;
   display: flex;
   align-items: center;
@@ -1217,7 +1215,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: rgba(234, 235, 236, 0.73);
-  /* Exact Figma Color */
+
   text-transform: uppercase;
   margin: 16px 0 12px;
 }
@@ -1226,7 +1224,7 @@ body {
   width: 186px;
   height: 0;
   border: 0.7px solid #515B60;
-  /* Line 4 */
+
   margin: 12px 0;
 }
 
@@ -1236,7 +1234,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* Frame 100 gap */
+
 }
 
 .footer-list li {
@@ -1260,10 +1258,10 @@ body {
   color: #ff5722;
 }
 
-/* Contact Specifics */
+
 .footer-contact-list li {
   gap: 10px;
-  /* Frame 108 gap */
+
   color: #EAEBEC;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -1273,16 +1271,16 @@ body {
 
 .footer-contact-list svg {
   width: 15px;
-  /* Vector size */
+
   height: 15px;
 }
 
 .footer-contact-list path {
   fill: #FFFFFF;
-  /* Vector BG */
+
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
   max-width: 1200px;
   margin: 0 auto;
@@ -1308,7 +1306,7 @@ body {
 .footer-legal {
   display: flex;
   gap: 36px;
-  /* Frame 115 gap */
+
 }
 
 .footer-legal a {
@@ -1320,7 +1318,7 @@ body {
   text-decoration: none;
 }
 
-/* Responsive Overrides (Keep previous mobile logic but update styles) */
+
 @media (max-width: 1100px) {
   .footer-container {
     padding: 0 40px 60px;
@@ -1359,38 +1357,36 @@ body {
   }
 }
 
-/* ============================================
-   RESPONSIVE DESIGN - MEDIA QUERIES
-   ============================================ */
 
-/* Tablet - 1024px and below */
+
+
 @media (max-width: 1024px) {
 
-  /* Navbar Responsiveness */
+
   .nav-menu {
     display: none;
-    /* Hide desktop menu links */
+
   }
 
   .mobile-menu-toggle {
     display: flex;
-    /* Show hamburger menu */
+
     color: #ffffff;
   }
 
   .nav-container {
     padding: 0 40px;
-    /* Adjust spacing */
+
   }
 
-  /* Ensure Buttons stay visible or adjust if needed */
+
   .nav-buttons .btn-primary,
   .nav-buttons .btn-outline {
-    /* Optional: Hide buttons on smaller tablets if crowded */
+
     display: flex;
   }
 
-  /* Hero Section */
+
   .hero {
     height: auto;
     min-height: 550px;
@@ -1401,7 +1397,7 @@ body {
     padding: 0 60px;
   }
 
-  /* ... rest of existing 1024px queries ... */
+
   .hero-title {
     font-size: 40px;
     margin-top: 0;
@@ -1414,21 +1410,21 @@ body {
     padding: 0 40px;
   }
 
-  /* Programs Dropdown Tweak */
+
   .dropdown-menu.mobile-active .dropdown-link {
     padding: 12px 15px !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
   }
 }
 
-/* Mobile - 768px and below */
+
 @media (max-width: 768px) {
 
-  /* Hero Section */
+
   .hero {
     height: auto;
     min-height: 100vh;
-    /* Full screen impact */
+
     padding: 100px 0 60px;
     display: flex;
     align-items: center;
@@ -1443,7 +1439,7 @@ body {
 
   .hero-title {
     font-size: 32px;
-    /* Smaller for mobile */
+
     line-height: 1.15;
     margin-bottom: 18px;
   }
@@ -1465,18 +1461,18 @@ body {
   .hero-buttons .btn-outline {
     width: 100%;
     max-width: 320px;
-    /* Prevent over-stretching */
+
     justify-content: center;
     padding: 14px 24px;
-    /* Touchable area */
+
     font-size: 16px;
   }
 }
 
-/* Tablet - 991px and below */
+
 @media (max-width: 991px) {
 
-  /* Programs Section */
+
   .programs-section {
     padding: 35px 40px 60px;
   }
@@ -1491,7 +1487,7 @@ body {
     gap: 24px;
   }
 
-  /* Stats Section */
+
   .stats-section {
     padding: 40px 0;
   }
@@ -1512,7 +1508,7 @@ body {
     line-height: 1.4;
   }
 
-  /* Why Section */
+
   .why-section {
     padding: 25px 0 0;
   }
@@ -1537,10 +1533,10 @@ body {
     font-size: 14px;
   }
 
-  /* Story Section */
+
   .story-section {
     grid-template-columns: 1fr;
-    /* Force single column */
+
     grid-template-areas:
       "title"
       "subtitle"
@@ -1550,7 +1546,7 @@ body {
     gap: 40px;
     text-align: center;
     justify-items: center;
-    /* Center all grid items horizontally */
+
   }
 
   .story-image {
@@ -1558,13 +1554,13 @@ body {
     max-width: 500px;
     transform: translateX(0);
     justify-self: center;
-    /* Remove desktop 'end' alignment */
+
   }
 
   .story-content {
     max-width: 600px;
     justify-self: center;
-    /* Remove desktop 'start' alignment */
+
     text-align: center;
   }
 
@@ -1580,7 +1576,7 @@ body {
     font-size: 18px;
   }
 
-  /* Roles Section */
+
   .roles-section {
     padding: 60px 0 0 0;
   }
@@ -1592,7 +1588,7 @@ body {
 
   .roles-grid {
     grid-template-columns: repeat(1, 1fr);
-    /* 2 columns on tablet */
+
     gap: 25px;
     margin-bottom: 80px;
     padding: 0 40px;
@@ -1603,7 +1599,7 @@ body {
     min-height: 280px;
   }
 
-  /* Join Section */
+
   .join-section {
     flex-direction: column;
     padding: 60px 40px;
@@ -1630,13 +1626,13 @@ body {
     max-width: 300px;
   }
 
-  /* Support Section */
+
   .support-section {
     height: auto;
     padding: 60px 20px 80px;
   }
 
-  /* Footer */
+
   .footer {
     padding: 60px 0 0;
   }
@@ -1652,41 +1648,41 @@ body {
     gap: 20px;
   }
 
-  /* Close Tablet Media Query */
+
 }
 
-/* Mobile - 768px and below */
+
 @media (max-width: 768px) {
 
-  /* Programs Section Mobile Grid */
+
   .programs-grid {
     grid-template-columns: 1fr;
     gap: 24px;
     padding: 0 10px;
   }
 
-  /* Stats Section Mobile */
+
   .stats-container {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 0 20px;
   }
 
-  /* Footer Tablet Adjustment */
+
   .footer-container {
     padding: 0 40px 40px;
   }
 
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 cols on Tablet */
+
   }
 }
 
-/* Mobile - 480px and below */
+
 @media (max-width: 480px) {
 
-  /* Navigation */
+
   .nav-container {
     padding: 0 20px;
     gap: 16px;
@@ -1708,7 +1704,7 @@ body {
     padding: 8px 10px;
   }
 
-  /* Hero Section */
+
   .hero {
     height: 400px;
   }
@@ -1734,7 +1730,7 @@ body {
     padding: 10px 20px;
   }
 
-  /* Programs Section */
+
   .programs-section {
     padding: 30px 20px 50px;
   }
@@ -1755,7 +1751,7 @@ body {
     margin: 0 auto;
   }
 
-  /* Stats Section */
+
   .stats-section {
     padding: 32px 0;
   }
@@ -1774,16 +1770,16 @@ body {
     font-size: 10px;
   }
 
-  /* Why Section */
+
   .comparison-container {
     padding: 0 20px;
     gap: 24px;
   }
 
-  /* Story Section Mobile */
+
   .story-section {
     padding: 50px 20px;
-    /* Reduced vertical padding */
+
     gap: 30px;
   }
 
@@ -1795,14 +1791,14 @@ body {
 
   .story-subtitle {
     font-size: 28px;
-    /* Much smaller for mobile */
+
     line-height: 1.2;
     margin-bottom: 24px;
   }
 
   .story-content {
     text-align: center;
-    /* Center text on mobile */
+
     justify-self: center;
   }
 
@@ -1812,9 +1808,9 @@ body {
 
   .story-text-with {
     font-size: 16px;
-    /* Scaled down body text */
+
     margin: 0 auto 24px auto;
-    /* Centering only on mobile */
+
   }
 
   .story-link {
@@ -1839,7 +1835,7 @@ body {
 
 
 
-  /* Roles Section Mobile */
+
   .roles-section .section-title {
     margin-bottom: 40px;
     font-size: 24px;
@@ -1847,7 +1843,7 @@ body {
 
   .roles-grid {
     grid-template-columns: 1fr;
-    /* Stack cards */
+
     padding: 0 20px;
     gap: 25px;
     margin-bottom: 50px;
@@ -1866,13 +1862,13 @@ body {
     max-width: 100%;
   }
 
-  /* Join Section Mobile */
+
   .join-section {
     padding: 40px 20px;
-    /* Reset padding for mobile */
+
     gap: 24px;
     border-radius: 0;
-    /* Flat edges on mobile ? or keep rounded */
+
     border-radius: 0;
     margin: 0;
     width: 100%;
@@ -1890,17 +1886,17 @@ body {
   .join-button {
     width: 100%;
     max-width: 320px;
-    /* Max width for mobile to prevent overflow */
+
     height: 55px;
     font-size: 18px;
     margin: 0 auto;
-    /* Center it */
+
   }
 
-  /* Footer Mobile */
+
   .footer-links {
     grid-template-columns: 1fr;
-    /* Single column stack */
+
     gap: 40px;
   }
 
@@ -1923,18 +1919,14 @@ body {
   }
 }
 
-/* ========================================
-   NAVBAR DROPDOWN GRID OVERRIDE
-   ======================================== */
+
 .sports-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
   gap: 8px 30px;
 }
 
-/* ========================================
-   SCROLL REVEAL ANIMATIONS
-   ======================================== */
+
 .stat-item,
 .program-card,
 .role-card,
@@ -1954,7 +1946,7 @@ body {
   transform: translateY(0);
 }
 
-/* Stagger animation for grid items */
+
 .stat-item:nth-child(1) {
   transition-delay: 0.1s;
 }
@@ -1999,7 +1991,7 @@ body {
   transition-delay: 0.3s;
 }
 
-/* General reveal classes for custom use */
+
 .reveal-up,
 .reveal-left,
 .reveal-right,
@@ -2032,11 +2024,9 @@ body {
   transform: translate(0, 0);
 }
 
-/* ========================================
-   RESPONSIVE STYLES FOR MOBILE/TABLET
-   ======================================== */
 
-/* Tablet and below - adjust story section */
+
+
 @media (max-width: 1024px) {
   .story-content-wrapper {
     flex-direction: column;
@@ -2053,14 +2043,14 @@ body {
     font-size: 1.5rem;
   }
 
-  /* Programs grid - 2 columns on tablet */
+
   .programs-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
-/* Mobile - stack everything vertically */
+
 @media (max-width: 768px) {
   .story-section {
     padding: 2rem 1rem;
@@ -2081,13 +2071,13 @@ body {
     max-width: 100%;
   }
 
-  /* Programs section */
+
   .programs-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
   }
 
-  /* Comparison section */
+
   .comparison-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
@@ -2098,39 +2088,37 @@ body {
     padding: 1.5rem;
   }
 
-  /* Stats section */
+
   .stats-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem;
   }
 
-  /* Roles section */
+
   .roles-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem;
   }
 }
 
-/* ========================================
-   SIDE DRAWER MOBILE NAVIGATION (800px and below)
-   ======================================== */
+
 @media (max-width: 800px) {
 
-  /* Hide desktop nav buttons */
+
   .nav-buttons .btn-primary,
   .nav-buttons .btn-secondary,
   .nav-buttons .btn-outline {
     display: none;
   }
 
-  /* Show hamburger menu */
+
   .mobile-menu-toggle {
     display: flex !important;
     position: relative;
     z-index: 1003;
   }
 
-  /* Transform nav-menu into side drawer */
+
   .nav-menu {
     position: fixed;
     top: 0;
@@ -2151,7 +2139,7 @@ body {
     right: 0;
   }
 
-  /* Style nav links for drawer */
+
   .nav-menu .nav-link {
     width: 100%;
     color: #212121;
@@ -2167,7 +2155,7 @@ body {
     background: transparent;
   }
 
-  /* Programs dropdown in drawer */
+
   .nav-menu .programs-dropdown {
     color: #212121;
     border-bottom: 1px solid #e0e0e0;
@@ -2177,7 +2165,7 @@ body {
     stroke: #212121;
   }
 
-  /* Reset dropdown menu positioning for mobile */
+
   .dropdown-menu {
     position: static;
     transform: none;
@@ -2193,14 +2181,14 @@ body {
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
-  /* Add drawer buttons at bottom */
+
   .nav-menu::after {
     content: '';
     display: block;
     margin-top: auto;
   }
 
-  /* Drawer overlay */
+
   .dropdown-backdrop.active {
     display: block;
     position: fixed;
@@ -2212,12 +2200,12 @@ body {
     z-index: 1001;
   }
 
-  /* Hamburger color for visibility */
+
   .mobile-menu-toggle span {
     background-color: #ffffff;
   }
 
-  /* Logo adjustments */
+
   .logo {
     width: 50px;
     height: 50px;
@@ -2228,10 +2216,10 @@ body {
   }
 }
 
-/* Mobile Programs Dropdown in Drawer */
+
 @media (max-width: 800px) {
 
-  /* Show dropdown menu inside drawer when active */
+
   .dropdown-menu.mobile-active {
     max-height: 1000px;
     opacity: 1;
@@ -2284,12 +2272,12 @@ body {
     transform: none;
   }
 
-  /* Rotate arrow when expanded */
+
   .programs-dropdown.expanded svg {
     transform: rotate(180deg);
   }
 
-  /* Sports grid in mobile */
+
   .dropdown-menu.mobile-active .sports-grid {
     display: flex !important;
     flex-direction: column;
