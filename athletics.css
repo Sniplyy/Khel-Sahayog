@@ -268,7 +268,7 @@
 
 .athlete-pathway-section {
     background-color: #FFFFFF;
-    padding: 80px 40px;
+    padding: 50px 40px;
 }
 
 .athlete-pathway-container {
@@ -278,13 +278,13 @@
 }
 
 .pathway-heading {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .pathway-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     color: #F25F25;
     margin: 0 0 8px 0;
 }
@@ -292,7 +292,7 @@
 .pathway-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     margin: 0;
 }
@@ -303,7 +303,7 @@
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 .pathway-step {
@@ -315,18 +315,18 @@
 }
 
 .step-number {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     background-color: #F25F25;
     color: #FFFFFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto 16px;
+    margin: 0 auto 12px;
     transition: transform 0.3s ease;
 }
 
@@ -335,21 +335,21 @@
 }
 
 .step-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #000000;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .step-description {
-    font-size: 14px;
+    font-size: 13px;
     color: #666;
     line-height: 1.5;
 }
 
 .pathway-arrow {
-    font-size: 32px;
+    font-size: 24px;
     color: #F25F25;
     font-weight: 700;
 }
