@@ -77,11 +77,7 @@ body {
 .section-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-<<<<<<< HEAD
   font-size: clamp(1.5rem, 3vw, 1.75rem);
-=======
-  font-size: 45px;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
   line-height: 1.2;
   background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #ff5521 88%);
   -webkit-background-clip: text;
@@ -107,11 +103,7 @@ body {
   line-height: 1.4;
   color: #000000;
   text-align: center;
-<<<<<<< HEAD
   margin-bottom: 1.25rem;
-=======
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .who-paragraph u {
@@ -178,12 +170,7 @@ body {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   line-height: 1.2;
   color: #FF5722;
-<<<<<<< HEAD
   margin-bottom: 1rem;
-=======
-  margin-bottom: 20px;
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .vm-card-intro {
@@ -192,23 +179,13 @@ body {
   font-size: 0.9375rem;
   line-height: 1.4;
   color: #000000;
-<<<<<<< HEAD
   margin-bottom: 0.75rem;
-=======
-  margin-bottom: 16px;
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .vm-list {
   list-style: none;
   padding: 0;
-<<<<<<< HEAD
   margin-bottom: 1.25rem;
-=======
-  margin-bottom: 20px;
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .vm-list li {
@@ -238,12 +215,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #000000;
-<<<<<<< HEAD
   margin-top: 1rem;
-=======
-  margin-top: 16px;
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 
@@ -277,7 +249,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   margin-bottom: 0.75rem;
   height: 3.75rem;
 }
@@ -285,11 +256,6 @@ body {
 .value-icon svg {
   width: 3.75rem;
   height: 3.75rem;
-=======
-  margin-bottom: 20px;
-  height: 80px;
-  scale: calc(1.2);
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .value-title {
@@ -323,14 +289,8 @@ body {
   line-height: 1.5;
   color: #000000;
   text-align: center;
-<<<<<<< HEAD
-  max-width: 56.25rem;
+  max-width: 60rem;
   margin: 0 auto 1.875rem;
-=======
-  max-width: 900px;
-  margin: 0 auto 50px;
-  font-weight: bold;
->>>>>>> 3328396d4fd43b55869ea61c8620db0d50aea62f
 }
 
 .tournament-container {
