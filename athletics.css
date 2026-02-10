@@ -418,26 +418,26 @@
 
 
 .athletics-cta-section {
-    padding: 80px 40px;
+    padding: 50px 40px;
     background-color: #F25F25;
     text-align: center;
 }
 
 .athletics-cta-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .athletics-cta-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
     max-width: 800px;
-    margin: 0 auto 32px;
+    margin: 0 auto 24px;
     line-height: 1.6;
 }
 
