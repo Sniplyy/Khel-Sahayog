@@ -72,17 +72,14 @@
     color: #666666;
     text-align: center;
     margin-bottom: 60px;
-    font-weight: bold;
 }
 
 .section-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #333333;
-    line-height: 1.8;
-    text-align: justify;
-    font-weight: bold;
+    line-height: 1.5;
     text-align: center;
 }
 
@@ -177,7 +174,7 @@
     font-size: 15px;
     font-weight: 400;
     color: #333333;
-    padding: 10px 0;
+    padding: 6px 0;
     padding-left: 24px;
     position: relative;
     text-align: left;
@@ -204,7 +201,7 @@
 
 .core-services-section {
     background: #F5F5F5;
-    padding: 100px 40px;
+    padding: 60px 40px;
     text-align: center;
 }
 
@@ -263,9 +260,10 @@
     font-size: 15px;
     font-weight: 400;
     color: #333333;
-    padding: 12px 0;
+    padding: 6px 0;
     padding-left: 24px;
     position: relative;
+    text-align: left;
 }
 
 .tier-list li::before {
@@ -344,7 +342,7 @@
 
 .join-mission-section {
     background: #FF5722;
-    padding: 80px 40px;
+    padding: 50px 40px;
     text-align: center;
 }
 
@@ -358,13 +356,12 @@
 
 .join-mission-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
     max-width: 800px;
     margin: 0 auto 40px;
     line-height: 1.6;
-    font-weight: bold;
 }
 
 .join-mission-buttons {
