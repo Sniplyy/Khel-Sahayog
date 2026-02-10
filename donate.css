@@ -204,92 +204,92 @@ button {
 
 
 .reality-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: var(--white);
 }
 
 .section-heading {
     font-family: var(--font-primary);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--primary-orange);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .reality-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 40px;
     align-items: center;
 }
 
 .reality-text {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
 .reality-description {
     font-family: var(--font-secondary);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.5;
     color: var(--dark-grey);
 }
 
 .accent-text {
     font-family: var(--font-primary);
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--primary-amber);
-    margin: 10px 0;
+    margin: 5px 0;
+}
+
+.reality-image {
+    display: flex;
+    justify-content: center;
 }
 
 .reality-image img {
     width: 100%;
+    max-width: 450px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 
 .benefits-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: var(--white);
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-top: 50px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .benefit-card {
     background-color: var(--dark-grey);
     border: 1px solid var(--primary-orange);
-    border-radius: 20px;
-    padding: 40px 30px;
+    border-radius: 15px;
+    padding: 25px 40px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .benefit-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(255, 87, 34, 0.3);
-}
-
-.benefit-icon {
-    font-size: 60px;
-    color: var(--primary-amber);
-    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(255, 87, 34, 0.3);
 }
 
 .benefit-heading {
     font-family: var(--font-primary);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    color: var(--white);
+    color: var(--primary-amber);
     margin-bottom: 15px;
 }
 
@@ -390,7 +390,7 @@ button {
 
 .impact-section {
     background-color: var(--primary-orange);
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 

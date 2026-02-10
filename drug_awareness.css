@@ -105,7 +105,7 @@
 
 .problem-gap-section {
     background-color: #FFFFFF;
-    padding: 80px 40px;
+    padding: 50px 40px;
 }
 
 .problem-gap-container {
@@ -115,18 +115,18 @@
 
 .section-heading-orange {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 800;
     color: #FF5722;
     text-align: center;
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
     line-height: 1.2;
 }
 
 .problem-gap-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -136,8 +136,8 @@
     background-color: #212121;
     border: 3px solid #FF5722;
     border-radius: 12px;
-    padding: 40px;
-    min-height: 409px;
+    padding: 25px 20px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
@@ -157,10 +157,10 @@
 
 .card-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
-    color: #FF5722;
-    margin: 0 0 24px 0;
+    color: #FFC107;
+    margin: 0 0 20px 0;
     text-align: center;
     line-height: 1.2;
 }
@@ -173,13 +173,13 @@
 
 .card-list li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     color: #FFFFFF;
-    margin-bottom: 16px;
-    padding-left: 32px;
+    margin-bottom: 12px;
+    padding-left: 25px;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .card-list li::before {
@@ -187,14 +187,14 @@
     position: absolute;
     left: 8px;
     color: #FF5722;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 
 .solution-section {
     background-color: #F5F5F5;
-    padding: 80px 40px;
+    padding: 50px 40px;
 }
 
 .solution-container {
@@ -205,14 +205,14 @@
 .solution-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-    margin-top: 60px;
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .solution-card {
     background-color: #e0e0e0;
     border-radius: 15px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -231,21 +231,21 @@
 
 .solution-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #000000;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     line-height: 1.3em;
     white-space: nowrap;
 }
 
 .solution-description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: #424242;
     margin: 0;
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 

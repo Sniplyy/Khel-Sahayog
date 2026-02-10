@@ -103,7 +103,7 @@ a {
 
 
 .problem-gap-section {
-    padding: 80px 129px;
+    padding: 50px 129px;
     background-color: #ffffff;
     width: 100%;
     margin: 0;
@@ -117,17 +117,17 @@ a {
 .section-heading-orange {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.2em;
     color: #ff5722;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .problem-gap-content {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     align-items: stretch;
 }
 
@@ -135,9 +135,9 @@ a {
     background-color: #212121;
     border: 3px solid #ff5722;
     border-radius: 20px;
-    padding: 40px 30px;
-    width: 450px;
-    min-height: 556px;
+    padding: 25px 20px;
+    width: 400px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,11 +153,11 @@ a {
 .problem-card-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.2em;
-    color: #ffffff;
+    color: #FFC107;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .problem-card-list {
@@ -169,11 +169,11 @@ a {
 .problem-card-list li {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6em;
+    font-size: 14px;
+    line-height: 1.4em;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 20px;
-    padding-left: 25px;
+    margin-bottom: 15px;
+    padding-left: 20px;
     position: relative;
 }
 
@@ -182,13 +182,13 @@ a {
     position: absolute;
     left: 0;
     color: #ff5722;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2em;
 }
 
 
 .what-we-do-section {
-    padding: 80px 129px;
+    padding: 50px 129px;
     background-color: #f5f5f5;
     width: 100%;
     margin: 0;
@@ -202,13 +202,13 @@ a {
 .what-we-do-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .solution-card {
     background-color: #e0e0e0;
     border-radius: 15px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,27 +221,20 @@ a {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.solution-card-icon {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .solution-card-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3em;
     color: #000000;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .solution-card-description {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 13px;
+    line-height: 1.4em;
     color: #424242;
 }
 

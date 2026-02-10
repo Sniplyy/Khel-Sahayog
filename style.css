@@ -1010,7 +1010,7 @@ body {
 .support-section {
   background-color: #FF5722;
 
-  padding: 100px 5%;
+  padding: 40px 5%;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -1065,7 +1065,7 @@ body {
   transform: translateY(-4px) scale(1.05);
 
   box-shadow: 0 10px 25px rgba(255, 87, 34, 0.6);
-  background-color: #e64a19;
+  background-color: #ffb800;
 
 }
 
@@ -1635,7 +1635,7 @@ body {
 
   .support-section {
     height: auto;
-    padding: 60px 20px 80px;
+    padding: 30px 20px 40px;
   }
 
 
