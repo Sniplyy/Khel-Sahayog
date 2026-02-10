@@ -340,73 +340,74 @@
 }
 
 
+
 .join-mission-section {
-    background: #FF5722;
-    padding: 50px 40px;
+    background-color: #FF5722;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
     text-align: center;
+    width: 100%;
 }
 
 .join-mission-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 1rem;
 }
 
 .join-mission-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #FFFFFF;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 50rem;
+    margin: 0 auto 1.5rem;
 }
 
 .join-mission-buttons {
     display: flex;
-    gap: 24px;
     justify-content: center;
-    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.btn-donate-yellow {
-    background: #FFC107;
+.btn-partner {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFC107;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 700;
-    padding: 16px 40px;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn-donate-yellow:hover {
-    background: #FFB300;
+.btn-partner:hover {
+    background-color: #FFD54F;
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(255, 193, 7, 0.3);
 }
 
-.btn-get-involved-white {
-    background: #FFFFFF;
+.btn-donate-white {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFFFFF;
     color: #FF5722;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 700;
-    padding: 16px 40px;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn-get-involved-white:hover {
-    background: #F5F5F5;
+.btn-donate-white:hover {
+    background-color: #F5F5F5;
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
 

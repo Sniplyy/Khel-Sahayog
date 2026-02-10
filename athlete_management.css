@@ -118,7 +118,7 @@
     font-weight: 700;
     color: #FF5722;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 60px;
 }
 
 .section-description-orange {
@@ -145,7 +145,7 @@
 
 .critical-gap-section {
     background: #ffffff;
-    padding: 100px 40px;
+    padding: clamp(3rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .gap-infographic {
@@ -158,29 +158,29 @@
 
 .gap-column-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
     font-weight: 700;
     color: #000000;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .gap-items {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: clamp(1rem, 1.5vw, 1.25rem);
 }
 
 .gap-item {
     display: flex;
-    gap: 20px;
+    gap: 0.75rem;
     align-items: flex-start;
 }
 
 .gap-icon {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,30 +196,30 @@
 
 .gap-content p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #666666;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 
 .model-section {
     background: #FFFFFF;
-    padding: 50px 40px;
+    padding: clamp(2.5rem, 4vw, 3.125rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .model-grid {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .model-card {
     background: #1A1A1A;
     border-radius: 15px;
-    padding: 40px;
+    padding: clamp(1.5rem, 2.5vw, 2.5rem);
     transition: all 0.3s ease;
 }
 
@@ -232,14 +232,16 @@
     width: 64px;
     height: 64px;
     margin-bottom: 24px;
+    display: none;
 }
 
 .model-card-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
     font-weight: 700;
     color: #FF5722;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .model-card-description {
@@ -250,10 +252,15 @@
     line-height: 1.6;
 }
 
+/* Reduce font size for longer title */
+.model-card:nth-child(4) .model-card-title {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+}
+
 
 .tiers-section {
     background: #F5F5F5;
-    padding: 100px 40px;
+    padding: clamp(3rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .tiers-grid {
@@ -267,7 +274,7 @@
 .tier-card {
     background: #FFFFFF;
     border-radius: 15px;
-    padding: 40px;
+    padding: clamp(1.5rem, 2vw, 2rem);
     transition: all 0.3s ease;
 }
 
@@ -290,10 +297,10 @@
 
 .tier-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
     font-weight: 700;
     color: #000000;
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
 }
 
 .tier-list {
@@ -304,11 +311,11 @@
 
 .tier-list li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: clamp(0.875rem, 1vw, 1rem);
     font-weight: 400;
     color: #333333;
-    padding: 12px 0;
-    padding-left: 24px;
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
     position: relative;
 }
 
@@ -322,56 +329,94 @@
 
 
 .onboarding-section {
-    background: #FFFFFF;
-    padding: 80px 40px;
+    background: #F5F5F5;
+    padding: clamp(4rem, 6vw, 6rem) clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.onboarding-flow {
-    max-width: 1200px;
-    margin: 0 auto;
+.onboarding-flow-horizontal {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: clamp(0.5rem, 1vw, 1rem);
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.flow-step {
-    position: relative;
+/* Flow Boxes */
+.flow-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1.25rem, 2vw, 1.75rem) clamp(1rem, 1.5vw, 1.5rem);
+    border-radius: 12px;
+    width: clamp(8.5rem, 12vw, 11rem);
+    height: clamp(6rem, 8vw, 7.5rem);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.flow-step-content {
-    background: #E53935;
-    color: #FFFFFF;
+.flow-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flow-box-number {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: clamp(0.875rem, 1.2vw, 1.125rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.flow-box-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
     font-weight: 600;
-    padding: 16px 24px;
+    color: #FFFFFF;
     text-align: center;
-    min-width: 180px;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
-    position: relative;
+    line-height: 1.4;
 }
 
-.flow-step:first-child .flow-step-content {
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
-    padding-left: 20px;
+/* Gradient Colors for Each Box */
+.flow-box-1 {
+    background: #BF360C;
 }
 
-.flow-step:last-child .flow-step-content {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20px 50%);
-    padding-right: 20px;
+.flow-box-2 {
+    background: #D84315;
 }
 
-.flow-arrow {
-    width: 0;
-    height: 0;
-    margin: 0 -1px;
+.flow-box-3 {
+    background: #E64A19;
+}
+
+.flow-box-4 {
+    background: #FF5722;
+}
+
+.flow-box-5 {
+    background: #FF8A65;
+}
+
+/* Horizontal Arrows */
+.flow-arrow-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.flow-arrow-horizontal svg {
+    width: clamp(2rem, 3vw, 2.5rem);
+    height: clamp(2rem, 3vw, 2.5rem);
 }
 
 
 .kpi-section {
     background: #F5F5F5;
-    padding: 80px 40px;
+    padding: 40px 40px 80px;
 }
 
 .kpi-grid {
@@ -399,7 +444,7 @@
     width: 48px;
     height: 48px;
     margin: 0 auto 20px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -421,29 +466,76 @@
 }
 
 
+
 .join-mission-section {
-    background: #FF5722;
-    padding: 80px 40px;
+    background-color: #FF5722;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
     text-align: center;
+    width: 100%;
 }
 
 .join-mission-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 1rem;
 }
 
 .join-mission-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #FFFFFF;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 50rem;
+    margin: 0 auto 1.5rem;
 }
+
+.join-mission-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-partner {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFC107;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-partner:hover {
+    background-color: #FFD54F;
+    transform: translateY(-2px);
+}
+
+.btn-donate-white {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFFFFF;
+    color: #FF5722;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-donate-white:hover {
+    background-color: #F5F5F5;
+    transform: translateY(-2px);
+}
+
 
 .join-mission-buttons {
     display: flex;
@@ -493,11 +585,6 @@
 
 
 @media (max-width: 1200px) {
-    .model-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
-    }
-
     .tiers-grid {
         grid-template-columns: 1fr;
         gap: 32px;

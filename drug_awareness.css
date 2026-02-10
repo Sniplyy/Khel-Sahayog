@@ -249,70 +249,72 @@
 }
 
 
-.mission-cta-section {
+
+.join-mission-section {
     background-color: #FF5722;
-    padding: 60px 40px;
-}
-
-.mission-cta-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
     text-align: center;
+    width: 100%;
 }
 
-.mission-cta-title {
+.join-mission-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 800;
-    color: #FFFFFF;
-    margin: 0 0 20px 0;
-    line-height: 1.3;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 1rem;
 }
 
-.mission-cta-text {
+.join-mission-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #FFFFFF;
-    margin: 0 0 40px 0;
-    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 50rem;
+    margin: 0 auto 1.5rem;
 }
 
-.mission-cta-buttons {
+.join-mission-buttons {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
-.btn-donate,
-.btn-get-involved {
+.btn-partner {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFC107;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
-    padding: 16px 48px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn-donate {
-    background-color: #FFC107;
-    color: #000000;
-}
-
-.btn-donate:hover {
-    background-color: #FFB300;
+.btn-partner:hover {
+    background-color: #FFD54F;
     transform: translateY(-2px);
 }
 
-.btn-get-involved {
+.btn-donate-white {
+    padding: 0.75rem 1.875rem;
     background-color: #FFFFFF;
     color: #FF5722;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.btn-get-involved:hover {
+.btn-donate-white:hover {
     background-color: #F5F5F5;
     transform: translateY(-2px);
 }

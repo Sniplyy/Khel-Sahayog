@@ -246,90 +246,74 @@ a {
 }
 
 
-.join-mission-section {
-    background-color: #ff5722;
-    padding: 80px 129px;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-}
 
-.join-mission-container {
-    max-width: 900px;
-    margin: 0 auto;
+.join-mission-section {
+    background-color: #FF5722;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+    width: 100%;
 }
 
 .join-mission-title {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2em;
+    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    line-height: 1.2;
     color: #ffffff;
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
 }
 
 .join-mission-text {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5em;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #ffffff;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 50rem;
+    margin: 0 auto 1.5rem;
 }
 
 .join-mission-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.btn-donate-yellow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 40px;
-    background-color: #ffc107;
+.btn-partner {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFC107;
     color: #000000;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn-donate-yellow:hover {
+.btn-partner:hover {
+    background-color: #FFD54F;
     transform: translateY(-2px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn-get-involved-white {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 40px;
-    background-color: #ffffff;
-    color: #ff5722;
-    font-family: "Montserrat", sans-serif;
+.btn-donate-white {
+    padding: 0.75rem 1.875rem;
+    background-color: #FFFFFF;
+    color: #FF5722;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn-get-involved-white:hover {
+.btn-donate-white:hover {
+    background-color: #F5F5F5;
     transform: translateY(-2px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-    background-color: #f5f5f5;
 }
 
 
