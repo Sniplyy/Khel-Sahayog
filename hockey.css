@@ -12,7 +12,8 @@
 .hockey-hero {
     position: relative;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -553,7 +554,8 @@
 
 @media (max-width: 768px) {
     .hockey-hero {
-        height: 400px;
+        min-height: 400px;
+        height: auto;
     }
 
     .hockey-hero-content {

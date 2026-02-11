@@ -14,7 +14,8 @@
 .kabaddi-hero {
     position: relative;
     width: 100%;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -501,7 +502,8 @@
 
 @media (max-width: 1024px) {
     .kabaddi-hero {
-        height: 350px;
+        min-height: 450px;
+        height: auto;
     }
 
     .kabaddi-hero-content {
@@ -550,7 +552,8 @@
 
 @media (max-width: 768px) {
     .kabaddi-hero {
-        height: 400px;
+        min-height: 400px;
+        height: auto;
     }
 
     .kabaddi-hero-content {

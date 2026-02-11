@@ -20,7 +20,8 @@ body {
 
 .hero {
     position: relative;
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     background-image: url('images/badminton-hero-bg.png');
     background-size: cover;
     background-position: center;
@@ -565,7 +566,8 @@ body {
     }
 
     .hero {
-        height: 500px;
+        min-height: 400px;
+        height: auto;
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;

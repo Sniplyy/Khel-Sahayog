@@ -415,6 +415,25 @@ body {
   box-shadow: 0px 6px 14px rgba(255, 87, 34, 0.5);
 }
 
+.btn-yellow {
+  background-color: #FFC107;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #FFB300;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
 
 .programs-section {
   padding: 80px 5%;
