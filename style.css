@@ -476,14 +476,14 @@ body {
   font-weight: 700;
   line-height: 1.2;
   color: #FF5722;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
   text-align: left;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .sports-hero-description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.6;
   color: #FFFFFF;
@@ -1246,34 +1246,37 @@ body {
 }
 
 .footer-logo-img {
-  width: 128px;
-  height: 128px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
   position: relative;
   top: -5px;
-  left: -15px;
+  left: -40px;
 }
 
 /* Modified for stacked text */
 .footer-logo-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: lef;
   /* Text aligns to the right, towards the logo */
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   /* Extra bold for impact */
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.1;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: right;
+  text-align: left;
   padding-top: 15px;
 }
 
 .footer-logo-text span {
   display: block;
   white-space: nowrap;
+  position: relative;
+  left: -70px;
+  top: 20px;
 }
 
 .footer-description {

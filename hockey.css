@@ -141,7 +141,7 @@
 .why-hockey-subtitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--black);
     margin: 0 0 8px 0;
 }
@@ -220,7 +220,7 @@
 .context-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     line-height: 1.6;
@@ -403,6 +403,7 @@
     font-size: 13px;
     color: #666;
     line-height: 1.5;
+    font-weight: 600;
 }
 
 .pathway-arrow {

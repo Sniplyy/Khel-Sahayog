@@ -1,456 +1,483 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;700&amp;family=Open+Sans:wght@400&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-<link href="athlete_management.css" rel="stylesheet"/>
-<title>Khel Sahayog - Athlete Management</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;700&amp;family=Open+Sans:wght@400&amp;display=swap"
+    rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="athlete_management.css" rel="stylesheet" />
+  <title>Khel Sahayog - Athlete Management</title>
 </head>
+
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar">
-<div class="nav-container">
-<a href="/index.html"><img alt="Khel Sahayog Logo" class="logo" src="images/logo.png"/></a>
-<div class="nav-menu">
-<a class="nav-link" href="index.html">Home</a>
-<a class="nav-link" href="about.html">About</a>
-<div class="nav-link programs-dropdown">
-<span>Programs</span>
-<svg fill="none" height="5" viewbox="0 0 10 5" width="10">
-<path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"></path>
-</svg>
-</div>
-<!-- Programs Dropdown Menu -->
-<div class="dropdown-menu">
-<div class="dropdown-container">
-<div class="dropdown-section">
-<h3 class="dropdown-heading">Our Programs</h3>
-<ul class="dropdown-list">
-<li><a class="dropdown-link" href="grassroots_development.html">Grassroots Development</a></li>
-<li><a class="dropdown-link" href="athlete_management.html">Athlete Management</a></li>
-</ul>
-</div>
-<div class="dropdown-section">
-<h3 class="dropdown-heading">Sports</h3>
-<ul class="dropdown-list sports-grid">
-<li><a class="dropdown-link" href="hockey.html">Hockey</a></li>
-<li><a class="dropdown-link" href="rugby.html">Rugby</a></li>
-<li><a class="dropdown-link" href="football.html">Football</a></li>
-<li><a class="dropdown-link" href="kabaddi.html">Kabaddi</a></li>
-<li><a class="dropdown-link" href="athletics.html">Athletics</a></li>
-<li><a class="dropdown-link" href="tabletennis.html">Table Tennis</a></li>
-<li><a class="dropdown-link" href="badminton.html">Badminton</a></li>
-</ul>
-</div>
-<div class="dropdown-section">
-<h3 class="dropdown-heading">Other programs</h3>
-<ul class="dropdown-list">
-<li><a class="dropdown-link" href="job_skilling.html">Job Skilling</a></li>
-<li><a class="dropdown-link" href="women_empowerment.html">Women Empowerment</a></li>
-<li><a class="dropdown-link" href="drug_awareness.html">Drug Awareness</a></li>
-<li><a class="dropdown-link" href="mental_heath.html">Mental Health</a></li>
-</ul>
-</div>
-</div>
-</div>
-<a class="nav-link" href="get_involved.html">Get Involved</a>
-<a class="nav-link" href="impact.html">Impact</a>
-</div>
-<div class="nav-buttons">
-<a class="btn-primary" href="donate.html">Donate/Partner</a>
-<a class="btn-outline" href="contact_us.html">Contact Us</a>
-<button aria-label="Toggle Menu" class="mobile-menu-toggle">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Dropdown Backdrop -->
-<div class="dropdown-backdrop"></div>
-<!-- Hero Section -->
-<section class="athlete-hero">
-<div class="athlete-hero-background"></div>
-<div class="athlete-hero-content">
-<h1 class="athlete-hero-title">
-<span class="title-orange">Athlete Management</span>
-<span class="title-white">— Build a career, not just a performance.</span>
-</h1>
-<p class="athlete-hero-description">
-                Khel Sahayog Foundation's Athlete Management program runs parallel to our grassroots work, providing
-                comprehensive career support to talented athletes who have emerged from our ecosystem or are identified
-                through scouting. We don't just develop players—we build sustainable athletic careers.
-            </p>
-<div class="athlete-hero-buttons">
-<button class="btn-support-athlete">Support Athlete</button>
-<button class="btn-join-player">Join as a player/parent</button>
-</div>
-</div>
-</section>
-<!-- The Critical Gap Section -->
-<section class="critical-gap-section">
-<h2 class="section-title-orange">The Critical Gap: Why Talent Fails</h2>
-<p class="section-subtitle">Visualizing the cause and effects in Indian sports</p>
-<div class="gap-infographic">
-<div class="gap-column">
-<h3 class="gap-column-title">The Causes (The Gaps)</h3>
-<div class="gap-items">
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<rect fill="none" height="12" stroke="#FF5722" stroke-width="2.5" width="8" x="8" y="28"></rect>
-<rect fill="none" height="20" stroke="#FF5722" stroke-width="2.5" width="8" x="20" y="20"></rect>
-<rect fill="none" height="16" stroke="#FF5722" stroke-width="2.5" width="8" x="32" y="24"></rect>
-<path d="M4 40H44" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Lack of Infrastructure</h4>
-<p>Limited access to quality training facilities and equipment</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="none" stroke="#FF5722" stroke-width="2.5"></path>
-<circle cx="24" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="2.5"></circle>
-</svg>
-</div>
-<div class="gap-content">
-<h4>No Professional Pathways</h4>
-<p>Unclear routes from amateur to professional sports</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<circle cx="24" cy="24" fill="none" r="12" stroke="#FF5722" stroke-width="2.5"></circle>
-<path d="M24 18V24L28 28" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-<path d="M18 10L24 6L30 10" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Financial Barriers</h4>
-<p>High costs of training, equipment, and competition</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<circle cx="24" cy="16" fill="none" r="6" stroke="#FF5722" stroke-width="2.5"></circle>
-<path d="M14 32C14 26 18 24 24 24C30 24 34 26 34 32" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-<path d="M32 36L36 40M36 36L32 40" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Limited Coaching</h4>
-<p>Shortage of qualified coaches and mentors</p>
-</div>
-</div>
-</div>
-</div>
-<div class="gap-column">
-<h3 class="gap-column-title">The Consequences (The Lost Potential)</h3>
-<div class="gap-items">
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M24 8L20 20L8 22L18 30L16 42L24 36L32 42L30 30L40 22L28 20L24 8Z" fill="none" stroke="#FF5722" stroke-width="2.5"></path>
-<line stroke="#FF5722" stroke-linecap="round" stroke-width="2.5" x1="16" x2="32" y1="16" y2="32"></line>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Talent Wastage</h4>
-<p>Gifted athletes never reach their full potential</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M12 24L20 32L36 16" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-<circle cx="24" cy="24" fill="none" r="16" stroke="#FF5722" stroke-width="2.5"></circle>
-<path d="M30 12L36 8" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<div class="gap-content">
-<h4>High Dropout Rates</h4>
-<p>Athletes abandon sports due to lack of support</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M8 32L16 24L24 28L32 20L40 24" fill="none" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-<path d="M8 38L16 30L24 34L32 26L40 30" fill="none" opacity="0.5" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Lost Potential</h4>
-<p>India misses out on world-class athletes</p>
-</div>
-</div>
-<div class="gap-item">
-<div class="gap-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<rect fill="none" height="16" rx="2" stroke="#FF5722" stroke-width="2.5" width="24" x="12" y="20"></rect>
-<path d="M18 20V16C18 13 20 12 24 12C28 12 30 13 30 16V20" stroke="#FF5722" stroke-width="2.5"></path>
-<circle cx="24" cy="28" fill="#FF5722" r="2"></circle>
-</svg>
-</div>
-<div class="gap-content">
-<h4>Economic Impact</h4>
-<p>Loss of sports industry growth and employment</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Athlete Management Model Section -->
-<section class="model-section">
-<h2 class="section-title-orange">Our Athlete Management Model</h2>
-<p class="section-description-orange">We follow an integrated, athlete-first model under six service pillars:
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/index.html"><img alt="Khel Sahayog Logo" class="logo" src="images/logo.png" /></a>
+      <div class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <div class="nav-link programs-dropdown">
+          <span>Programs</span>
+          <svg fill="none" height="5" viewbox="0 0 10 5" width="10">
+            <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"></path>
+          </svg>
+        </div>
+        <!-- Programs Dropdown Menu -->
+        <div class="dropdown-menu">
+          <div class="dropdown-container">
+            <div class="dropdown-section">
+              <h3 class="dropdown-heading">Our Programs</h3>
+              <ul class="dropdown-list">
+                <li><a class="dropdown-link" href="grassroots_development.html">Grassroots Development</a></li>
+                <li><a class="dropdown-link" href="athlete_management.html">Athlete Management</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-section">
+              <h3 class="dropdown-heading">Sports</h3>
+              <ul class="dropdown-list sports-grid">
+                <li><a class="dropdown-link" href="hockey.html">Hockey</a></li>
+                <li><a class="dropdown-link" href="rugby.html">Rugby</a></li>
+                <li><a class="dropdown-link" href="football.html">Football</a></li>
+                <li><a class="dropdown-link" href="kabaddi.html">Kabaddi</a></li>
+                <li><a class="dropdown-link" href="athletics.html">Athletics</a></li>
+                <li><a class="dropdown-link" href="tabletennis.html">Table Tennis</a></li>
+                <li><a class="dropdown-link" href="badminton.html">Badminton</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-section">
+              <h3 class="dropdown-heading">Other programs</h3>
+              <ul class="dropdown-list">
+                <li><a class="dropdown-link" href="job_skilling.html">Job Skilling</a></li>
+                <li><a class="dropdown-link" href="women_empowerment.html">Women Empowerment</a></li>
+                <li><a class="dropdown-link" href="drug_awareness.html">Drug Awareness</a></li>
+                <li><a class="dropdown-link" href="mental_heath.html">Mental Health</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link" href="get_involved.html">Get Involved</a>
+        <a class="nav-link" href="impact.html">Impact</a>
+      </div>
+      <div class="nav-buttons">
+        <a class="btn-primary" href="donate.html">Donate/Partner</a>
+        <a class="btn-outline" href="contact_us.html">Contact Us</a>
+        <button aria-label="Toggle Menu" class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Dropdown Backdrop -->
+  <div class="dropdown-backdrop"></div>
+  <!-- Hero Section -->
+  <section class="athlete-hero">
+    <div class="athlete-hero-background"></div>
+    <div class="athlete-hero-content">
+      <h1 class="athlete-hero-title">
+        <span class="title-orange">Athlete Management</span>
+        <span class="title-white">— Build a career, not just a performance.</span>
+      </h1>
+      <p class="athlete-hero-description">
+        Khel Sahayog Foundation's Athlete Management program runs parallel to our grassroots work, providing
+        comprehensive career support to talented athletes who have emerged from our ecosystem or are identified
+        through scouting. We don't just develop players—we build sustainable athletic careers.
+      </p>
+      <div class="athlete-hero-buttons">
+        <button class="btn-support-athlete">Support Athlete</button>
+        <button class="btn-join-player">Join as a player/parent</button>
+      </div>
+    </div>
+  </section>
+  <!-- The Critical Gap Section -->
+  <section class="critical-gap-section">
+    <h2 class="section-title-orange">The Critical Gap: Why Talent Fails</h2>
+    <p class="section-subtitle">Visualizing the cause and effects in Indian sports</p>
+    <div class="gap-infographic">
+      <div class="gap-column">
+        <h3 class="gap-column-title">The Causes (The Gaps)</h3>
+        <div class="gap-items">
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <rect fill="none" height="12" stroke="#FF5722" stroke-width="2.5" width="8" x="8" y="28"></rect>
+                <rect fill="none" height="20" stroke="#FF5722" stroke-width="2.5" width="8" x="20" y="20"></rect>
+                <rect fill="none" height="16" stroke="#FF5722" stroke-width="2.5" width="8" x="32" y="24"></rect>
+                <path d="M4 40H44" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Lack of Infrastructure</h4>
+              <p>Limited access to quality training facilities and equipment</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="none" stroke="#FF5722"
+                  stroke-width="2.5"></path>
+                <circle cx="24" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="2.5"></circle>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>No Professional Pathways</h4>
+              <p>Unclear routes from amateur to professional sports</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <circle cx="24" cy="24" fill="none" r="12" stroke="#FF5722" stroke-width="2.5"></circle>
+                <path d="M24 18V24L28 28" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
+                <path d="M18 10L24 6L30 10" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2.5"></path>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Financial Barriers</h4>
+              <p>High costs of training, equipment, and competition</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <circle cx="24" cy="16" fill="none" r="6" stroke="#FF5722" stroke-width="2.5"></circle>
+                <path d="M14 32C14 26 18 24 24 24C30 24 34 26 34 32" stroke="#FF5722" stroke-linecap="round"
+                  stroke-width="2.5"></path>
+                <path d="M32 36L36 40M36 36L32 40" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Limited Coaching</h4>
+              <p>Shortage of qualified coaches and mentors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gap-column">
+        <h3 class="gap-column-title">The Consequences (The Lost Potential)</h3>
+        <div class="gap-items">
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M24 8L20 20L8 22L18 30L16 42L24 36L32 42L30 30L40 22L28 20L24 8Z" fill="none" stroke="#FF5722"
+                  stroke-width="2.5"></path>
+                <line stroke="#FF5722" stroke-linecap="round" stroke-width="2.5" x1="16" x2="32" y1="16" y2="32"></line>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Talent Wastage</h4>
+              <p>Gifted athletes never reach their full potential</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M12 24L20 32L36 16" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2.5"></path>
+                <circle cx="24" cy="24" fill="none" r="16" stroke="#FF5722" stroke-width="2.5"></circle>
+                <path d="M30 12L36 8" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>High Dropout Rates</h4>
+              <p>Athletes abandon sports due to lack of support</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <path d="M8 32L16 24L24 28L32 20L40 24" fill="none" stroke="#FF5722" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2.5"></path>
+                <path d="M8 38L16 30L24 34L32 26L40 30" fill="none" opacity="0.5" stroke="#FF5722"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Lost Potential</h4>
+              <p>India misses out on world-class athletes</p>
+            </div>
+          </div>
+          <div class="gap-item">
+            <div class="gap-icon">
+              <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+                <rect fill="none" height="16" rx="2" stroke="#FF5722" stroke-width="2.5" width="24" x="12" y="20">
+                </rect>
+                <path d="M18 20V16C18 13 20 12 24 12C28 12 30 13 30 16V20" stroke="#FF5722" stroke-width="2.5"></path>
+                <circle cx="24" cy="28" fill="#FF5722" r="2"></circle>
+              </svg>
+            </div>
+            <div class="gap-content">
+              <h4>Economic Impact</h4>
+              <p>Loss of sports industry growth and employment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Athlete Management Model Section -->
+  <section class="model-section">
+    <h2 class="section-title-orange">Our Athlete Management Model</h2>
+    <p class="section-description-orange">We follow an integrated, athlete-first model under six service pillars:
+    </p>
+    <div class="model-grid">
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <circle cx="32" cy="32" fill="none" r="20" stroke="#FF5722" stroke-width="3"></circle>
+            <circle cx="32" cy="32" fill="#FF5722" r="4"></circle>
+            <path d="M32 12V22M32 42V52M12 32H22M42 32H52" stroke="#FF5722" stroke-linecap="round" stroke-width="3">
+            </path>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Scouting &amp; Onboarding</h3>
+        <p class="model-card-description">
+          Identifying talent through tournaments, grassroots, and
+          partnerships. Assessment and enrollment.
         </p>
-<div class="model-grid">
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<circle cx="32" cy="32" fill="none" r="20" stroke="#FF5722" stroke-width="3"></circle>
-<circle cx="32" cy="32" fill="#FF5722" r="4"></circle>
-<path d="M32 12V22M32 42V52M12 32H22M42 32H52" stroke="#FF5722" stroke-linecap="round" stroke-width="3"></path>
-</svg>
-</div>
-<h3 class="model-card-title">Scouting &amp; Onboarding</h3>
-<p class="model-card-description">
-                    Identifying talent through tournaments, grassroots, and
-                    partnerships. Assessment and enrollment.
-                </p>
-</div>
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<path d="M16 48L24 32L32 40L40 24L48 32" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-<circle cx="24" cy="32" fill="#FF5722" r="3"></circle>
-<circle cx="32" cy="40" fill="#FF5722" r="3"></circle>
-<circle cx="40" cy="24" fill="#FF5722" r="3"></circle>
-</svg>
-</div>
-<h3 class="model-card-title">Holistic Performance Support</h3>
-<p class="model-card-description">
-                    Strength &amp; conditioning, sports science, nutrition, mental conditioning, and injury prevention
-                    programs.
-                </p>
-</div>
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<path d="M32 12L36 24L48 26L38 34L42 46L32 40L22 46L26 34L16 26L28 24L32 12Z" fill="none" stroke="#FF5722" stroke-width="3"></path>
-<circle cx="32" cy="32" fill="none" r="6" stroke="#FF5722" stroke-width="3"></circle>
-</svg>
-</div>
-<h3 class="model-card-title">Competition &amp; Exposure</h3>
-<p class="model-card-description">
-                    Access to national and international tournaments, competitive leagues, and performance tracking
-                    systems.
-                </p>
-</div>
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<path d="M20 32C20 32 24 28 32 28C40 28 44 32 44 32" stroke="#FF5722" stroke-linecap="round" stroke-width="3"></path>
-<circle cx="20" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="3"></circle>
-<circle cx="44" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="3"></circle>
-<path d="M28 40L32 44L36 40" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<h3 class="model-card-title">Sponsorship &amp; Commercial</h3>
-<p class="model-card-description">
-                    Brand partnerships, endorsement deals, contract negotiations, and financial planning for athletes.
-                </p>
-</div>
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<rect fill="none" height="28" rx="2" stroke="#FF5722" stroke-width="3" width="32" x="16" y="20"></rect>
-<path d="M24 20V16C24 14 26 12 32 12C38 12 40 14 40 16V20" stroke="#FF5722" stroke-width="3"></path>
-<path d="M24 32L28 36L40 24" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<h3 class="model-card-title">Education &amp; Career Transition</h3>
-<p class="model-card-description">
-                    Academic support, vocational training, and career planning for life beyond competitive sports.
-                </p>
-</div>
-<div class="model-card">
-<div class="model-icon">
-<svg fill="none" height="64" viewbox="0 0 64 64" width="64">
-<path d="M32 8L38 18L50 20L41 29L43 41L32 35L21 41L23 29L14 20L26 18L32 8Z" fill="none" stroke="#FF5722" stroke-width="3"></path>
-<path d="M28 28L30 32L36 26" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<h3 class="model-card-title">Legal &amp; Safeguarding</h3>
-<p class="model-card-description">
-                    Contract review, rights protection, anti-doping compliance, and athlete welfare safeguards.
-                </p>
-</div>
-</div>
-</section>
-<!-- Service Tiers Section -->
-<section class="tiers-section">
-<h2 class="section-title-orange">Service Tiers</h2>
-<div class="tiers-grid">
-<div class="tier-card tier-entry">
-<h3 class="tier-title">Exposure (Entry)</h3>
-<ul class="tier-list">
-<li>Tournament access</li>
-<li>Basic performance tracking</li>
-<li>Group training sessions</li>
-<li>Equipment support</li>
-<li>Injury prevention workshops</li>
-</ul>
-</div>
-<div class="tier-card tier-core">
-<h3 class="tier-title">Performance Support (Core)</h3>
-<ul class="tier-list">
-<li>Personalized training programs</li>
-<li>Sports science support</li>
-<li>Nutrition planning</li>
-<li>Mental conditioning</li>
-<li>National tournament access</li>
-<li>Sponsorship opportunities</li>
-</ul>
-</div>
-<div class="tier-card tier-elite">
-<h3 class="tier-title">Performance Support (Elite)</h3>
-<ul class="tier-list">
-<li>Full-time coaching staff</li>
-<li>International competition access</li>
-<li>Commercial management</li>
-<li>Legal &amp; contract support</li>
-<li>Career transition planning</li>
-<li>Brand partnerships</li>
-</ul>
-</div>
-</div>
-</section>
-<!-- Athlete Onboarding Flow Section -->
-<section class="onboarding-section">
-<h2 class="section-title-orange">Athlete Onboarding Flow</h2>
-<div class="onboarding-flow-horizontal">
-<!-- Step 1 -->
-<div class="flow-box flow-box-1">
-<div class="flow-box-number">1</div>
-<div class="flow-box-text">Referral /<br/>Scouting</div>
-</div>
-<!-- Arrow 1 -->
-<div class="flow-arrow-horizontal">
-<svg fill="none" height="40" viewbox="0 0 40 40" width="40">
-<path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#D84315" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<!-- Step 2 -->
-<div class="flow-box flow-box-2">
-<div class="flow-box-number">2</div>
-<div class="flow-box-text">Trials &amp;<br/>Assessments</div>
-</div>
-<!-- Arrow 2 -->
-<div class="flow-arrow-horizontal">
-<svg fill="none" height="40" viewbox="0 0 40 40" width="40">
-<path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#E64A19" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<!-- Step 3 -->
-<div class="flow-box flow-box-3">
-<div class="flow-box-number">3</div>
-<div class="flow-box-text">Individual<br/>Development<br/>Plan (IDP)</div>
-</div>
-<!-- Arrow 3 -->
-<div class="flow-arrow-horizontal">
-<svg fill="none" height="40" viewbox="0 0 40 40" width="40">
-<path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<!-- Step 4 -->
-<div class="flow-box flow-box-4">
-<div class="flow-box-number">4</div>
-<div class="flow-box-text">Contract<br/>(if applicable)</div>
-</div>
-<!-- Arrow 4 -->
-<div class="flow-arrow-horizontal">
-<svg fill="none" height="40" viewbox="0 0 40 40" width="40">
-<path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#FF6F43" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-</svg>
-</div>
-<!-- Step 5 -->
-<div class="flow-box flow-box-5">
-<div class="flow-box-number">5</div>
-<div class="flow-box-text">Quarterly Reviews<br/>&amp; KPI Tracking</div>
-</div>
-</div>
-</section>
-<!-- KPIs & Success Metrics Section -->
-<section class="kpi-section">
-<h2 class="section-title-orange">KPIs &amp; Success Metrics</h2>
-<div class="kpi-grid">
-<div class="kpi-card">
-<div class="kpi-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="none" stroke="#FF5722" stroke-width="2.5"></path>
-<circle cx="24" cy="24" fill="#FF5722" r="3"></circle>
-</svg>
-</div>
-<h3 class="kpi-title">Performance</h3>
-<p class="kpi-description">Personal best improvements, selection to higher teams, medals, rankings</p>
-</div>
-<div class="kpi-card">
-<div class="kpi-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<rect fill="none" height="20" rx="2" stroke="#FF5722" stroke-width="2.5" width="28" x="10" y="14"></rect>
-<path d="M16 14V12C16 10 18 8 24 8C30 8 32 10 32 12V14" stroke="#FF5722" stroke-width="2.5"></path>
-<circle cx="24" cy="24" fill="#FF5722" r="2"></circle>
-<path d="M24 26V30" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<h3 class="kpi-title">Commercial</h3>
-<p class="kpi-description">Sponsorship revenue per athlete, brand partnerships, and increased media
-                    visibility.</p>
-</div>
-<div class="kpi-card">
-<div class="kpi-icon">
-<svg fill="none" height="48" viewbox="0 0 48 48" width="48">
-<path d="M24 8C16 8 10 14 10 22C10 30 24 40 24 40C24 40 38 30 38 22C38 14 32 8 24 8Z" fill="none" stroke="#FF5722" stroke-width="2.5"></path>
-<circle cx="24" cy="22" fill="none" r="4" stroke="#FF5722" stroke-width="2.5"></circle>
-<path d="M20 22L22 24L28 18" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
-</svg>
-</div>
-<h3 class="kpi-title">Welfare</h3>
-<p class="kpi-description">Education continuation, mental well-being, injury recovery timelines, athlete
-                    satisfaction</p>
-</div>
-</div>
-</section>
-<!-- JOIN OUR MISSION Section -->
-<section class="join-mission-section">
-<h2 class="join-mission-title">JOIN OUR MISSION</h2>
-<p class="join-mission-text">
-            Whether you're a corporate partner, individual donor, or volunteer, there's a role for you in transforming
-            India's
-            sports landscape.
+      </div>
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <path d="M16 48L24 32L32 40L40 24L48 32" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="3"></path>
+            <circle cx="24" cy="32" fill="#FF5722" r="3"></circle>
+            <circle cx="32" cy="40" fill="#FF5722" r="3"></circle>
+            <circle cx="40" cy="24" fill="#FF5722" r="3"></circle>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Holistic Performance Support</h3>
+        <p class="model-card-description">
+          Strength &amp; conditioning, sports science, nutrition, mental conditioning, and injury prevention
+          programs.
         </p>
-<div class="join-mission-buttons">
-<button class="btn-partner">Become a partner</button>
-<button class="btn-donate-white">Donate Now</button>
-</div>
-</section>
-<!-- Footer -->
-<!-- Footer -->
-<footer class="footer">
+      </div>
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <path d="M32 12L36 24L48 26L38 34L42 46L32 40L22 46L26 34L16 26L28 24L32 12Z" fill="none" stroke="#FF5722"
+              stroke-width="3"></path>
+            <circle cx="32" cy="32" fill="none" r="6" stroke="#FF5722" stroke-width="3"></circle>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Competition &amp; Exposure</h3>
+        <p class="model-card-description">
+          Access to national and international tournaments, competitive leagues, and performance tracking
+          systems.
+        </p>
+      </div>
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <path d="M20 32C20 32 24 28 32 28C40 28 44 32 44 32" stroke="#FF5722" stroke-linecap="round"
+              stroke-width="3"></path>
+            <circle cx="20" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="3"></circle>
+            <circle cx="44" cy="24" fill="none" r="4" stroke="#FF5722" stroke-width="3"></circle>
+            <path d="M28 40L32 44L36 40" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="3"></path>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Sponsorship &amp; Commercial</h3>
+        <p class="model-card-description">
+          Brand partnerships, endorsement deals, contract negotiations, and financial planning for athletes.
+        </p>
+      </div>
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <rect fill="none" height="28" rx="2" stroke="#FF5722" stroke-width="3" width="32" x="16" y="20"></rect>
+            <path d="M24 20V16C24 14 26 12 32 12C38 12 40 14 40 16V20" stroke="#FF5722" stroke-width="3"></path>
+            <path d="M24 32L28 36L40 24" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="3"></path>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Education &amp; Career Transition</h3>
+        <p class="model-card-description">
+          Academic support, vocational training, and career planning for life beyond competitive sports.
+        </p>
+      </div>
+      <div class="model-card">
+        <div class="model-icon">
+          <svg fill="none" height="64" viewbox="0 0 64 64" width="64">
+            <path d="M32 8L38 18L50 20L41 29L43 41L32 35L21 41L23 29L14 20L26 18L32 8Z" fill="none" stroke="#FF5722"
+              stroke-width="3"></path>
+            <path d="M28 28L30 32L36 26" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="3"></path>
+          </svg>
+        </div>
+        <h3 class="model-card-title">Legal &amp; Safeguarding</h3>
+        <p class="model-card-description">
+          Contract review, rights protection, anti-doping compliance, and athlete welfare safeguards.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Service Tiers Section -->
+  <section class="tiers-section">
+    <h2 class="section-title-orange">Service Tiers</h2>
+    <div class="tiers-grid">
+      <div class="tier-card tier-entry">
+        <h3 class="tier-title">Exposure (Entry)</h3>
+        <ul class="tier-list">
+          <li>Tournament access</li>
+          <li>Basic performance tracking</li>
+          <li>Group training sessions</li>
+          <li>Equipment support</li>
+          <li>Injury prevention workshops</li>
+        </ul>
+      </div>
+      <div class="tier-card tier-core">
+        <h3 class="tier-title">Performance Support (Core)</h3>
+        <ul class="tier-list">
+          <li>Personalized training programs</li>
+          <li>Sports science support</li>
+          <li>Nutrition planning</li>
+          <li>Mental conditioning</li>
+          <li>National tournament access</li>
+          <li>Sponsorship opportunities</li>
+        </ul>
+      </div>
+      <div class="tier-card tier-elite">
+        <h3 class="tier-title">Performance Support (Elite)</h3>
+        <ul class="tier-list">
+          <li>Full-time coaching staff</li>
+          <li>International competition access</li>
+          <li>Commercial management</li>
+          <li>Legal &amp; contract support</li>
+          <li>Career transition planning</li>
+          <li>Brand partnerships</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Athlete Onboarding Flow Section -->
+  <section class="onboarding-section">
+    <h2 class="section-title-orange">Athlete Onboarding Flow</h2>
+    <div class="onboarding-flow-horizontal">
+      <!-- Step 1 -->
+      <div class="flow-box flow-box-1">
+        <div class="flow-box-number">1</div>
+        <div class="flow-box-text">Referral /<br />Scouting</div>
+      </div>
+      <!-- Arrow 1 -->
+      <div class="flow-arrow-horizontal">
+        <svg fill="none" height="40" viewbox="0 0 40 40" width="40">
+          <path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#D84315" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="3"></path>
+        </svg>
+      </div>
+      <!-- Step 2 -->
+      <div class="flow-box flow-box-2">
+        <div class="flow-box-number">2</div>
+        <div class="flow-box-text">Trials &amp;<br />Assessments</div>
+      </div>
+      <!-- Arrow 2 -->
+      <div class="flow-arrow-horizontal">
+        <svg fill="none" height="40" viewbox="0 0 40 40" width="40">
+          <path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#E64A19" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="3"></path>
+        </svg>
+      </div>
+      <!-- Step 3 -->
+      <div class="flow-box flow-box-3">
+        <div class="flow-box-number">3</div>
+        <div class="flow-box-text">Individual<br />Development<br />Plan (IDP)</div>
+      </div>
+      <!-- Arrow 3 -->
+      <div class="flow-arrow-horizontal">
+        <svg fill="none" height="40" viewbox="0 0 40 40" width="40">
+          <path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#FF5722" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="3"></path>
+        </svg>
+      </div>
+      <!-- Step 4 -->
+      <div class="flow-box flow-box-4">
+        <div class="flow-box-number">4</div>
+        <div class="flow-box-text">Contract<br />(if applicable)</div>
+      </div>
+      <!-- Arrow 4 -->
+      <div class="flow-arrow-horizontal">
+        <svg fill="none" height="40" viewbox="0 0 40 40" width="40">
+          <path d="M5 20 L30 20 M30 20 L25 15 M30 20 L25 25" fill="none" stroke="#FF6F43" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="3"></path>
+        </svg>
+      </div>
+      <!-- Step 5 -->
+      <div class="flow-box flow-box-5">
+        <div class="flow-box-number">5</div>
+        <div class="flow-box-text">Quarterly Reviews<br />&amp; KPI Tracking</div>
+      </div>
+    </div>
+  </section>
+  <!-- KPIs & Success Metrics Section -->
+  <section class="kpi-section">
+    <h2 class="section-title-orange">KPIs &amp; Success Metrics</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon">
+          <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+            <path d="M24 8L28 16L36 18L30 24L32 32L24 28L16 32L18 24L12 18L20 16L24 8Z" fill="none" stroke="#FF5722"
+              stroke-width="2.5"></path>
+            <circle cx="24" cy="24" fill="#FF5722" r="3"></circle>
+          </svg>
+        </div>
+        <h3 class="kpi-title">Performance</h3>
+        <p class="kpi-description">Personal best improvements, selection to higher teams, medals, rankings</p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">
+          <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+            <rect fill="none" height="20" rx="2" stroke="#FF5722" stroke-width="2.5" width="28" x="10" y="14"></rect>
+            <path d="M16 14V12C16 10 18 8 24 8C30 8 32 10 32 12V14" stroke="#FF5722" stroke-width="2.5"></path>
+            <circle cx="24" cy="24" fill="#FF5722" r="2"></circle>
+            <path d="M24 26V30" stroke="#FF5722" stroke-linecap="round" stroke-width="2.5"></path>
+          </svg>
+        </div>
+        <h3 class="kpi-title">Commercial</h3>
+        <p class="kpi-description">Sponsorship revenue per athlete, brand partnerships, and increased media
+          visibility.</p>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">
+          <svg fill="none" height="48" viewbox="0 0 48 48" width="48">
+            <path d="M24 8C16 8 10 14 10 22C10 30 24 40 24 40C24 40 38 30 38 22C38 14 32 8 24 8Z" fill="none"
+              stroke="#FF5722" stroke-width="2.5"></path>
+            <circle cx="24" cy="22" fill="none" r="4" stroke="#FF5722" stroke-width="2.5"></circle>
+            <path d="M20 22L22 24L28 18" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2.5"></path>
+          </svg>
+        </div>
+        <h3 class="kpi-title">Welfare</h3>
+        <p class="kpi-description">Education continuation, mental well-being, injury recovery timelines, athlete
+          satisfaction</p>
+      </div>
+    </div>
+  </section>
+  <!-- JOIN OUR MISSION Section -->
+  <section class="join-mission-section">
+    <h2 class="join-mission-title">JOIN OUR MISSION</h2>
+    <p class="join-mission-text">
+      Whether you're a corporate partner, individual donor, or volunteer, there's a role for you in transforming
+      India's
+      sports landscape.
+    </p>
+    <div class="join-mission-buttons">
+      <button class="btn-partner">Become a partner</button>
+      <button class="btn-donate-white">Donate Now</button>
+    </div>
+  </section>
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer-container">
       <!-- 1. Brand & Social -->
       <div class="footer-brand">
@@ -575,7 +602,8 @@
       </div>
     </div>
   </footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
 <parameter name="Complexity">9</parameter>
