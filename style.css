@@ -1114,7 +1114,8 @@ body {
   justify-content: flex-start;
   /* Keeps them close but aligned to content flow */
   gap: 8px;
-  margin-bottom: 0px;
+  /* Negative margin absorbs the logo height gap, pulling description up */
+  margin-bottom: -30px;
   margin-top: -10px;
 }
 
@@ -1155,7 +1156,7 @@ body {
   font-size: 12px;
   line-height: 20px;
   color: #FFEFE9;
-  max-width: 406px;
+  max-width: 350px;
   margin: 0;
   margin-top: -10px;
 }
