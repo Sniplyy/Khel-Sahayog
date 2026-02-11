@@ -392,7 +392,6 @@ body {
   max-width: 935px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 75px;
 }
 
 .hero-buttons {
@@ -432,6 +431,114 @@ body {
   background-color: #FFB300;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+/* ========================================
+   STANDARDIZED SPORTS HERO SECTION
+   Based on Football page as reference
+   ======================================== */
+
+.sports-hero {
+  position: relative;
+  min-height: 550px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: left;
+}
+
+.sports-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(26, 22, 22, 0.9) 0%, rgba(26, 22, 22, 0.7) 50%, rgba(26, 22, 22, 0.3) 100%);
+}
+
+.sports-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  text-align: left;
+}
+
+/* STANDARDIZED FONT STYLES - Football Reference */
+.sports-hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 24px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.sports-hero-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 0;
+  opacity: 0.95;
+  text-align: left;
+  max-width: 500px;
+}
+
+.sports-hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Responsive Font Sizes - Football Standard */
+@media (max-width: 1024px) {
+  .sports-hero-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sports-hero {
+    min-height: 400px;
+    height: auto;
+  }
+
+  .sports-hero-title {
+    font-size: 32px;
+  }
+
+  .sports-hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sports-hero-buttons .btn-large {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sports-hero-title {
+    font-size: 28px;
+  }
 }
 
 
