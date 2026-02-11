@@ -19,7 +19,8 @@ body {
 .about-hero {
   position: relative;
   width: 100%;
-  height: clamp(20rem, 50vh, 31.25rem);
+  min-height: 550px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
