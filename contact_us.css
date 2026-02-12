@@ -388,3 +388,7 @@
         flex-wrap: wrap;
     }
 }
+a {
+   color: inherit;
+   text-decoration: none;
+}
