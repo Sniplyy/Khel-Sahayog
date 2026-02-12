@@ -469,6 +469,11 @@ body {
   text-align: left;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* STANDARDIZED FONT STYLES - Football Reference */
 .sports-hero-title {
   font-family: 'Montserrat', sans-serif;
