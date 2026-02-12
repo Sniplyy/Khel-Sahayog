@@ -243,6 +243,7 @@ body {
     font-size: 13px;
     color: #666;
     line-height: 1.5;
+    font-weight: 600;
 }
 
 .pathway-arrow {
@@ -250,15 +251,6 @@ body {
     color: #FF5722;
     font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
 

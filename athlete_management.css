@@ -230,8 +230,10 @@
 .model-icon {
     width: 64px;
     height: 64px;
-    margin-bottom: 24px;
-    display: none;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .model-card-title {

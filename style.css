@@ -1477,6 +1477,33 @@ body {
   text-decoration: none;
 }
 
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-contact-inline {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #EAEBEC;
+  white-space: nowrap;
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
 
 @media (max-width: 1100px) {
   .footer-container {
@@ -1512,6 +1539,24 @@ body {
   .footer-bottom-container {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-bottom-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-contact-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .footer-legal {
     gap: 20px;
   }
 }
