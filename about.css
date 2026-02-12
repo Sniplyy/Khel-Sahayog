@@ -68,6 +68,16 @@ body {
   margin: 0;
 }
 
+.about-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
 .who-are-we-section {
   background-color: #ffffff;

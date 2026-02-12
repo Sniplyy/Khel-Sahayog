@@ -44,7 +44,8 @@
     font-weight: 700;
     color: #FF5722;
     margin-bottom: 16px;
-    max-width: 600px;
+    text-align: center;
+    max-width: 100%;
 }
 
 .grassroots-hero-subtitle {
@@ -52,7 +53,8 @@
     font-size: 14px;
     font-weight: 700;
     color: #FFFFFF;
-    max-width: 550px;
+    max-width: 100%;
+    text-align: center;
 }
 
 
