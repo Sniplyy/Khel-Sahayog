@@ -1249,8 +1249,8 @@ a {
 }
 
 .footer-logo-img {
-  width: 160px;
-  height: 160px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   position: relative;
 }
@@ -1262,11 +1262,12 @@ a {
   align-items: flex-start;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
   text-align: left;
+  margin-top: 0px;
 }
 
 .footer-logo-text span {
