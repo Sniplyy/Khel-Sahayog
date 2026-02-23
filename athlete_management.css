@@ -746,12 +746,17 @@
     .join-mission-buttons {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 12px;
     }
 
+    .btn-partner,
+    .btn-donate-white,
     .btn-partner-white,
     .btn-donate-outline {
         flex: 1 1 auto;
-        min-width: 120px;
+        min-width: 100px;
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
     }
 }
 
