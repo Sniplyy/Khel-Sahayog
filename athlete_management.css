@@ -719,6 +719,22 @@
         padding: 60px 24px;
     }
 
+    .onboarding-flow-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flow-arrow-horizontal svg {
+        transform: rotate(90deg);
+    }
+
+    .flow-box {
+        width: 80%;
+        max-width: 260px;
+        height: auto;
+        padding: 18px 24px;
+    }
+
     .join-mission-title {
         font-size: 28px;
     }
