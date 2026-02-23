@@ -10,13 +10,19 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  position: relative;
 }
 
 .mobile-menu-toggle {
@@ -70,6 +76,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -2607,6 +2614,7 @@ a {
 
   .dropdown-menu.mobile-active {
     max-height: 2500px;
+    overflow: visible;
     opacity: 1;
     visibility: visible;
     margin-top: 10px;
@@ -2688,46 +2696,5 @@ a {
     font-weight: 500;
     padding: 8px 0 8px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-}
-
-
-/* ── Mobile-only: Other Programs nav section ─────────────── */
-.mobile-other-programs {
-  display: none;
-}
-
-@media (max-width: 800px) {
-  .mobile-other-programs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 8px;
-    margin-top: 4px;
-    gap: 0;
-  }
-
-  .mobile-other-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ff5722;
-    padding: 10px 0 6px 0;
-    display: block;
-  }
-
-  .mobile-other-programs .nav-link {
-    width: 100%;
-    color: #212121;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
-    justify-content: flex-start;
-  }
-
-  .mobile-other-programs .nav-link:last-child {
-    border-bottom: none;
   }
 }
