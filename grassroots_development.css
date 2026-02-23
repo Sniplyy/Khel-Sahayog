@@ -1,10 +1,12 @@
 .grassroots-hero {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
+    margin: 0;
 }
 
 .grassroots-hero-background {
@@ -32,22 +34,23 @@
 .grassroots-hero-content {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 0 clamp(20px, 10vw, 245px);
     width: 100%;
+    text-align: center;
 }
 
 .grassroots-hero-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: clamp(28px, 4vw, 50px);
     font-weight: 700;
     color: #FF5722;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    margin-top: 100px;
     text-align: center;
     max-width: 100%;
-    line-height: 70px;
-    padding-top: 80px;
+    line-height: 1.6em;
 }
 
 /* .grassroots-hero-title1{
@@ -63,10 +66,12 @@
 
 .grassroots-hero-subtitle {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #FFFFFF;
-    max-width: 100%;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #eaebec;
+    max-width: 935px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -454,11 +459,11 @@
 
 @media (max-width: 992px) {
     .grassroots-hero {
-        height: 450px;
+        height: 500px;
     }
 
     .grassroots-hero-title {
-        font-size: 40px;
+        font-size: clamp(28px, 4vw, 40px);
     }
 
     .grassroots-hero-subtitle {
@@ -492,16 +497,18 @@
 
 @media (max-width: 768px) {
     .grassroots-hero {
-        min-height: clamp(300px, 50vh, 400px);
+        min-height: 400px;
         height: auto;
     }
 
     .grassroots-hero-title {
-        font-size: clamp(24px, 5vw, 32px);
+        font-size: 22px;
+        margin-top: 60px;
+        line-height: 1.8em;
     }
 
     .grassroots-hero-subtitle {
-        font-size: clamp(14px, 2.5vw, 18px);
+        font-size: 16px;
     }
 
     .who-we-are-section,
@@ -563,11 +570,11 @@
     }
 
     .grassroots-hero-title {
-        font-size: clamp(20px, 6vw, 28px);
+        font-size: 28px;
     }
 
     .grassroots-hero-subtitle {
-        font-size: clamp(12px, 3.5vw, 16px);
+        font-size: 16px;
     }
 
     .section-heading-orange {
