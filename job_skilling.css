@@ -511,14 +511,13 @@ a {
     }
 
     .join-mission-buttons {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .btn-partner,
     .btn-donate-white {
-        width: 100%;
-        max-width: 280px;
-        text-align: center;
+        flex: 1 1 auto;
+        min-width: 120px;
     }
 }

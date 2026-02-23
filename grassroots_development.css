@@ -551,14 +551,14 @@
     }
 
     .join-mission-buttons {
-        flex-direction: column;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .btn-donate-yellow,
     .btn-get-involved-white {
-        width: 100%;
-        max-width: 300px;
+        flex: 1 1 auto;
+        min-width: 120px;
     }
 }
 
