@@ -1,10 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Reset any stale nav/backdrop states on page load (fixes white space after navigation)
+function resetNavState() {
     document.querySelectorAll('.nav-menu, .dropdown-menu, .dropdown-backdrop, .mobile-menu-toggle').forEach(el => {
         el.classList.remove('active', 'mobile-active', 'expanded');
     });
     document.body.style.overflow = '';
+    document.body.style.overflowX = '';
+    document.documentElement.style.overflowX = '';
+}
 
+// Reset on initial load
+document.addEventListener('DOMContentLoaded', resetNavState);
+
+// Also reset when page is restored from bfcache (browser back/forward)
+window.addEventListener('pageshow', (e) => {
+    if (e.persisted) resetNavState();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     // Dropdown menu functionality
     const programsDropdown = document.querySelector('.programs-dropdown');
     const dropdownMenu = document.querySelector('.dropdown-menu');
