@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -58,29 +59,32 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
+  padding-top: clamp(80px, 10vw, 120px);
 }
 
 .about-hero-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
-  line-height: 1.2;
+  font-size: 50px;
+  line-height: 1.219em;
   background: linear-gradient(90deg, #FF5722 13%, #FF794E 53%, #FF5722 88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0;
+  margin-bottom: 24px;
 }
 
 .about-hero-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    max-width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 935px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .who-are-we-section {
@@ -524,11 +528,32 @@ body {
 
 @media (max-width: 768px) {
   .about-hero {
-    height: clamp(18rem, 40vh, 21.875rem);
+    height: auto;
+    min-height: 500px;
+    padding: 100px 0 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .about-hero-title {
-    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    max-width: 100%;
   }
 
   .who-are-we-section,
@@ -607,11 +632,22 @@ body {
 
 @media (max-width: 480px) {
   .about-hero {
-    height: clamp(15rem, 35vh, 18.75rem);
+    height: 400px;
+  }
+
+  .about-hero-content {
+    padding: 0 20px;
   }
 
   .about-hero-title {
-    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-hero-subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
   }
 
   .who-are-we-section,

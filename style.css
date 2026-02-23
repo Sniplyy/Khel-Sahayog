@@ -1241,47 +1241,37 @@ a {
 
 .footer-logo {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  /* Keeps them close but aligned to content flow */
-  gap: 8px;
-  /* Negative margin absorbs the logo height gap, pulling description up */
-  margin-bottom: -30px;
-  margin-top: -10px;
+  gap: 16px;
+  margin-bottom: -10px;
+  margin-top: 5px;
 }
 
 .footer-logo-img {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   position: relative;
-  top: -5px;
-  left: -40px;
 }
 
 /* Modified for stacked text */
 .footer-logo-text {
   display: flex;
   flex-direction: column;
-  align-items: lef;
-  /* Text aligns to the right, towards the logo */
+  align-items: flex-start;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  /* Extra bold for impact */
-  font-size: 20px;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
   text-align: left;
-  padding-top: 15px;
 }
 
 .footer-logo-text span {
   display: block;
   white-space: nowrap;
-  position: relative;
-  left: -70px;
-  top: 20px;
 }
 
 .footer-description {
@@ -1525,43 +1515,100 @@ a {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 60px 0 0;
+    padding: 30px 0 0;
   }
 
   .footer-container {
     padding: 0 20px 40px;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-links {
     flex-direction: column;
     gap: 40px;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-brand {
     width: 100%;
+    align-items: center;
+  }
+
+  .footer-logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+    gap: 8px;
+  }
+
+  .footer-logo-img {
+    width: 90px;
+    height: 90px;
+    position: static;
+  }
+
+  .footer-logo-text {
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 0;
+    margin-top: -6px;
+    font-size: 14px;
+  }
+
+  .footer-logo-text span {
+    position: static;
+    white-space: nowrap;
+  }
+
+  .footer-description {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    align-items: center;
+  }
+
+  .footer-heading {
+    justify-content: center;
   }
 
   .footer-bottom-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    text-align: center;
   }
 
   .footer-bottom-right {
     width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
   }
 
   .footer-contact-inline {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     width: 100%;
   }
 
   .footer-legal {
+    justify-content: center;
     gap: 20px;
   }
 }
