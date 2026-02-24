@@ -476,7 +476,7 @@
 
 .tabletennis-cta-section {
     background-color: var(--primary-orange);
-    padding: 50px 40px;
+    padding: 24px 40px;
     text-align: center;
 }
 
@@ -487,7 +487,11 @@
     color: var(--white);
     margin: 0 0 16px 0;
     padding: 0 5px;
-    white-space: nowrap;
+    white-space: normal;
+}
+
+.mobile-only-break {
+    display: none;
 }
 
 .tabletennis-cta-text {
@@ -639,9 +643,12 @@
     .why-tabletennis-section,
     .tabletennis-programs-section,
     .athlete-pathway-section,
-    .impact-goal-section,
-    .tabletennis-cta-section {
+    .impact-goal-section {
         padding: 60px 20px;
+    }
+
+    .tabletennis-cta-section {
+        padding: 24px 20px;
     }
 
     .program-card1,
@@ -651,6 +658,10 @@
 
     .impact-stat-box {
         padding: 32px 24px;
+    }
+
+    .mobile-only-break {
+        display: block;
     }
 }
 

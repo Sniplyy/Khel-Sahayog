@@ -474,7 +474,7 @@
 
 .rugby-cta-section {
     background-color: var(--primary-orange);
-    padding: 50px 40px;
+    padding: 24px 40px;
     text-align: center;
 }
 
@@ -637,9 +637,12 @@
     .why-rugby-section,
     .rugby-programs-section,
     .athlete-pathway-section,
-    .impact-goal-section,
-    .rugby-cta-section {
+    .impact-goal-section {
         padding: 60px 20px;
+    }
+
+    .rugby-cta-section {
+        padding: 24px 20px;
     }
 
     .program-card {

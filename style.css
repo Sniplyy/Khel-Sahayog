@@ -1154,7 +1154,7 @@ a {
 .support-section {
   background-color: #FF5722;
 
-  padding: 40px 5%;
+  padding: 24px 5%;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -1903,7 +1903,7 @@ a {
 
   .support-section {
     height: auto;
-    padding: 30px 20px 40px;
+    padding: 24px 20px;
   }
 
 

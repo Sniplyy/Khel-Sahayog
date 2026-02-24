@@ -472,8 +472,8 @@
 
 
 .kabaddi-cta-section {
-    background-color: var(--primary-orange);
-    padding: 50px 40px;
+    background-color: #F05A28;
+    padding: 24px 40px;
     text-align: center;
 }
 
@@ -635,9 +635,12 @@
 
     .why-kabaddi-section,
     .athlete-pathway-section,
-    .impact-goal-section,
-    .kabaddi-cta-section {
+    .impact-goal-section {
         padding: 60px 20px;
+    }
+
+    .kabaddi-cta-section {
+        padding: 24px 20px;
     }
 
     .kabaddi-programs-section {

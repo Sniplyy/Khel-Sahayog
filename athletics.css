@@ -424,7 +424,7 @@
 
 
 .athletics-cta-section {
-    padding: 50px 40px;
+    padding: 24px 40px;
     background-color: #F25F25;
     text-align: center;
 }
@@ -578,9 +578,12 @@
 
     .why-athletics-section,
     .athlete-pathway-section,
-    .impact-goal-section,
-    .athletics-cta-section {
+    .impact-goal-section {
         padding: 60px 20px;
+    }
+
+    .athletics-cta-section {
+        padding: 24px 20px;
     }
 
     .athletics-programs-section {
