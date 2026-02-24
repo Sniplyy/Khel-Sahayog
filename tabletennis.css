@@ -239,8 +239,9 @@
 }
 
 .tabletennis-programs-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .programs-grid {
@@ -252,28 +253,28 @@
 }
 
 .program-card2 {
-    background-color: #1C1C1C;
+    background-color: #1A1616;
     padding: 48px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     min-width: 0;
-    max-width: 550px;
+    max-width: 100%;
     width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
 }
 
 .program-card1 {
-    background-color: #1C1C1C;
+    background-color: #1A1616;
     padding: 48px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     min-width: 0;
-    max-width: 550px;
+    max-width: 100%;
     width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
@@ -282,10 +283,11 @@
 .program-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--primary-orange);
     margin: 0 0 20px 0;
     text-align: center;
+    padding-left: 0;
     width: 100%;
 }
 
@@ -642,7 +644,8 @@
         padding: 60px 20px;
     }
 
-    .program-card {
+    .program-card1,
+    .program-card2 {
         padding: 24px;
     }
 
