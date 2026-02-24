@@ -511,8 +511,14 @@ button {
         font-size: 13px;
     }
 
-    .cta-button {
+    .hero-buttons a {
         flex: 2 !important;
+        min-width: 0 !important;
+        display: flex;
+    }
+
+    .hero-buttons a .cta-button {
+        width: 100%;
     }
 
     .cta-button-outline {
@@ -552,8 +558,14 @@ button {
         white-space: nowrap;
     }
 
-    .cta-button {
+    .hero-buttons a {
         flex: 2 !important;
+        min-width: 0 !important;
+        display: flex;
+    }
+
+    .hero-buttons a .cta-button {
+        width: 100%;
     }
 
     .cta-button-outline {
