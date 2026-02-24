@@ -634,14 +634,22 @@
 @media (max-width: 480px) {
 
     .why-kabaddi-section,
-    .kabaddi-programs-section,
     .athlete-pathway-section,
     .impact-goal-section,
     .kabaddi-cta-section {
         padding: 60px 20px;
     }
 
-    .program-card {
+    .kabaddi-programs-section {
+        padding: 60px 0;
+    }
+
+    .kabaddi-programs-section .kabaddi-programs-container {
+        padding: 0 16px;
+    }
+
+    .program-card1,
+    .program-card2 {
         padding: 24px;
     }
 

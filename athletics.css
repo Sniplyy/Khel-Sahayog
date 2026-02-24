@@ -208,7 +208,7 @@
     flex-direction: column;
     align-items: flex-start;
     min-width: 0;
-    max-width: 550px;
+    max-width: 100%;
     width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
@@ -222,7 +222,7 @@
     flex-direction: column;
     align-items: flex-start;
     min-width: 0;
-    max-width: 550px;
+    max-width: 100%;
     width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
@@ -554,11 +554,18 @@
 @media (max-width: 480px) {
 
     .why-athletics-section,
-    .athletics-programs-section,
     .athlete-pathway-section,
     .impact-goal-section,
     .athletics-cta-section {
         padding: 60px 20px;
+    }
+
+    .athletics-programs-section {
+        padding: 60px 0;
+    }
+
+    .athletics-programs-section .athletics-programs-container {
+        padding: 0 16px;
     }
 
     .section-heading-orange,
@@ -570,7 +577,8 @@
         padding: 0 20px;
     }
 
-    .program-card {
+    .program-card1,
+    .program-card2 {
         padding: 24px;
     }
 
