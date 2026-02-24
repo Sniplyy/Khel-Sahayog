@@ -1160,7 +1160,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 
-  font-size: 1.75rem;
+  font-size: clamp(24px, 5.5vw, 36px);
   line-height: 1.2;
   color: #1a1a1a;
 
@@ -2696,5 +2696,24 @@ a {
     font-weight: 500;
     padding: 8px 0 8px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Sport Pages Program Titles Mobile Fix */
+@media (max-width: 768px) {
+
+  .program-card1 .program-title,
+  .program-card2 .program-title,
+  .program-card .program-title {
+    white-space: nowrap !important;
+    font-size: clamp(14px, 5.5vw, 24px) !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .program-features-list li,
+  .program-description {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
   }
 }

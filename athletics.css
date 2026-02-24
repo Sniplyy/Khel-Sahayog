@@ -185,7 +185,7 @@
 
 .athletics-programs-section {
     padding: 80px 40px;
-    background-color: #000000;
+    background-color: #E8E8E8;
 }
 
 .athletics-programs-container {
@@ -428,7 +428,7 @@
 
 .athletics-cta-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: clamp(24px, 5vw, 36px);
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 16px;
@@ -579,9 +579,8 @@
         font-size: 48px;
     }
 
-    .athletics-cta-title {
-        font-size: 28px;
-    }
+
+
 }
 
 a {

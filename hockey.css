@@ -231,7 +231,7 @@
 }
 
 .hockey-programs-section {
-    background-color: #111111;
+    background-color: #E8E8E8;
     padding: 80px 40px;
 }
 
@@ -482,7 +482,7 @@
 .hockey-cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp(24px, 5vw, 36px);
     color: var(--white);
     margin: 0 0 16px 0;
     white-space: nowrap;
