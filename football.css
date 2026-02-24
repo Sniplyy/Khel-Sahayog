@@ -545,9 +545,16 @@ body {
 @media (max-width: 480px) {
 
     .why-football-section,
-    .programs-section,
     .impact-goal-section {
         padding: 60px 20px;
+    }
+
+    .programs-section {
+        padding: 60px 0;
+    }
+
+    .programs-section .container {
+        padding: 0 16px;
     }
 
     .program-card1,
