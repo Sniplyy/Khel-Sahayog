@@ -504,12 +504,19 @@ button {
 
     .cta-button,
     .cta-button-outline {
-        flex: 1;
         min-width: 0;
         text-align: center;
         white-space: nowrap;
         padding: 10px 8px;
         font-size: 13px;
+    }
+
+    .cta-button {
+        flex: 2;
+    }
+
+    .cta-button-outline {
+        flex: 1;
     }
 }
 
@@ -539,10 +546,17 @@ button {
 
     .cta-button,
     .cta-button-outline {
-        flex: 1;
         min-width: 0;
         font-size: 13px;
         padding: 10px 12px;
         white-space: nowrap;
+    }
+
+    .cta-button {
+        flex: 2;
+    }
+
+    .cta-button-outline {
+        flex: 1;
     }
 }
