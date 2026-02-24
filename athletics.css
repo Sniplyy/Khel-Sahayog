@@ -198,6 +198,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    width: 100%;
     justify-items: center;
 }
 
@@ -521,8 +522,21 @@
         gap: 12px;
     }
 
-    .athlectics-hero-buttons {
-        flex-direction: column;
+    .athletics-hero-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+
+    .btn-support-yellow,
+    .btn-get-involved-white {
+        width: auto;
+        padding: 10px 16px;
+        font-size: 13px;
+        flex-shrink: 1;
+        white-space: nowrap;
     }
 
     .pathway-steps {
@@ -545,10 +559,18 @@
         gap: 24px;
     }
 
-    .btn-support-yellow,
-    .btn-get-involved-white {
-        width: 100%;
-        max-width: 300px;
+    .athletics-cta-buttons {
+        flex-direction: row;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .athletics-cta-buttons .btn-support-yellow,
+    .athletics-cta-buttons .btn-get-involved-white {
+        padding: 10px 16px;
+        font-size: 13px;
+        flex-shrink: 1;
+        white-space: nowrap;
     }
 }
 
