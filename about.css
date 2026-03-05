@@ -315,12 +315,12 @@ body {
 }
 
 .tournament-container {
-  max-width: 75rem;
+  max-width: 55rem;
   margin: 0 auto 1.5rem;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  align-items: stretch;
+  align-items: auto;
 }
 
 /* ── Left panel: Benefits ─────────────────────────────────── */
@@ -383,6 +383,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .pipeline-title {
@@ -408,7 +409,7 @@ body {
   align-items: center;
   text-align: center;
   flex: 0 0 auto;
-  width: 80px;
+  width: 120px;
 }
 
 .stage-icon-wrap {
@@ -433,8 +434,8 @@ body {
 
 .pipeline-connector {
   flex: 1;
-  height: 32px;
-  min-width: 30px;
+  height: 40px;
+  min-width: 60px;
 }
 
 .pipeline-connector svg {
@@ -444,20 +445,20 @@ body {
 
 /* ── Description below ────────────────────────────────────── */
 .tournament-description {
-  max-width: 75rem;
+  max-width: 58rem;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   line-height: 1.6;
   color: #333333;
-  text-align: center;
+  text-align: right;
 }
 
 
 .join-mission-section {
   background-color: #FF5722;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: 44px 40px;
   text-align: center;
   width: 100%;
 }
@@ -465,65 +466,65 @@ body {
 .join-mission-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.75rem, 3.5vw, 2rem);
-  line-height: 1.2;
+  font-size: clamp(16px, 5.5vw, 28px);
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin: 0 0 16px 0;
+  padding: 0 5px;
+  white-space: nowrap;
 }
 
 .join-mission-text {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
   color: #ffffff;
-  max-width: 50rem;
-  margin: 0 auto 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 24px auto;
 }
 
 .join-mission-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .btn-partner {
-  padding: 0.75rem 1.875rem;
-  background-color: #FFC107;
+  padding: 14px 32px;
+  background-color: #FFB800;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 16px;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-partner:hover {
+  background-color: #FFC933;
   transform: translateY(-2px);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .btn-donate-white {
-  padding: 0.75rem 1.875rem;
-  background-color: #ffffff;
-  color: #FF5722;
+  padding: 14px 32px;
+  background-color: transparent;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  border: none;
-  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-donate-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 

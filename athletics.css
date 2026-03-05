@@ -426,7 +426,7 @@
 
 
 .athletics-cta-section {
-    padding: 24px 40px;
+    padding: 44px 40px;
     background-color: #F25F25;
     text-align: center;
 }
@@ -459,7 +459,7 @@
 
 
 .btn-support-yellow {
-    background-color: #FFC107;
+    background-color: #FFB800;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -472,9 +472,8 @@
 }
 
 .btn-support-yellow:hover {
-    background-color: #FFB300;
+    background-color: #FFC933;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
 }
 
 .btn-get-involved-white {
@@ -491,8 +490,7 @@
 }
 
 .btn-get-involved-white:hover {
-    background-color: #FFFFFF;
-    color: #F25F25;
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
@@ -585,7 +583,7 @@
     }
 
     .athletics-cta-section {
-        padding: 24px 20px;
+        padding: 44px 20px;
     }
 
     .athletics-programs-section {

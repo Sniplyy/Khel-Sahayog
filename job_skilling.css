@@ -380,72 +380,74 @@ a {
    ============================================================ */
 .join-mission-section {
     background-color: var(--primary-orange);
-    padding: clamp(2.5rem, 5vw, 4rem) var(--section-px);
+    padding: 44px 40px;
     text-align: center;
     width: 100%;
 }
 
 .join-mission-title {
     font-family: var(--font-primary);
-    font-weight: 800;
-    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 700;
+    font-size: clamp(16px, 5.5vw, 28px);
     color: var(--white);
-    margin-bottom: 0.875rem;
+    margin: 0 0 16px 0;
+    padding: 0 5px;
+    white-space: nowrap;
 }
 
 .join-mission-text {
     font-family: var(--font-primary);
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 16px;
     color: var(--white);
-    max-width: 46rem;
-    margin: 0 auto 1.75rem;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
     line-height: 1.6;
-    opacity: 0.95;
 }
 
 .join-mission-buttons {
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    align-items: center;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
 .btn-partner {
     display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: var(--accent-yellow);
+    padding: 14px 32px;
+    background-color: #FFB800;
     color: #000;
     font-family: var(--font-primary);
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 16px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-partner:hover {
-    background-color: #FFD54F;
+    background-color: #FFC933;
     transform: translateY(-2px);
 }
 
 .btn-donate-white {
     display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: var(--white);
-    color: var(--primary-orange);
+    padding: 14px 32px;
+    background-color: transparent;
+    color: var(--white);
     font-family: var(--font-primary);
-    font-weight: 700;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid var(--white);
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-donate-white:hover {
-    background-color: #F5F5F5;
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
