@@ -181,6 +181,7 @@ a {
     padding: 1.1rem 1.25rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
 }
 
 .job-gap-item:hover {

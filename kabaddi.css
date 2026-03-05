@@ -141,6 +141,7 @@
 .kabaddi-left-column {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
 }
 
 .why-kabaddi-subtitle {

@@ -141,6 +141,7 @@
 .tabletennis-left-column {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
 }
 
 .why-tabletennis-subtitle {

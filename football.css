@@ -353,6 +353,7 @@ body {
 .football-left-column {
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 .why-football-subtitle {
