@@ -191,6 +191,7 @@
     flex-direction: column;
     gap: 24px;
     text-align: center;
+    max-width: 500px;
 }
 
 .context-box {
