@@ -96,7 +96,7 @@
 
 .section-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #333333;
     line-height: 1.5;
@@ -301,7 +301,8 @@
 }
 
 .grassroots-sports-container {
-    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 0 40px;
 }
 
