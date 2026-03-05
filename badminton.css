@@ -485,7 +485,7 @@ body {
 .cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: clamp(16px, 4.5vw, 28px);
+    font-size: clamp(16px, 4.5vw, 18px);
     color: #FFFFFF;
     margin-bottom: 24px;
     padding: 0 5px;
