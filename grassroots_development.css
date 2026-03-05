@@ -362,77 +362,6 @@
 
 
 
-.join-mission-section {
-    background-color: #FF5722;
-    padding: 44px 40px;
-    text-align: center;
-    width: 100%;
-}
-
-.join-mission-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
-    color: #ffffff;
-    margin: 0 0 16px 0;
-    padding: 0 5px;
-    white-space: nowrap;
-}
-
-.join-mission-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto 24px auto;
-}
-
-.join-mission-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.btn-partner {
-    padding: 14px 32px;
-    background-color: #FFB800;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-partner:hover {
-    background-color: #FFC933;
-    transform: translateY(-2px);
-}
-
-.btn-donate-white {
-    padding: 14px 32px;
-    background-color: transparent;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-donate-white:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
 
 @media (max-width: 1200px) {
     .athlete-model-flow {
@@ -541,28 +470,9 @@
         flex-direction: column !important;
     }
 
-    .join-mission-section {
-        padding: clamp(40px, 8vw, 60px) clamp(16px, 4vw, 24px);
-    }
-
-    .join-mission-title {
-        font-size: clamp(24px, 5vw, 32px);
-    }
-
-    .join-mission-text {
-        font-size: clamp(14px, 2.5vw, 18px);
-    }
-
-    .join-mission-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .btn-donate-yellow,
-    .btn-get-involved-white {
-        flex: 1 1 auto;
-        min-width: 120px;
-    }
+
 }
 
 
@@ -595,13 +505,6 @@
         font-size: clamp(14px, 4vw, 18px);
     }
 
-    .join-mission-title {
-        font-size: clamp(20px, 6vw, 28px);
-    }
-
-    .join-mission-text {
-        font-size: clamp(12px, 3.5vw, 16px);
-    }
 }
 
 a {

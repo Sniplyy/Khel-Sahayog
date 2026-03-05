@@ -458,41 +458,6 @@
 }
 
 
-.btn-support-yellow {
-    background-color: #FFB800;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-support-yellow:hover {
-    background-color: #FFC933;
-    transform: translateY(-2px);
-}
-
-.btn-get-involved-white {
-    background-color: transparent;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 14px 32px;
-    border: 2px solid #FFFFFF;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-get-involved-white:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
 
 
 @media (max-width: 1024px) {
@@ -530,14 +495,6 @@
         margin-bottom: 20px;
     }
 
-    .btn-support-yellow,
-    .btn-get-involved-white {
-        width: auto;
-        padding: 10px 16px;
-        font-size: 13px;
-        flex-shrink: 1;
-        white-space: nowrap;
-    }
 
     .pathway-steps {
         flex-direction: column;

@@ -120,6 +120,7 @@
     background-color: #f5f5f5;
     border-radius: 12px;
     transition: all 0.3s ease;
+    width: 80%;
 }
 
 .contact-detail-item:hover {
@@ -372,7 +373,8 @@
 
     .contact-detail-item {
         padding: 16px;
-    }
+        width: 80%;
+}
 
     .contact-icon {
         width: 40px;

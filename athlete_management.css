@@ -496,96 +496,9 @@
    JOIN MISSION SECTION
    ======================================== */
 
-.join-mission-section {
-    background-color: #FF5722;
-    padding: 44px 40px;
-    text-align: center;
-    width: 100%;
-}
 
-.join-mission-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
-    line-height: 1.2;
-    color: #ffffff;
-    margin: 0 0 16px 0;
-    padding: 0 5px;
-    white-space: nowrap;
-}
 
-.join-mission-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto 24px auto;
-}
 
-.join-mission-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.btn-partner {
-    padding: 14px 32px;
-    background-color: #FFB800;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-partner:hover {
-    background-color: #FFC933;
-    transform: translateY(-2px);
-}
-
-.btn-donate-white {
-    padding: 14px 32px;
-    background-color: transparent;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-donate-white:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-.btn-partner-white {
-    background: #FFFFFF;
-    color: #FF5722;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 16px 40px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-partner-white:hover {
-    background: #F5F5F5;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
-}
 
 .btn-donate-outline {
     background: transparent;
@@ -651,13 +564,6 @@
         gap: 24px;
     }
 
-    .join-mission-title {
-        font-size: 32px;
-    }
-
-    .join-mission-text {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -718,9 +624,6 @@
         padding: 32px 24px;
     }
 
-    .join-mission-section {
-        padding: 60px 24px;
-    }
 
     .onboarding-flow-horizontal {
         flex-direction: column;
@@ -738,29 +641,6 @@
         padding: 18px 24px;
     }
 
-    .join-mission-title {
-        font-size: 28px;
-    }
-
-    .join-mission-text {
-        font-size: 16px;
-    }
-
-    .join-mission-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .btn-partner,
-    .btn-donate-white,
-    .btn-partner-white,
-    .btn-donate-outline {
-        flex: 1 1 auto;
-        min-width: 100px;
-        padding: 0.65rem 1.25rem;
-        font-size: 0.9rem;
-    }
 }
 
 @media (max-width: 480px) {

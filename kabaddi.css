@@ -83,41 +83,7 @@
     align-items: center;
 }
 
-.btn-support-yellow {
-    background-color: var(--primary-yellow);
-    color: var(--black);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.btn-support-yellow:hover {
-    background-color: #FFC933;
-    transform: translateY(-2px);
-}
-
-.btn-get-involved-white {
-    background-color: transparent;
-    color: var(--white);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 14px 32px;
-    border: 2px solid var(--white);
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn-get-involved-white:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
 
 
 
@@ -584,14 +550,6 @@
         margin-bottom: 20px;
     }
 
-    .btn-support-yellow,
-    .btn-get-involved-white {
-        width: auto;
-        padding: 10px 16px;
-        font-size: 13px;
-        flex-shrink: 1;
-        white-space: nowrap;
-    }
 
     .why-kabaddi-title {
         font-size: 28px;
