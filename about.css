@@ -315,7 +315,7 @@ body {
 }
 
 .tournament-container {
-  max-width: 55rem;
+  max-width: 40rem;
   margin: 0 auto 1.5rem;
   display: flex;
   flex-direction: column;
@@ -343,8 +343,10 @@ body {
 
 .benefits-cards-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .benefit-card {
@@ -384,6 +386,15 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+/* Row 2 benefits panel — same card style, content centered */
+.benefits-row2-panel {
+  justify-content: center;
+}
+
+.benefits-row2-panel .benefits-cards-row {
+  width: 70%;
 }
 
 .pipeline-title {

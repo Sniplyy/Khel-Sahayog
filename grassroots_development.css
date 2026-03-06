@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
+    background: rgba(0, 0, 0, 0.78);
 }
 
 .grassroots-hero-content {
@@ -470,8 +470,6 @@
         flex-direction: column !important;
     }
 
-
-    .btn-donate-yellow,
 
 }
 
