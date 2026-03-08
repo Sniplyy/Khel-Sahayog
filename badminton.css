@@ -108,7 +108,6 @@ body {
 .badminton-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
 }
 
 .why-badminton-subtitle {
@@ -531,9 +530,9 @@ body {
 
     .programs-grid {
         grid-template-columns: 1fr;
-    max-width: 1000px;
-    width: 100%;
-}
+        max-width: 1000px;
+        width: 100%;
+    }
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -703,10 +702,10 @@ body {
     .program-card1,
     .program-card2 {
         padding: 28px 24px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 a {

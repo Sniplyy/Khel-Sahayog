@@ -107,7 +107,6 @@
 .kabaddi-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
 }
 
 .why-kabaddi-subtitle {
@@ -508,9 +507,9 @@
 
     .programs-grid {
         grid-template-columns: 1fr;
-    max-width: 1000px;
-    width: 100%;
-}
+        max-width: 1000px;
+        width: 100%;
+    }
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -617,10 +616,10 @@
     .program-card1,
     .program-card2 {
         padding: 24px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 
     .impact-stat-box {
         padding: 32px 24px;
