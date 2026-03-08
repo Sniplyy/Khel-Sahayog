@@ -87,7 +87,7 @@
 
 .why-hockey-section {
     background-color: var(--white);
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .why-hockey-container {
@@ -184,7 +184,7 @@
     font-weight: 600;
     font-size: 14px;
     color: var(--white);
-    margin: 0 0 12px 0;
+    margin: 0 0 4px 0;
     text-align: center;
 }
 
@@ -199,8 +199,8 @@
 }
 
 .hockey-programs-section {
-    background-color: #E8E8E8;
-    padding: 80px 40px;
+    background-color: #1a1a1a;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .hockey-programs-container {
@@ -297,7 +297,7 @@
 
 .athlete-pathway-section {
     background-color: var(--white);
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .athlete-pathway-container {
@@ -386,11 +386,11 @@
 
 .impact-goal-section {
     background-color: #E8E8E8;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .impact-goal-container {
-    max-width: 1200px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
@@ -415,12 +415,12 @@
 .impact-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 18px;
 }
 
 .impact-stat-box {
     background-color: var(--dark-grey);
-    padding: 32px 24px;
+    padding: var(--space-card-v) var(--space-card-h);
     border-radius: 8px;
     text-align: center;
 }

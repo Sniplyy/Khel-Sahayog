@@ -71,7 +71,7 @@
 
 .why-athletics-section {
     background-color: #FFFFFF;
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .why-athletics-container {
@@ -89,7 +89,7 @@
 .athletics-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .why-athletics-subtitle {
@@ -170,7 +170,7 @@
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
-    margin: 0 0 12px 0;
+    margin: 0 0 4px 0;
     text-align: center;
 }
 
@@ -186,8 +186,8 @@
 
 
 .athletics-programs-section {
-    padding: 80px 40px;
-    background-color: #E8E8E8;
+    padding: var(--space-section-v) var(--space-section-h);
+    background-color: #1a1a1a;
 }
 
 .athletics-programs-container {
@@ -275,7 +275,7 @@
 
 .athlete-pathway-section {
     background-color: #FFFFFF;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .athlete-pathway-container {
@@ -365,12 +365,12 @@
 
 .impact-goal-section {
     background-color: #E8E8E8;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     border-bottom: 4px solid #F25F25;
 }
 
 .impact-goal-container {
-    max-width: 1200px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
@@ -395,14 +395,14 @@
 .impact-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 18px;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .impact-stat-box {
     background-color: #212121;
-    padding: 32px 24px;
+    padding: var(--space-card-v) var(--space-card-h);
     border-radius: 8px;
     text-align: center;
 }
@@ -426,7 +426,7 @@
 
 
 .athletics-cta-section {
-    padding: 44px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: #F25F25;
     text-align: center;
 }

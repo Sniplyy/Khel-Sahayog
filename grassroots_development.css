@@ -106,7 +106,7 @@
 
 .who-we-are-section {
     background: #FFFFFF;
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .who-we-are-container {
@@ -117,7 +117,7 @@
 
 .why-grassroots-section {
     background: #F5F5F5;
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .why-grassroots-container {
@@ -128,7 +128,7 @@
 
 .athlete-model-section {
     background: #FFFFFF;
-    padding: 100px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     text-align: center;
 }
 
@@ -142,7 +142,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    gap: 24px;
+    gap: var(--space-gap-lg);
     margin-top: 60px;
 }
 
@@ -150,7 +150,7 @@
     flex: 1;
     background: #F9F9F9;
     border-radius: 12px;
-    padding: 40px 32px;
+    padding: var(--space-card-v) var(--space-card-h);
     border-left: 5px solid #FF5722;
     transition: all 0.3s ease;
 }
@@ -221,7 +221,7 @@
 
 .core-services-section {
     background: #F5F5F5;
-    padding: 60px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     text-align: center;
 }
 
@@ -240,7 +240,7 @@
 .service-tier {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 40px;
+    padding: var(--space-card-v) var(--space-card-h);
     transition: all 0.3s ease;
 }
 
@@ -297,7 +297,7 @@
 
 .grassroots-sports-section {
     background: #FFFFFF;
-    padding: 100px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .grassroots-sports-container {

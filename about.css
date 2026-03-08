@@ -89,7 +89,7 @@ body {
 
 .who-are-we-section {
   background-color: #ffffff;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -103,8 +103,8 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
+  margin-bottom: var(--space-heading-mb);
+  margin-top: var(--space-heading-mb);
 }
 
 .who-content {
@@ -131,7 +131,7 @@ body {
 
 .vision-mission-section {
   background-color: #212121;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -140,7 +140,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: var(--space-gap-lg);
 }
 
 .vm-card {
@@ -179,7 +179,7 @@ body {
 }
 
 .vm-card-content {
-  padding: 1.875rem;
+  padding: var(--space-card-v) var(--space-card-h);
   background-color: #ffffff;
   text-align: left;
 }
@@ -241,7 +241,7 @@ body {
 
 .values-section {
   background-color: #F5F5F5;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -250,7 +250,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2.5rem;
+  gap: var(--space-gap-lg);
 }
 
 .value-card {

@@ -90,7 +90,7 @@ body {
 
 .why-badminton-section {
     background-color: #FFFFFF;
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .why-badminton-container {
@@ -108,7 +108,7 @@ body {
 .badminton-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .why-badminton-subtitle {
@@ -186,7 +186,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
-    margin: 0 0 12px 0;
+    margin: 0 0 4px 0;
     text-align: center;
 }
 
@@ -287,7 +287,7 @@ body {
 
 .athlete-pathway-section {
     background-color: #FFFFFF;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .athlete-pathway-container {
@@ -375,7 +375,7 @@ body {
 
 .badminton-impact-section {
     background-color: #E8E8E8;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     border-bottom: 4px solid #F05A28;
 }
 
@@ -410,7 +410,7 @@ body {
 
 .impact-stat-box {
     background-color: #1A1A1A;
-    padding: 32px 24px;
+    padding: var(--space-card-v) var(--space-card-h);
     border-radius: 8px;
     text-align: center;
 }
@@ -434,7 +434,7 @@ body {
 
 
 .cta-section {
-    padding: 44px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: #F25F25;
     text-align: center;
 }
