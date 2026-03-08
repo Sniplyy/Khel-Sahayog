@@ -105,7 +105,6 @@
 .hockey-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
 }
 
 .why-hockey-subtitle {
@@ -136,7 +135,7 @@
 
 .hockey-benefits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px 24px;
 }
 
@@ -473,14 +472,14 @@
     }
 
     .hockey-benefits {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .programs-grid {
         grid-template-columns: 1fr;
-    max-width: 1000px;
-    width: 100%;
-}
+        max-width: 1000px;
+        width: 100%;
+    }
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -559,10 +558,10 @@
 
     .program-card {
         padding: 24px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 
     .impact-stat-box {
         padding: 32px 24px;
