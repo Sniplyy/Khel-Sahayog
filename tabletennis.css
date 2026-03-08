@@ -89,7 +89,7 @@
 
 .why-tabletennis-section {
     background-color: var(--white);
-    padding: 80px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .why-tabletennis-container {
@@ -107,7 +107,7 @@
 .tabletennis-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 55px;
 }
 
 .why-tabletennis-subtitle {
@@ -185,7 +185,7 @@
     font-weight: 600;
     font-size: 14px;
     color: var(--white);
-    margin: 0 0 12px 0;
+    margin: 0 0 4px 0;
     text-align: center;
 }
 
@@ -202,16 +202,13 @@
 
 
 .tabletennis-programs-section {
-    background-color: #E8E8E8;
-    padding: 80px 40px;
+    background-color: #1a1a1a;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
-.tabletennis-programs-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
+/* .tabletennis-programs-container replaced by .programs-inner in style.css */
 
+<<<<<<< HEAD
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -279,6 +276,9 @@
     padding-left: 20px;
     position: relative;
 }
+=======
+
+>>>>>>> 14be869e96403e5a49222a7a0af077fbc6965b9c
 
 .program-features-list li::before {
     content: '•';
@@ -293,7 +293,7 @@
 
 .athlete-pathway-section {
     background-color: var(--white);
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
 }
 
 .athlete-pathway-container {
@@ -382,12 +382,12 @@
 
 .impact-goal-section {
     background-color: #E8E8E8;
-    padding: 50px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     border-bottom: 4px solid var(--primary-orange);
 }
 
 .impact-goal-container {
-    max-width: 1200px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
@@ -412,14 +412,14 @@
 .impact-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 18px;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .impact-stat-box {
     background-color: var(--dark-grey);
-    padding: 32px 24px;
+    padding: var(--space-card-v) var(--space-card-h);
     border-radius: 8px;
     text-align: center;
 }
@@ -445,7 +445,7 @@
 
 .tabletennis-cta-section {
     background-color: var(--primary-orange);
-    padding: 44px 40px;
+    padding: var(--space-section-v) var(--space-section-h);
     text-align: center;
 }
 
@@ -478,6 +478,63 @@
     gap: 16px;
     justify-content: center;
     align-items: center;
+}
+
+.btn-support-yellow {
+    background-color: #FFB800;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-support-yellow a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-support-yellow:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+}
+
+.btn-get-involved-white {
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 13px 28px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-get-involved-white a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-get-involved-white:hover {
+    background-color: #ffffff;
+    color: #F05A28;
+    transform: translateY(-1px);
+}
+
+.btn-get-involved-white:hover a {
+    color: #F05A28;
 }
 
 

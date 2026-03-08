@@ -204,7 +204,7 @@ button {
 
 
 .reality-section {
-    padding: 50px 0;
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: var(--white);
 }
 
@@ -214,13 +214,11 @@ button {
     font-weight: 700;
     color: var(--primary-orange);
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .reality-content {
     display: grid;
     grid-template-columns: 1fr 0.8fr;
-    gap: 40px;
     align-items: center;
 }
 
@@ -243,12 +241,13 @@ button {
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-amber);
-    margin: 5px 0;
+    margin: 15px 0 auto;
 }
 
 .reality-image {
     display: flex;
     justify-content: center;
+    scale: calc(0.9);
 }
 
 .reality-image img {
@@ -260,22 +259,22 @@ button {
 
 
 .benefits-section {
-    padding: 50px 0;
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: var(--white);
 }
 
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
+    gap: var(--space-gap-lg);
+    margin-top: var(--space-gap-lg);
 }
 
 .benefit-card {
     background-color: var(--dark-grey);
     border: 1px solid var(--primary-orange);
     border-radius: 15px;
-    padding: 25px 40px;
+    padding: var(--space-card-v) var(--space-card-h);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -290,7 +289,7 @@ button {
     font-size: 20px;
     font-weight: 700;
     color: var(--primary-amber);
-    margin-bottom: 15px;
+    margin-bottom: 6px;
 }
 
 .benefit-description {

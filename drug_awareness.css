@@ -1,9 +1,3 @@
-/* ============================================================
-   Drug Awareness — drug_awareness.css
-   Brand Colors: Primary Orange #FF5722 | Accent Yellow #FFC107
-   Standard: mirrors mental_heath.css exactly
-   ============================================================ */
-
 :root {
     --primary-orange: #FF5722;
     --accent-yellow: #FFC107;
@@ -22,7 +16,6 @@
     --section-px: clamp(1rem, 5vw, 2rem);
 }
 
-/* ── Reset ──────────────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -54,10 +47,11 @@ a {
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    background-image: url('images/drug.jpg');
+    background-image: url('images/drug-hero-aurora.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 0 5%;
 }
 
 .drug-hero-overlay {
@@ -129,6 +123,7 @@ a {
    THE COMMUNITY GAP — SPLIT PANEL
    ============================================================ */
 .drug-gap-section {
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: var(--white);
     padding: var(--section-py) var(--section-px);
 }
@@ -186,10 +181,9 @@ a {
     background: var(--white);
     border: 1px solid rgba(255, 87, 34, 0.3);
     border-radius: 12px;
-    padding: 1.1rem 1.25rem;
+    padding: var(--space-card-v) var(--space-card-h);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-    width: 80%;
 }
 
 .drug-gap-item:hover {
@@ -215,6 +209,7 @@ a {
    OUR COMMUNITY APPROACH — ICON CARDS
    ============================================================ */
 .drug-approach-section {
+    padding: var(--space-section-v) var(--space-section-h);
     padding: var(--section-py) var(--section-px);
     background-color: var(--light-gray);
 }
@@ -250,7 +245,7 @@ a {
 .drug-approach-card {
     background-color: var(--white);
     border-radius: 16px;
-    padding: 1.75rem 1.25rem;
+    padding: var(--space-card-v) var(--space-card-h);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,6 +285,7 @@ a {
    MASS IMPACT — STAT COUNTERS
    ============================================================ */
 .drug-impact-section {
+    padding: var(--space-section-v) var(--space-section-h);
     padding: var(--section-py) var(--section-px);
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
     position: relative;
@@ -386,8 +382,76 @@ a {
 /* ============================================================
    JOIN OUR MISSION CTA
    ============================================================ */
+.join-mission-section {
+    background-color: var(--primary-orange);
+    padding: clamp(2.5rem, 5vw, 4rem) var(--section-px);
+    text-align: center;
+    width: 100%;
+}
 
+.join-mission-title {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    color: var(--white);
+    margin-bottom: 0.875rem;
+}
 
+.join-mission-text {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--white);
+    max-width: 46rem;
+    margin: 0 auto 1.75rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.join-mission-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.btn-partner {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--accent-yellow);
+    color: #000;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-partner:hover {
+    background-color: #FFD54F;
+    transform: translateY(-2px);
+}
+
+.btn-donate-white {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--white);
+    color: var(--primary-orange);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-donate-white:hover {
+    background-color: #F5F5F5;
+    transform: translateY(-2px);
+}
 
 /* ============================================================
    RESPONSIVE — TABLET (≤ 1100px)
@@ -451,4 +515,14 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .join-mission-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-partner,
+    .btn-donate-white {
+        flex: 1 1 auto;
+        min-width: 120px;
+    }
 }

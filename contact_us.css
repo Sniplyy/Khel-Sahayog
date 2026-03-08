@@ -59,7 +59,7 @@
 
 
 .contact-content-section {
-    padding: 80px 0 100px;
+    padding: var(--space-section-v) var(--space-section-h);
     background-color: #ffffff;
     width: 100%;
     margin: 0;
@@ -204,7 +204,7 @@
 .contact-form-container {
     background-color: #f5f5f5;
     border-radius: 15px;
-    padding: 40px;
+    padding: var(--space-card-v) var(--space-card-h);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -374,7 +374,7 @@
     .contact-detail-item {
         padding: 16px;
         width: 80%;
-}
+    }
 
     .contact-icon {
         width: 40px;
@@ -390,7 +390,8 @@
         flex-wrap: wrap;
     }
 }
+
 a {
-   color: inherit;
-   text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }

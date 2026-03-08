@@ -89,7 +89,7 @@ body {
 
 .who-are-we-section {
   background-color: #ffffff;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -103,8 +103,8 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
+  margin-bottom: var(--space-heading-mb);
+  margin-top: var(--space-heading-mb);
 }
 
 .who-content {
@@ -131,7 +131,7 @@ body {
 
 .vision-mission-section {
   background-color: #212121;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -140,7 +140,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: var(--space-gap-lg);
 }
 
 .vm-card {
@@ -179,7 +179,7 @@ body {
 }
 
 .vm-card-content {
-  padding: 1.875rem;
+  padding: var(--space-card-v) var(--space-card-h);
   background-color: #ffffff;
   text-align: left;
 }
@@ -241,7 +241,7 @@ body {
 
 .values-section {
   background-color: #F5F5F5;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
+  padding: var(--space-section-v) var(--space-section-h);
   width: 100%;
 }
 
@@ -250,7 +250,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2.5rem;
+  gap: var(--space-gap-lg);
 }
 
 .value-card {
@@ -315,7 +315,7 @@ body {
 }
 
 .tournament-container {
-  max-width: 55rem;
+  max-width: 40rem;
   margin: 0 auto 1.5rem;
   display: flex;
   flex-direction: column;
@@ -343,8 +343,10 @@ body {
 
 .benefits-cards-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .benefit-card {
@@ -384,6 +386,15 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+/* Row 2 benefits panel — same card style, content centered */
+.benefits-row2-panel {
+  justify-content: center;
+}
+
+.benefits-row2-panel .benefits-cards-row {
+  width: 70%;
 }
 
 .pipeline-title {

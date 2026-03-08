@@ -1,5 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400&family=Teko:wght@300;400;500;600;700&display=swap");
 
+/* ── Global Spacing Tokens ─────────────────────────────────── */
+:root {
+  --space-section-v: 60px;
+  /* vertical padding for every content section */
+  --space-section-h: 5%;
+  /* horizontal padding for every content section */
+  --space-section-sm-v: 32px;
+  /* vertical section padding on ≤768px */
+  --space-card-v: 32px;
+  /* card internal vertical padding */
+  --space-card-h: 24px;
+  /* card internal horizontal padding */
+  --space-gap-lg: 32px;
+  /* large grid / flex gap */
+  --space-gap-sm: 16px;
+  /* small inline gap */
+  --space-heading-mb: 24px;
+  /* margin-bottom on section headings */
+}
+
+/* ── Shared Sport Programs Section Layout ───────────────────── */
+
+.athletics-programs-section,
+.hockey-programs-section,
+.kabaddi-programs-section,
+.rugby-programs-section,
+.tabletennis-programs-section,
+.programs-section {
+  background-color: #1a1a1a;
+  padding: var(--space-section-v) var(--space-section-h);
+}
+
+.programs-inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.programs-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.prog-card {
+  background-color: #242424;
+  border: 1.5px solid #FF5722;
+  border-radius: 12px;
+  padding: var(--space-card-v) var(--space-card-h);
+}
+
+.prog-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.prog-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.prog-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FF5722;
+}
+
+.prog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.prog-list li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
+  padding-left: 22px;
+  position: relative;
+}
+
+.prog-list--square li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  background-color: #FF5722;
+  border-radius: 1px;
+}
+
+.prog-list--circle li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid #FF5722;
+  border-radius: 50%;
+  background: transparent;
+}
+
 
 * {
   margin: 0;
@@ -1165,7 +1288,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 
-  font-size: clamp(16px, 5.5vw, 38px);
+  font-size: 28px;
   line-height: 1.2;
   color: #1a1a1a;
 
