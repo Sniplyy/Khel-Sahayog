@@ -210,9 +210,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    max-width: 1200px;
     margin: 0 auto;
     justify-items: center;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -223,11 +223,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-width: 0;
-    max-width: 650px;
-    width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
 .program-card1 {
@@ -237,11 +237,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-width: 0;
-    max-width: 650px;
-    width: 100%;
     border: 1px solid #2a2a2a;
     min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
 .program-title {
@@ -531,7 +531,9 @@ body {
 
     .programs-grid {
         grid-template-columns: 1fr;
-    }
+    max-width: 1000px;
+    width: 100%;
+}
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -701,7 +703,10 @@ body {
     .program-card1,
     .program-card2 {
         padding: 28px 24px;
-    }
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
 }
 
 a {
