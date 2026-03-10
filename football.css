@@ -438,9 +438,7 @@ body {
 
 .football-left-column {
     display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
+    flex-direction: column;}
 
 .why-football-subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -471,7 +469,7 @@ body {
 
 .football-benefits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px 24px;
 }
 
@@ -546,7 +544,7 @@ body {
     }
 
     .football-benefits {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 

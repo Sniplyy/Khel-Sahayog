@@ -107,7 +107,6 @@
 .tabletennis-left-column {
     display: flex;
     flex-direction: column;
-    padding-top: 55px;
 }
 
 .why-tabletennis-subtitle {
@@ -138,7 +137,7 @@
 
 .tabletennis-benefits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px 24px;
 }
 
@@ -208,6 +207,77 @@
 
 /* .tabletennis-programs-container replaced by .programs-inner in style.css */
 
+<<<<<<< HEAD
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    justify-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.program-card2 {
+    background-color: #1A1616;
+    padding: 48px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #2a2a2a;
+    min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.program-card1 {
+    background-color: #1A1616;
+    padding: 48px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #2a2a2a;
+    min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.program-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-orange);
+    margin: 0 0 20px 0;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+}
+
+.program-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.program-features-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    padding-left: 20px;
+    position: relative;
+}
+=======
+
+>>>>>>> 14be869e96403e5a49222a7a0af077fbc6965b9c
 
 .program-features-list li::before {
     content: '•';
@@ -496,14 +566,14 @@
     }
 
     .tabletennis-benefits {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .programs-grid {
         grid-template-columns: 1fr;
-    max-width: 1000px;
-    width: 100%;
-}
+        max-width: 1000px;
+        width: 100%;
+    }
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -603,10 +673,10 @@
     .program-card1,
     .program-card2 {
         padding: 24px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 
     .impact-stat-box {
         padding: 32px 24px;

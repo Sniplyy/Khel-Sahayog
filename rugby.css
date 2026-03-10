@@ -107,9 +107,7 @@
 
 .rugby-left-column {
     display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
+    flex-direction: column;}
 
 .why-rugby-subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -139,7 +137,7 @@
 
 .rugby-benefits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px 24px;
 }
 
@@ -504,7 +502,7 @@
     }
 
     .rugby-benefits {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .programs-grid {
