@@ -207,7 +207,6 @@
 
 /* .tabletennis-programs-container replaced by .programs-inner in style.css */
 
-<<<<<<< HEAD
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -275,9 +274,7 @@
     padding-left: 20px;
     position: relative;
 }
-=======
 
->>>>>>> 14be869e96403e5a49222a7a0af077fbc6965b9c
 
 .program-features-list li::before {
     content: '•';
