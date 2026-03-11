@@ -215,6 +215,78 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.program-card2 {
+    background-color: #1A1616;
+    padding: 48px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #2a2a2a;
+    min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.program-card1 {
+    background-color: #1A1616;
+    padding: 48px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #2a2a2a;
+    min-height: 250px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.program-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-orange);
+    margin: 0 0 20px 0;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+}
+
+.program-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.program-features-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.program-features-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+>>>>>>> e9d6f6b02da95e9aad7fa863a94edf232a81b468
 
 
 .athlete-pathway-section {
