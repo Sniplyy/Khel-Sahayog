@@ -529,11 +529,13 @@ button {
 @media (max-width: 480px) {
     .hero-heading {
         font-size: 28px;
+        text-align: center;
     }
 
     .hero-subtext {
         font-size: 14px;
         line-height: 22px;
+        text-align: center;
     }
 
     .section-heading {
@@ -553,7 +555,7 @@ button {
     .cta-button,
     .cta-button-outline {
         min-width: 0 !important;
-        font-size: 13px;
+        font-size: 17px;
         padding: 10px 12px;
         white-space: nowrap;
     }
@@ -570,5 +572,9 @@ button {
 
     .cta-button-outline {
         flex: 1 !important;
+    }
+
+    .accent-text {
+        text-align: center;
     }
 }
