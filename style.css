@@ -27,6 +27,7 @@
 .kabaddi-programs-section,
 .rugby-programs-section,
 .tabletennis-programs-section,
+.badminton-programs-section,
 .programs-section {
   background-color: #1a1a1a;
   padding: var(--space-section-v) var(--space-section-h);

@@ -203,7 +203,7 @@
 }
 
 .hockey-programs-container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -212,55 +212,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-items: center;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.program-card2 {
-    background-color: #1C1C1C;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-card1 {
-    background-color: #1C1C1C;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-icon-large {
-    margin-bottom: 20px;
-}
-
-.program-icon-large svg {
-    width: 64px;
-    height: 64px;
-}
-
-.program-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--primary-orange);
-    margin: 0 0 20px 0;
-    text-align: center;
-    padding-left: 0;
     width: 100%;
 }
 

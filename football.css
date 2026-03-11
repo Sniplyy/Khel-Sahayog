@@ -438,7 +438,8 @@ body {
 
 .football-left-column {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .why-football-subtitle {
     font-family: 'Montserrat', sans-serif;

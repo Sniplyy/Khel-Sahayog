@@ -212,76 +212,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-items: center;
-    max-width: 1000px;
     width: 100%;
-}
-
-.program-card2 {
-    background-color: #1A1616;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-card1 {
-    background-color: #1A1616;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--primary-orange);
-    margin: 0 0 20px 0;
-    text-align: center;
-    padding-left: 0;
-    width: 100%;
-}
-
-.program-features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-}
-
-.program-features-list li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-    padding-left: 20px;
-    position: relative;
-}
-
-.program-features-list li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--white);
-    font-size: 20px;
-    line-height: 1.6;
 }
 
 
@@ -438,99 +369,6 @@
 
 
 
-.tabletennis-cta-section {
-    background-color: var(--primary-orange);
-    padding: var(--space-section-v) var(--space-section-h);
-    text-align: center;
-}
-
-.tabletennis-cta-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
-    color: var(--white);
-    margin: 0 0 16px 0;
-    padding: 0 5px;
-    white-space: nowrap;
-}
-
-.mobile-only-break {
-    display: none;
-}
-
-.tabletennis-cta-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--white);
-    margin: 0 auto 24px auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.tabletennis-cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-support-yellow {
-    background-color: #FFB800;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    letter-spacing: 0.03em;
-    transition: background-color 0.2s ease, transform 0.15s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-support-yellow a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.btn-support-yellow:hover {
-    background-color: #333333;
-    transform: translateY(-1px);
-}
-
-.btn-get-involved-white {
-    background-color: transparent;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 13px 28px;
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    cursor: pointer;
-    letter-spacing: 0.03em;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-get-involved-white a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.btn-get-involved-white:hover {
-    background-color: #ffffff;
-    color: #F05A28;
-    transform: translateY(-1px);
-}
-
-.btn-get-involved-white:hover a {
-    color: #F05A28;
-}
 
 
 
@@ -626,23 +464,6 @@
         gap: 12px;
     }
 
-    .tabletennis-cta-text {
-        font-size: 16px;
-    }
-
-    .tabletennis-cta-buttons {
-        flex-direction: row;
-        gap: 8px;
-        flex-wrap: nowrap;
-    }
-
-    .tabletennis-cta-buttons .btn-support-yellow,
-    .tabletennis-cta-buttons .btn-get-involved-white {
-        padding: 10px 16px;
-        font-size: 13px;
-        flex-shrink: 1;
-        white-space: nowrap;
-    }
 
     .stat-number {
         font-size: 48px;
@@ -662,9 +483,6 @@
         padding: 60px 20px;
     }
 
-    .tabletennis-cta-section {
-        padding: 44px 20px;
-    }
 
     .program-card1,
     .program-card2 {

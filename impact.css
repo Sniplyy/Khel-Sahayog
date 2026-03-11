@@ -330,57 +330,6 @@
 }
 
 
-.impact-cta-section {
-    padding: var(--space-section-v) var(--space-section-h);
-    background-color: #FF5722;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-}
-
-.impact-cta-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-}
-
-.impact-cta-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #FFFFFF;
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
-
-.impact-cta-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 48px;
-    background-color: #FFFFFF;
-    color: #FF5722;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.impact-cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    background-color: #FFC107;
-    color: #000000;
-}
 
 
 @media (max-width: 1200px) {
@@ -426,9 +375,6 @@
         padding: 60px 40px;
     }
 
-    .impact-cta-section {
-        padding: 25px 40px;
-    }
 
     .gallery-grid,
     .success-stories-grid,
@@ -454,10 +400,6 @@
         font-size: 28px;
     }
 
-    .impact-cta-title {
-        font-size: 24px;
-        white-space: nowrap;
-    }
 
     .goal-number {
         font-size: 40px;

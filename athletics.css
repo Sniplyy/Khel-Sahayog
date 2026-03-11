@@ -190,7 +190,7 @@
 }
 
 .athletics-programs-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     width: 100%;
 }
@@ -200,46 +200,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-items: center;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.program-card2 {
-    background-color: #1C1C1C;
-    border-radius: 20px;
-    padding: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-card1 {
-    background-color: #1C1C1C;
-    border-radius: 20px;
-    padding: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #FF5722;
-    margin: 0 0 20px 0;
-    text-align: center;
-    padding-left: 0;
     width: 100%;
 }
 
@@ -425,37 +385,6 @@
 }
 
 
-.athletics-cta-section {
-    padding: var(--space-section-v) var(--space-section-h);
-    background-color: #F25F25;
-    text-align: center;
-}
-
-.athletics-cta-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(16px, 5.5vw, 28px);
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    padding: 0 5px;
-    white-space: nowrap;
-}
-
-.athletics-cta-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
-    max-width: 800px;
-    margin: 0 auto 24px;
-    line-height: 1.6;
-}
-
-.athletics-cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-}
 
 
 
@@ -518,19 +447,6 @@
         gap: 24px;
     }
 
-    .athletics-cta-buttons {
-        flex-direction: row;
-        gap: 8px;
-        flex-wrap: nowrap;
-    }
-
-    .athletics-cta-buttons .btn-support-yellow,
-    .athletics-cta-buttons .btn-get-involved-white {
-        padding: 10px 16px;
-        font-size: 13px;
-        flex-shrink: 1;
-        white-space: nowrap;
-    }
 }
 
 @media (max-width: 480px) {
@@ -541,9 +457,6 @@
         padding: 60px 20px;
     }
 
-    .athletics-cta-section {
-        padding: 44px 20px;
-    }
 
     .athletics-programs-section {
         padding: 60px 0;

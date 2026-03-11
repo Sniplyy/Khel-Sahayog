@@ -107,7 +107,8 @@
 
 .rugby-left-column {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .why-rugby-subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -200,91 +201,12 @@
 
 
 
-.rugby-programs-section {
-    background-color: #E8E8E8;
-    padding: var(--space-section-v) var(--space-section-h);
-}
-
-.rugby-programs-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     justify-items: center;
-    max-width: 1000px;
     width: 100%;
-}
-
-.program-card2 {
-    background-color: #1C1C1C;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-card1 {
-    background-color: #1C1C1C;
-    padding: 48px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid #2a2a2a;
-    min-height: 250px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
-
-.program-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--primary-orange);
-    margin: 0 0 20px 0;
-    text-align: center;
-    padding-left: 0;
-    width: 100%;
-}
-
-.program-features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-}
-
-.program-features-list li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-    padding-left: 20px;
-    position: relative;
-}
-
-.program-features-list li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--white);
-    font-size: 20px;
-    line-height: 1.6;
 }
 
 
@@ -439,38 +361,6 @@
 
 
 
-.rugby-cta-section {
-    background-color: var(--primary-orange);
-    padding: var(--space-section-v) var(--space-section-h);
-    text-align: center;
-}
-
-.rugby-cta-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
-    color: var(--white);
-    margin: 0 0 16px 0;
-    padding: 0 5px;
-    white-space: nowrap;
-}
-
-.rugby-cta-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--white);
-    margin: 0 auto 24px auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-.rugby-cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -507,9 +397,9 @@
 
     .programs-grid {
         grid-template-columns: 1fr;
-    max-width: 1000px;
-    width: 100%;
-}
+        max-width: 1000px;
+        width: 100%;
+    }
 
     .impact-stats {
         grid-template-columns: 1fr;
@@ -566,23 +456,6 @@
         gap: 12px;
     }
 
-    .rugby-cta-text {
-        font-size: 16px;
-    }
-
-    .rugby-cta-buttons {
-        flex-direction: row;
-        gap: 8px;
-        flex-wrap: nowrap;
-    }
-
-    .rugby-cta-buttons .btn-support-yellow,
-    .rugby-cta-buttons .btn-get-involved-white {
-        padding: 10px 16px;
-        font-size: 13px;
-        flex-shrink: 1;
-        white-space: nowrap;
-    }
 
     .stat-number {
         font-size: 48px;
@@ -608,10 +481,10 @@
 
     .program-card {
         padding: 24px;
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-}
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 
     .impact-stat-box {
         padding: 32px 24px;
