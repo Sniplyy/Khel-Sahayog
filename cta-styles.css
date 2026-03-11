@@ -11,11 +11,19 @@
 .cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
+    font-size: clamp(14px, 5.5vw, 24px);
     color: var(--white, #FFFFFF);
     margin: 0 0 16px 0;
     padding: 0 5px;
+    white-space: normal;
+}
+
+.cta-title-part {
     white-space: nowrap;
+}
+
+.cta-mobile-break {
+    display: inline;
 }
 
 .cta-text {
@@ -95,6 +103,10 @@
 
     .cta-section {
         padding: 44px 20px;
+    }
+
+    .cta-mobile-break {
+        display: block;
     }
 }
 
