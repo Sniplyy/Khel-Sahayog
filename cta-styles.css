@@ -11,11 +11,15 @@
 .cta-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: clamp(16px, 5.5vw, 28px);
+    font-size: clamp(16px, 5vw, 32px); /* Reduced mobile font size */
     color: var(--white, #FFFFFF);
     margin: 0 0 16px 0;
     padding: 0 5px;
-    white-space: nowrap;
+    white-space: nowrap; /* Keep desktop on one line */
+}
+
+.mobile-only-break {
+    display: none;
 }
 
 .cta-text {
@@ -76,6 +80,14 @@
 @media (max-width: 768px) {
     .cta-text {
         font-size: 16px;
+    }
+
+    .cta-title {
+        white-space: normal; /* Allow wrapping/break on mobile */
+    }
+
+    .mobile-only-break {
+        display: block;
     }
 
     .cta-buttons {
