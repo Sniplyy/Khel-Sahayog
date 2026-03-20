@@ -459,11 +459,7 @@
 
 
     .athletics-programs-section {
-        padding: 60px 0;
-    }
-
-    .athletics-programs-section .athletics-programs-container {
-        padding: 0 16px;
+        padding: 60px var(--space-section-h);
     }
 
     .section-heading-orange,
@@ -473,14 +469,6 @@
 
     .athletics-hero-content {
         padding: 0 20px;
-    }
-
-    .program-card1,
-    .program-card2 {
-        padding: 28px 24px;
-        min-width: 0;
-        max-width: 100%;
-        width: 100%;
     }
 
     .impact-stat-box {
