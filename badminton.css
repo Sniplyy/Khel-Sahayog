@@ -351,7 +351,7 @@ body {
 
 
 .cta-section {
-    padding: var(--space-section-v) var(--space-section-h);
+    padding: 44px 40px;
     background-color: #F25F25;
     text-align: center;
 }

@@ -476,19 +476,7 @@
 
 
     .kabaddi-programs-section {
-        padding: 60px 0;
-    }
-
-    .kabaddi-programs-section .kabaddi-programs-container {
-        padding: 0 16px;
-    }
-
-    .program-card1,
-    .program-card2 {
-        padding: 24px;
-        min-width: 0;
-        max-width: 100%;
-        width: 100%;
+        padding: 60px var(--space-section-h);
     }
 
     .impact-stat-box {
